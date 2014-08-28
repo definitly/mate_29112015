@@ -9,6 +9,7 @@ cp  $CURRENTDIRECTORY/config  /usr/local/etc/polipo/
 touch       /var/log/tor
 chmod 0002  /var/log/tor
 
-
+mkdir -p /var/run/polipo
+chmod -R 0002 /var/run/polipo
 touch /var/log/polipo
 chmod 0002  /var/log/polipo
