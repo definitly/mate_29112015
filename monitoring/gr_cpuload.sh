@@ -38,6 +38,6 @@ LINE3:idle#FFFF00:"CPU idle " \
 AREA:idle#FF0000:"" \
 GPRINT:idle:LAST:"Last %.2lf %% idle" \
 GPRINT:idle:MAX:"Max %.2lf %% idle" \
-GPRINT:idle:AVERAGE:"%.2lf %% idle " \
-GPRINT:idle:MIN:"%.2lf %% idle \c" \
+GPRINT:idle:AVERAGE:"Avg %.2lf %% idle " \
+GPRINT:idle:MIN:"Min  %.2lf %% idle \c" \
 COMMENT:"\n"
