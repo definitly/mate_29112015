@@ -17,15 +17,15 @@ core1="$(/sbin/sysctl dev.cpu.1.temperature | /usr/bin/awk '{print $2}' | /usr/b
 `/usr/local/bin/rrdtool update $rrd/cputemp.rrd N:$core0:$core1`
 
 #вывод заргрузки idle (бездействие системы)
-d="$(top -SIt | grep idle | awk ' {print $11} ')"
- 
+idle="$(top -SIt | grep idle | awk ' {print $11} '| sed 's/.$//' )"
+`/usr/local/bin/rrdtool update $rrd/cpuload.rrd N:$idle`
 
 #вывод времени 
 e="$(date | awk ' {print $4} ')"
  
 
  
-echo -en  "VBoxHeadless:$a     $b:$b2     $core0       $d     $e\n"   >>  /tmp/monitoring.log
+echo -en  "VBoxHeadless:$a     $b:$b2     $core0       $idle     $e\n"   >>  /tmp/monitoring.log
 cat /tmp/monitoring.log | column -c 3 -t                   >  /home/$login/monitoring.log
  
 
