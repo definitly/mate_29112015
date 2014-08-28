@@ -17,9 +17,6 @@ CURRENTDIRECTORY=$(pwd)
           cd $CURRENTDIRECTORY/etc
           ./etc.sh
           cd .. 
-          cd $CURRENTDIRECTORY/rtorrent
-          ./rtorrent.sh
-          cd .. 
           cd $CURRENTDIRECTORY/tint2
           ./tint2.sh
           cd ..
