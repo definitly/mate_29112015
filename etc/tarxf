@@ -1,0 +1,6 @@
+#!/usr/local/bin/bash
+CURRENTDIRECTORY=$(pwd)
+DIRNAME=`dirname $1`
+
+
+tar -xf $1 -C $DIRNAME

@@ -1,0 +1,19 @@
+#!/bin/sh
+#eurosport 2
+
+
+
+app="liveedge"
+
+flashVer="LNX 11,2,202,327"
+swfUrl="http://megatvhd.tv/jwplayer55/player11.swf"
+tcUrl="rtmp://80.82.64.38/liveedge"
+pageUrl="http://megatvhd.tv/ch.php?id=ch10&width=700&height=480"
+play="ch10"
+
+
+
+
+rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play  | mplayer -
+
+

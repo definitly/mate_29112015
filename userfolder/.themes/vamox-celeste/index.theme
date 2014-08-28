@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=vamox-celeste
+Type=X-GNOME-Metatheme
+Comment=tema del proyecto de tesis de diseño del mismo nombre
+
+[X-GNOME-Metatheme]
+GtkTheme=vamox-celeste
+MetacityTheme=vamox-celeste
+IconTheme=vamox-celeste
+GtkColorScheme=fg_color:#000,bg_color:#E3E3E3,base_color:#f2f2f2,text_color:#4d4d4d,selected_bg_color:#87c6ff,selected_fg_color:#888888,tooltip_bg_color:#fce649,tooltip_fg_color:#000
+CursorTheme=DMZ-White
+CursorSize=24
+BackgroundImage=/home/dafeba/DCV/tallerD/fondos/escudoblack.jpg

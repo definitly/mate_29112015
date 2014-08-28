@@ -1,0 +1,17 @@
+#!/bin/sh
+#eurosport 2
+
+
+
+app="flash"
+
+flashVer="LNX 11,2,202,327"
+swfUrl="http://static2.sawlive.tv/player.swf"
+tcUrl="rtmp://50.7.28.234/flash"
+pageUrl="http://sawlive.tv/embed/watch/VkMGRhMTFhODg0ZDFjMTQ5ZDEwNDMzZmE0OTo5OTQ2YWQyZmVjMDMxNTEyYzBiZDQ3NTY3YzRlM2QxNg__/OWRhNzRkNDg1ZmY5OmE0NjE2NzczNmI3OTczNjU3MzY1MzQ6OTRmNGQ3MzcxYjAxOW"
+play="12112?MTQwMDg2MzM1NDs5MjczYjk2NTJmMmM4M2YyZGU4YzcxYWQ5ZWRmNjA4YQ=="
+
+
+
+
+rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play  | mplayer -

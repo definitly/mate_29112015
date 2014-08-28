@@ -1,0 +1,16 @@
+#!/usr/local/bin/bash
+
+proc=sp-sc-auth 
+          if ! [ -z "$(pgrep $proc)" ]
+                then
+               echo sp-sc-auth allready run;
+          
+                else
+                   sp-sc-auth $1 3908 8908 > /dev/null &
+                   sleep 10
+                   mplayer http://localhost:8908/tv.asf 
+        fi
+           
+ 
+ 
+ 

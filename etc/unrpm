@@ -1,0 +1,4 @@
+#!/usr/local/bin/bash
+
+
+ rpm2cpio.pl $1 | cpio -idmv

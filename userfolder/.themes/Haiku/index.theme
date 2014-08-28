@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Haiku-Theme
+Type=X-GNOME-Metatheme
+Comment=
+
+[X-GNOME-Metatheme]
+GtkTheme=Haiku
+MetacityTheme=Haiku
+IconTheme=Haiku
+CursorTheme=HaikuHand
+CursorSize=1
+

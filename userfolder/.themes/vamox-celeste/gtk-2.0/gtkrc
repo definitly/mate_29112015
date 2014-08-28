@@ -1,0 +1,398 @@
+include "panel.rc"
+
+gtk_color_scheme = "fg_color:#000\nbg_color:#E3E3E3\nbase_color:#f2f2f2\ntext_color:#4d4d4d\nselected_bg_color:#87c6ff\nselected_fg_color:#888888\ntooltip_bg_color:#fce649\ntooltip_fg_color:#000"
+gtk-icon-sizes = "panel-menu=24,24:panel=24,24:gtk-button=22,22"
+
+# Vamox design project
+# --------------------
+# By Emiliano Luciani & Darío Badagnani
+# First Release December 2008
+# Based on:
+# >> The original Human GTK and metacity theme of Ubuntu
+# >> Tango and Human icons
+#
+# website: vamox.blogspot.com
+# ---------------------------
+#
+# Parte del proyecto de tesis para la cátedra Taller en Comunicación Visual 5D, Diseño
+# en comunicación visual (DCV), Universidad Nacional de La Plata, Argentina.
+# 
+# This is part of a thesis work for Taller en comunicación Visual 5D, Design in Visual
+# comunication (DCV), University of La Plata, Argentina. 
+
+#################### MENUBAR ###################
+style "menubar"		
+{
+  fg[ACTIVE] = "#fbfbfb"
+  fg[INSENSITIVE] = "#babdb6"
+
+
+xthickness			= 0
+ythickness			= 0
+
+	engine "pixmap"
+	{
+		image
+		{
+			function	= BOX
+			state = NORMAL
+			file		= "Menubar/menubar.png"
+			stretch	= TRUE
+    		}
+
+		image
+		{
+			function	= BOX
+			state = ACTIVE
+			file		= "Menubar/menubar.png"
+			stretch	= TRUE
+    		}
+
+  		image
+   		{
+    			function	= BOX
+			state   = PRELIGHT
+     			file		= "Menubar/menubar-item.png"
+      			stretch	= TRUE
+    }
+  }
+}
+
+################### MENUITEM ###################
+
+style "MenuBarItem"
+{
+	text[PRELIGHT] = "#000000"
+	text[ACTIVE]   = "#000000"
+	fg[PRELIGHT] = "#ffffff"
+	fg[ACTIVE]   = "#ffffff"
+
+	xthickness = 4
+	ythickness = 3
+
+
+    engine "pixmap" 
+	{
+
+        image 
+	    {
+              	function        = BOX
+              	recolorable     = TRUE
+              	file            = "Menubar/MenuBarItem.png"
+            	stretch         = TRUE
+            	border			= {10,10,0,0}
+		}
+	}
+}
+
+style "MenuItem"
+{
+	text[PRELIGHT] = "#000000"
+	text[ACTIVE]   = "#000000"
+	fg[PRELIGHT] = "#000000"
+	fg[ACTIVE]   = "#ffffff"
+
+	xthickness = 4
+	ythickness = 3
+
+
+    	engine "pixmap" 
+	{
+
+        image 
+	    {
+              	function        = BOX
+              	recolorable     = TRUE
+              	file            = "Menubar/menuitem.png"
+            	stretch         = TRUE
+            	border			= {1,1,0,0}
+            }
+
+    	image 
+            {
+        	function        = HLINE
+ 			recolorable     = TRUE
+ 			file            = "Menu/menu-line.png"
+			stretch         = TRUE
+      	    }
+
+	image
+	    {
+		function = ARROW
+		recolorable = TRUE
+		state = NORMAL
+		overlay_file = "Arrows/arrow-right-norm.png"
+		overlay_stretch	= FALSE
+		arrow_direction	= RIGHT
+	    }
+		
+	image
+	    {
+		function = ARROW
+		recolorable = TRUE
+		state = PRELIGHT
+		overlay_file = "Arrows/arrow-right-prelight.png"
+		overlay_stretch	= FALSE
+		arrow_direction	= RIGHT
+	    }
+ 
+	}
+}
+
+widget_class "*MenuItem.*" style "MenuItem"
+class "GtkMenuItem" style "MenuItem"
+widget_class "*MenuBar.*" style "MenuBarItem"
+
+
+
+#################### Nodoka ####################
+
+
+
+style "fedora-default"
+{
+
+	#GtkMenu::horizontal-offset = 0
+	GtkMenu::vertical-padding = 0
+	GtkMenu::horizontal-padding = 0
+
+	GtkButton::default_border	= { 0, 0, 0, 0 }
+	GtkButton::child-displacement-x	= 0
+	GtkButton::child-displacement-y	= 1
+
+	GtkRange::trough_border		= 0
+	GtkRange::slider_width		= 14
+	GtkRange::stepper_size		= 16
+  	GtkRange::stepper_spacing	= 0
+	GtkScale::slider-length		= 30
+
+	GtkPaned::handle_size		= 6
+
+	GtkScrollbar::min_slider_length	= 50
+	GtkCheckButton::indicator_size	= 13
+  	GtkRadioButton::indicator_size	= 13
+	GtkMenuBar::internal-padding	= 0
+	GtkTreeView::expander_size	= 14
+	GtkExpander::expander_size	= 16
+
+
+
+	xthickness			= 1
+	ythickness			= 1
+
+  	GtkTreeView::odd_row_color 	= shade (0.929458256, @base_color)
+  	GtkTreeView::even_row_color 	= @base_color
+
+	fg[NORMAL]			= @fg_color
+	fg[PRELIGHT]			= @fg_color
+	fg[ACTIVE]			= @fg_color
+	fg[SELECTED]			= @selected_fg_color
+	fg[INSENSITIVE]			= shade (0.7019, @selected_fg_color)
+
+	bg[NORMAL]			= @bg_color
+	bg[PRELIGHT]			= shade (1.1, @bg_color)
+	bg[ACTIVE]				= shade (0.9437, @bg_color)
+	bg[SELECTED]			= @selected_bg_color
+	bg[INSENSITIVE]			= shade (1.02, @bg_color)
+
+	base[NORMAL]			= @base_color
+	base[PRELIGHT]			= shade (0.3967, @base_color)
+	base[ACTIVE]			= shade (0.9437, @bg_color)
+	base[SELECTED]			= @selected_bg_color
+	base[INSENSITIVE]		= shade (1.02, @bg_color)
+
+	text[NORMAL]			= @text_color
+	text[PRELIGHT]			= @text_color
+	text[ACTIVE]			= @text_color
+	text[SELECTED]			= @text_color
+#<<<<<<<<<antes<<<<<<<<<<<< @selected_fg_color
+	text[INSENSITIVE]		= "#CCCCCC"
+
+	engine "nodoka"
+	{
+#		scrollbar_color		= shade (1.040897799, "#8DADCC")
+		animation		= TRUE # FALSE = disabled, TRUE = enabled
+#		contrast		= 1.0
+		gradients		= TRUE
+		hilight_ratio		= 0.909090909
+		listviewheaderstyle	= 1 # 0 = flat, 1 = gradient, 2 = raised
+		listviewstyle		= 1 # 0 = nothing, 1 = dotted
+		stripes			= FALSE # enable or disable stripes in menuitems, progressbars, and scrollbars
+		menubarstyle		= 3 # 0 = flat, 1 = normal raised gradient, 2 = normal lowered gradient, 3 = menubar gradient
+		toolbarstyle		= 2 # 0 = flat, 1 = normal raised gradient, 2 = normal lowered gradient, 3 = menubar gradient
+		roundness		= 3 # 0 = squared, 1 = old default, more will increase roundness
+		scrollbarstyle		= 1 # 0 = nothing, 1 = circles, 2 = bars
+		bullet_color		= "#3d7bb4"
+		focus_fill		= FALSE # enable or disable focus overlay fill
+		focus_inner		= FALSE	# TRUE = secondary focus ring inside, FALSE = secondary focus ring outside widgets
+	}
+
+}
+
+# Evolution (and some deprecated widgets) use bg and fg for its listview instead of 
+# base and text like they should, so we override it.
+style "evolution-hack" = "fedora-default"
+{	
+	bg[ACTIVE]	= @bg_color
+	bg[SELECTED]	= shade (1.040897799, @selected_bg_color)
+	fg[ACTIVE]	= @text_color
+	fg[SELECTED]	= @selected_fg_color
+}
+
+style "fedora-bright" = "fedora-default"
+{
+	bg[SELECTED]	= shade (1.040897799, @selected_bg_color)
+}
+
+
+style "fedora-wide" = "fedora-default"
+{
+	xthickness	= 2
+	ythickness	= 2
+}
+
+style "fedora-wide-bright" = "fedora-wide"
+{
+	bg[SELECTED]	= shade (1.040897799, @selected_bg_color)
+}
+
+style "fedora-wider" = "fedora-default"
+{
+	xthickness	= 3
+	ythickness	= 3
+}
+
+style "fedora-wider-bright" = "fedora-wider"
+{
+	bg[SELECTED]	= shade (1.040897799, @selected_bg_color)
+}
+
+style "fedora-button" = "fedora-wider"
+{
+    bg[NORMAL] = shade (1.05, @bg_color)
+	bg[ACTIVE] = shade (0.85, @bg_color)
+}
+
+style "fedora-menu" = "fedora-default"
+{
+  xthickness = 0
+  ythickness = 0
+  bg[NORMAL] = shade (1.0,@bg_color)
+}
+
+style "fedora-notebook" = "fedora-wide-bright"
+{
+	bg[ACTIVE]   	= shade (0.80, @bg_color)
+  	bg[INSENSITIVE] = shade (0.9221, @bg_color)
+  	bg[NORMAL]      = shade (1.06, @bg_color)
+	bg[PRELIGHT] 	= lighter (@bg_color)
+}
+
+style "fedora-tree" = "fedora-wide"
+{
+	bg[ACTIVE]	= shade (0.8, @bg_color)
+	bg[NORMAL]	= shade (1.05, @bg_color)
+}
+
+style "fedora-frame-title" = "fedora-default"
+{
+	fg[NORMAL]	= lighter (@fg_color)
+}
+
+style "fedora-tooltips" = "fedora-default"
+{
+	xthickness	= 4
+	ythickness	= 4
+	bg[NORMAL]	= { 1.0,1.0,0.75 }
+}
+
+style "fedora-progressbar" = "fedora-wide-bright"
+{
+    bg[NORMAL]      = shade (0.85, @bg_color)
+    bg[SELECTED]    = shade (0.85, @selected_bg_color)
+	fg[PRELIGHT]	= shade (1.1946, @selected_fg_color)
+}
+
+style "fedora-combo" = "fedora-button"
+{
+}
+
+style "fedora-status" = "fedora-wide"
+{
+	GtkStatusbar	::shadow-type	= GTK_SHADOW_IN
+}
+
+style "fedora-entry" = "fedora-wider-bright"
+{
+	GtkWidget	::focus-line-width	= 2
+	GtkEntry	::shadow-type		= GTK_SHADOW_IN
+}
+
+style "fedora-scrollbar" = "fedora-button"
+{
+	text[NORMAL]		= shade (0.2, @bg_color)
+	text[PRELIGHT]		= shade (0.2, @bg_color)
+	text[ACTIVE]		= @text_color
+}
+
+style "fedora-scale" = "fedora-button"
+{
+
+	GtkRange	::trough-side-details	= 0
+
+	bg[SELECTED]    = shade (1.1, @selected_bg_color)
+	fg[PRELIGHT]	= shade(1.1946, @selected_fg_color)
+}
+
+# widget styles
+class "GtkWidget"		style "fedora-default"
+class "GtkButton"		style "fedora-button"
+class "GtkCombo"		style "fedora-combo"
+class "GtkRange"		style "fedora-wide-bright"
+class "GtkFrame"		style "fedora-wide"
+class "GtkMenu"			style "fedora-menu"
+class "GtkEntry"		style "fedora-entry"
+class "GtkNotebook"		style "fedora-notebook"
+class "GtkProgressBar"	style "fedora-progressbar"
+class "GtkStatusbar"	style "fedora-status"
+class "GtkScrollbar"	style "fedora-scrollbar"
+class "GtkHBox"			style "fedora-wider"
+class "GtkScale"		style "fedora-scale"
+
+# combobox stuff
+widget_class "*.GtkComboBox.GtkButton"	style "fedora-combo"
+widget_class "*.GtkCombo.GtkButton"		style "fedora-combo"
+widget_class "*.GtkComboBox.GtkFrame"	style "fedora-wider"
+
+# tooltips stuff
+widget "gtk-tooltips"			style "fedora-tooltips"
+widget "gtk-tooltip"			style "fedora-tooltips"
+
+# treeview stuff
+widget_class "*.GtkTreeView.GtkButton"	style "fedora-tree"
+widget_class "*.GtkCTree.GtkButton"		style "fedora-tree"
+widget_class "*.GtkList.GtkButton"		style "fedora-tree"
+widget_class "*.GtkCList.GtkButton"		style "fedora-tree"
+widget_class "*.GtkFrame.GtkLabel"		style "fedora-frame-title"
+
+# notebook stuff
+widget_class "*.GtkNotebook.*.GtkEventBox"	style "fedora-notebook"
+widget_class "*.GtkNotebook.*.GtkViewport"	style "fedora-notebook"
+
+# these should really use base and text colors instead
+widget_class "*GtkCTree*"	style "evolution-hack"
+widget_class "*GtkList*"	style "evolution-hack"
+widget_class "*GtkCList*"	style "evolution-hack"
+widget_class "*.ETree.*"	style "evolution-hack"
+widget_class "*EInfoLabel*"	style "evolution-hack"
+
+#evolution new button workaround (should be fixed in Evo 2.24)
+style "fedora-evo-new-button-workaround"
+{
+	engine "nodoka"
+	{
+		toolbarstyle = 0
+	}
+}
+
+widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "fedora-evo-new-button-workaround"

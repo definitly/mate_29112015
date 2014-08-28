@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "Enter URL"
+while read URL
+do
+mplayer -cookies -cookies-file /tmp/cookies.txt $(youtube-dl -f 18 -g --cookies /tmp/cookie.txt "$URL")
+done

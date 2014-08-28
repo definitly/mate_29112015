@@ -1,0 +1,19 @@
+#!/bin/sh
+#eurosport 2
+
+
+
+app="shqstream/"
+
+flashVer="LNX 11,2,202,327"
+swfUrl="http://filo.hqstream.tv/jwp6/jwplayer.flash.swf"
+tcUrl="rtmp://174.36.195.13/shqstream/"
+pageUrl="http://hqstream.tv/player.php?streampage=ikcywq41xdijhhz&height=480&width=700"
+play="ikcywq41xdijhhz?keys=PCNhCqr-cw3OB6vhRkgzrg&keyt=1400434055"
+
+
+
+
+rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play  | mplayer -
+
+
