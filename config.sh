@@ -65,17 +65,17 @@
 #/usr/local/etc/pkg.conf
 
 
-#                   rm /usr/local/etc/pkg.conf
-#                   touch /usr/local/etc/pkg.conf
-#                    echo 'packagesite: http://pkg.cdn.pcbsd.org/9.2-RELEASE/amd64' >> /usr/local/etc/pkg.conf
-#                    echo 'PUBKEY: /usr/local/etc/pkg-pubkey.cert' >> /usr/local/etc/pkg.conf
-#                    echo 'PKG_CACHEDIR: /usr/local/tmp ' >> /usr/local/etc/pkg.conf
-#                     echo 'PACKAGESITE	    : pkg+http://pkg.freebsd.org/${ABI}/latest' >> /usr/local/etc/pkg.conf
+#                    rm /usr/local/etc/pkg.conf
+#                    touch /usr/local/etc/pkg.conf
+#                    echo 'packagesite: http://pkg.cdn.pcbsd.org/9.2-RELEASE/amd64'                    >> /usr/local/etc/pkg.conf
+#                    echo 'PUBKEY: /usr/local/etc/pkg-pubkey.cert'                                     >> /usr/local/etc/pkg.conf
+#                    echo 'PKG_CACHEDIR: /usr/local/tmp '                                              >> /usr/local/etc/pkg.conf
+#                    echo 'PACKAGESITE	    : pkg+http://pkg.freebsd.org/${ABI}/latest'                >> /usr/local/etc/pkg.conf
  
 
 #/etc/sysctl.conf   
-                   echo 'kern.coredump=0' >> /etc/sysctl.conf 
-
+                   echo 'kern.coredump=0'                 >>           /etc/sysctl.conf 
+                   echo 'kern.ipc.shm_allow_removed=1'    >>           /etc/sysctl.conf 
  
  # link ssl certificate verify 
                    ln -sf /usr/local/share/certs/ca-root-nss.crt /etc/ssl/cert.pem
@@ -89,4 +89,3 @@
 #6-u6hbv-rys4v-7ci39-4x89x-s4y2m
 # en pass k..........3 pass.png
 
-sysctl kern.ipc.shm_allow_removed=1
