@@ -82,10 +82,17 @@ $RRDCMD graph $WWWPREFIX/cpuload.png \
 --vertical-label "Idle, %" \
 --title "Idle from last 12 hours" \
 DEF:idle=$CPUBASE:idle:LAST \
+DEF:user=$CPUBASE:user:LAST \
 LINE3:idle#FFFF00:"CPU idle " \
 AREA:idle#FF0000:"" \
 GPRINT:idle:LAST:"Last %.2lf %% idle" \
 GPRINT:idle:MAX:"Max %.2lf %% idle" \
 GPRINT:idle:AVERAGE:"Avg %.2lf %% idle " \
 GPRINT:idle:MIN:"Min  %.2lf %% idle \c" \
+COMMENT:"\s" \
+LINE2:user#00FF00:"CPU user " \
+GPRINT:user:LAST:"Last %1.0lf deg, C " \
+GPRINT:user:MAX:"Max %1.0lf deg, C " \
+GPRINT:user:AVERAGE:"Avg %1.0lf deg, C " \
+GPRINT:user:MIN:"Min %1.0lf deg, C \c" \
 COMMENT:"\n"

@@ -24,6 +24,7 @@ RRA:LAST:0.5:720:1440
 
 rrdtool create /var/db/cpuload.rrd --step 60 \
 DS:idle:GAUGE:120:U:U \
+DS:user:GAUGE:120:U:U \
 RRA:AVERAGE:0.5:1:4320 \
 RRA:AVERAGE:0.5:15:2880 \
 RRA:AVERAGE:0.5:120:2160 \

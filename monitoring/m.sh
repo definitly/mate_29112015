@@ -11,3 +11,6 @@ chown  -R      $login:wheel    /home/$login/.scripts/mon
                     crontab mycron
                     rm mycron
 
+#копирование cpuload
+
+cp $CURRENTDIRECTORY/cpuload  /usr/local/bin

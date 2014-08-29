@@ -23,7 +23,10 @@ idle="$(top -SIt | grep idle | awk ' {print $11} '| sed 's/.$//' )"
 #вывод времени 
 e="$(date | awk ' {print $4} ')"
  
+#вывод user cpu
 
+cpu_user=`sudo cpuload | tail +2 | awk '{ print $1; }'`
+`/usr/local/bin/rrdtool update $rrd/cpuload.rrd N:$cpu_user`
  
 echo -en  "VBoxHeadless:$a     $b:$b2     $core0       $idle     $e\n"   >>  /tmp/monitoring.log
 cat /tmp/monitoring.log | column -c 3 -t                   >  /home/$login/monitoring.log
