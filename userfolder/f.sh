@@ -66,4 +66,4 @@ echo $k
 
 
 
-sudo /home/definitly/mate/userfolder/.scripts/rrdcreate.sh
+sudo /home/$login/.scripts/rrdcreate.sh
