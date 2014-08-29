@@ -90,9 +90,9 @@ GPRINT:idle:MAX:"Max %.2lf %% idle" \
 GPRINT:idle:AVERAGE:"Avg %.2lf %% idle " \
 GPRINT:idle:MIN:"Min  %.2lf %% idle \c" \
 COMMENT:"\s" \
-LINE2:user#00FF00:"CPU user " \
-GPRINT:user:LAST:"Last %1.0lf deg, C " \
-GPRINT:user:MAX:"Max %1.0lf deg, C " \
-GPRINT:user:AVERAGE:"Avg %1.0lf deg, C " \
-GPRINT:user:MIN:"Min %1.0lf deg, C \c" \
+LINE2:user#00FF00:"CPU user" \
+GPRINT:user:LAST:"Last %.2lf" \
+GPRINT:user:MAX:"Max %.2lf" \
+GPRINT:user:AVERAGE:"Avg %.2lf" \
+GPRINT:user:MIN:"Min %.2lf \c" \
 COMMENT:"\n"
