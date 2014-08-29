@@ -62,3 +62,8 @@ echo $k
 
 
   cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
+
+
+
+
+sudo /home/definitly/mate/userfolder/.scripts/rrdcreate.sh
