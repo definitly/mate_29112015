@@ -29,6 +29,9 @@ CURRENTDIRECTORY=$(pwd)
           cd $CURRENTDIRECTORY/noteconky
           ./note_install.sh
           cd .. 
+          cd $CURRENTDIRECTORY/rtorrent
+          ./rtorrent.sh
+          cd .. 
           cd $CURRENTDIRECTORY/repo_new-xorg
           ./repo_new-xorg.sh
           cd ..  
