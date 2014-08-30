@@ -21,7 +21,7 @@
 
 . /etc/rc.subr
 
-name="definitly"
+name="rtorrent"
 rcvar=`set_rcvar`
 
 load_rc_config $name
@@ -36,7 +36,7 @@ required_files="${rtorrent_home}/.rtorrent.rc"
 start_cmd="${name}_start"
 stop_cmd="${name}_stop"
 
-definitly_start()
+rtorrent_start()
 {
 if [ ! -f /var/run/${name}.run ]
     then
@@ -49,7 +49,7 @@ if [ ! -f /var/run/${name}.run ]
  echo "${name} seems to be already running -- remove /var/run/${name}.run manually if needed."
  fi
  }
- definitly_stop()
+ rtorrent_stop()
  {
  if [ -f /var/run/${name}.run ]
  then

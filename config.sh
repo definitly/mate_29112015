@@ -11,7 +11,7 @@
                      echo 'dbus_enable="yes"'            >>                   /etc/rc.conf
                      echo 'apache22_enable="YES"'        >>                   /etc/rc.conf
                      echo 'linux_enable="YES"'           >>                   /etc/rc.conf
-                     echo 'definitly_enable="YES"'       >>                   /etc/rc.conf
+                     echo 'rtorrent_enable="YES"'       >>                   /etc/rc.conf
                      echo 'dahdi_enable="YES"'           >>                   /etc/rc.conf
                      echo 'keymap=ru.koi8-r'             >>                   /etc/rc.conf
                      echo 'scrnmap=koi8-r2cp866'         >>                   /etc/rc.conf
