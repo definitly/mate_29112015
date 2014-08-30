@@ -70,7 +70,7 @@ a=$(cat /root/pid  |grep  nvidia)
                     cp $CURRENTDIRECTORY/pkg.conf                          /usr/local/etc/
 #copy freebsd.conf
                     mkdir -p /usr/local/etc/pkg/repos
-                    cp  $CURRENTDIRECTORY/freebsd.conf                      /usr/local/etc/pkg/repos
+  #                  cp  $CURRENTDIRECTORY/freebsd.conf                      /usr/local/etc/pkg/repos
 # copy free
 
                    cp  $CURRENTDIRECTORY/free  /usr/local/bin
