@@ -30,3 +30,7 @@ ifconfig ale0 ip/24 alias
 jexec name  csh
 
  Xephyr 
+
+
+# футбольные каналы
+http://www.ustream.tv/channel/radiotrance-54
