@@ -520,5 +520,16 @@ display: none !important;
 
 }
 
+@-moz-document domain(mlb.com){
+
+
+
+#gameday-footer-container {
+
+display: none !important;
+}
+
+}
+
 
 
