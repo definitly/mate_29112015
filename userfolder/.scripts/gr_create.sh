@@ -126,34 +126,34 @@ $RRDCMD graph $WWWPREFIX/memory.png \
 --color ARROW#FF0000 \
 --color GRID#CCCCCC \
 --color MGRID#CCCCCC \
---vertical-label "Idle, %" \
---title "Idle from last 12 hours" \
+--vertical-label "Memory, MB" \
+--title "Memoty from last 12 hours" \
 DEF:wired=$CPUBASE:wired:LAST \
 DEF:active=$CPUBASE:active:LAST \
 DEF:inactive=$CPUBASE:inactive:LAST \
 DEF:free=$CPUBASE:free:LAST \
-LINE6:wired#FFFF00:"CPU idle " \
+LINE6:wired#FFFF00:"Memory wired " \
 AREA:wired#FF0000:"" \
-GPRINT:wired:LAST:"Last %5.1lf %% idle" \
-GPRINT:wired:MAX:"Max %5.1lf %% idle" \
-GPRINT:wired:AVERAGE:"Avg %5.1lf %% idle " \
-GPRINT:wired:MIN:"Min  %5.1lf %% idle \c" \
+GPRINT:wired:LAST:"Last %5.1lf MB" \
+GPRINT:wired:MAX:"Max %5.1lf  MB" \
+GPRINT:wired:AVERAGE:"Avg %5.1lf  MB " \
+GPRINT:wired:MIN:"Min  %5.1lf  MB \c" \
 COMMENT:"\s" \
-LINE5:active#FFFF00:"CPU idle " \
+LINE5:active#FFFF00:"Memory active " \
 AREA:active#FF0000:"" \
-GPRINT:active:LAST:"Last %5.1lf %% idle" \
-GPRINT:active:MAX:"Max %5.1lf %% idle" \
-GPRINT:active:AVERAGE:"Avg %5.1lf %% idle " \
-GPRINT:active:MIN:"Min  %5.1lf %% idle \c" \
+GPRINT:active:LAST:"Last %5.1lf  MB" \
+GPRINT:active:MAX:"Max %5.1lf  MB" \
+GPRINT:active:AVERAGE:"Avg %5.1lf  MB " \
+GPRINT:active:MIN:"Min  %5.1lf  MB \c" \
 COMMENT:"\s" \
-LINE4:inactive#FFFF00:"CPU idle " \
+LINE4:inactive#FFFF00:"Memory inactive " \
 AREA:inactive#FF0000:"" \
-GPRINT:inactive:LAST:"Last %5.1lf %% idle" \
-GPRINT:inactive:MAX:"Max %5.1lf %% idle" \
-GPRINT:inactive:AVERAGE:"Avg %5.1lf %% idle " \
-GPRINT:inactive:MIN:"Min  %5.1lf %% idle \c" \
+GPRINT:inactive:LAST:"Last %5.1lf  MB" \
+GPRINT:inactive:MAX:"Max %5.1lf  MB" \
+GPRINT:inactive:AVERAGE:"Avg %5.1lf  MB " \
+GPRINT:inactive:MIN:"Min  %5.1lf  MB \c" \
 COMMENT:"\s" \
-LINE2:free#00FF00:"CPU user" \
+LINE2:free#00FF00:"Memory free" \
 GPRINT:free:LAST:"Last %5.1lf" \
 GPRINT:free:MAX:"Max %5.1lf" \
 GPRINT:free:AVERAGE:"Avg %5.1lf" \
