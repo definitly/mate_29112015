@@ -28,9 +28,9 @@ echo $user
 # вывод памяти
 
 wired="$(/usr/local/bin/free | grep Wired | awk ' {print $4} ' |  sed 's/.$//' | sed 's/.$//' | sed 's/.$//' )"
-active="$(free | grep Active | awk ' {print $5} ' | sed 's/.$//' | sed 's/.$//' | sed 's/.$//' )"
-inactive="$(free | grep Inactive | awk ' {print $4} ' | sed 's/.$//'| sed 's/.$//' | sed 's/.$//'  )"
-free="$(free | grep Free | awk ' {print $5} ' | sed 's/.$//' | sed 's/.$//' | sed 's/.$//'  )"
+active="$(/usr/local/bin/free | grep Active | awk ' {print $5} ' | sed 's/.$//' | sed 's/.$//' | sed 's/.$//' )"
+inactive="$(/usr/local/bin/free | grep Inactive | awk ' {print $4} ' | sed 's/.$//'| sed 's/.$//' | sed 's/.$//'  )"
+free="$(/usr/local/bin/free | grep Free | awk ' {print $5} ' | sed 's/.$//' | sed 's/.$//' | sed 's/.$//'  )"
 `/usr/local/bin/rrdtool update $rrd/memory.rrd N:$wired:$active:$inactive:$free`
 
  
