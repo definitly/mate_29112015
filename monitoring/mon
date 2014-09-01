@@ -25,7 +25,12 @@ user=`  /usr/local/bin/cpuload | tail +2 | awk '{ print $1; }'`
 e="$(date | awk ' {print $4} ')"
 echo $user
 
+# вывод памяти
 
+wired="$(/usr/local/bin/free | grep Wired | awk ' {print $4} ' |  sed 's/.$//')"
+active="$(free | grep Active | awk ' {print $5} ' | sed 's/.$//')"
+inactive="$(free | grep Inactive | awk ' {print $4} ' | sed 's/.$//')"
+free="$(free | grep Free | awk ' {print $5} ' | sed 's/.$//')"
 
  
 echo -en  "VBoxHeadless:$a     $b:$b2     $core0       $idle     $e\n"   >>  /tmp/monitoring.log
