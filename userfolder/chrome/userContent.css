@@ -456,7 +456,10 @@ body {
 }
 
 
-
+.spaceRow  {
+    
+  display: none !important;
+}
 
 .pb_left_banner {
     
