@@ -6,7 +6,7 @@
 #/etc/rc.conf
 
  
-                     echo 'ifconfig_ale0_alias0="inet 192.168.1.4  netmask 255.255.255.0"' >> /etc/rc.conf
+                     
  #                   echo 'hald_enable="yes"'            >>                   /etc/rc.conf
                      echo 'dbus_enable="yes"'            >>                   /etc/rc.conf
                      echo 'apache22_enable="YES"'        >>                   /etc/rc.conf
