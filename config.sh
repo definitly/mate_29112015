@@ -25,6 +25,7 @@
                      echo 'powerd_flags="-a adp -p 100 -r 90"' >>             /etc/rc.conf
                      echo 'nginx_enable="YES"'           >>                   /etc/rc.conf
                      echo 'polipo_enable="YES"'          >>                   /etc/rc.conf
+                     echo 'tor_enable="YES"'             >>                   /etc/rc.conf
 
 #/boot/defaults/loader.conf 
                      echo  'nvidia_load="YES" '          >>                   /boot/defaults/loader.conf
