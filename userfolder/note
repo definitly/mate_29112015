@@ -35,6 +35,6 @@ jexec name  csh
 # футбольные каналы
 http://www.ustream.tv/channel/radiotrance-54
 
-
+xhost localhost
 sudo -u ff -H firefox
 echo 639639 | pw useradd ff -m -g wheel -s /bin/csh -h 0
