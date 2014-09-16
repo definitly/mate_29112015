@@ -43,8 +43,8 @@
 			<item label="FireFox"> <action name="Execute">
 				<execute>firefox</execute>
 			</action> </item>
-                        <item label="FireFox-nightly"> <action name="Execute">
-				<execute>firefox-nightly</execute>
+                        <item label="FireFox-Tor"> <action name="Execute">
+				<execute>~/.scripts/firefox_tor.sh</execute>
 			</action> </item>
 
 
