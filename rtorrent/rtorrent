@@ -22,7 +22,7 @@
 . /etc/rc.subr
 
 name="rtorrent"
-rcvar=`set_rcvar`
+
 
 load_rc_config $name
 
