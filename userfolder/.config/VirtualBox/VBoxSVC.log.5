@@ -1,198 +1,66 @@
 VirtualBox XPCOM Server 4.3.12_OSE r93733 freebsd.amd64 (Sep  8 2014 17:36:02) release log
-00:00:00.001409 main     Log opened 2014-09-17T12:19:30.321465000Z
-00:00:00.001411 main     Build Type: release
-00:00:00.001421 main     OS Product: FreeBSD
-00:00:00.001426 main     OS Release: 10.1-BETA1
-00:00:00.001430 main     OS Version: FreeBSD 10.1-BETA1 #0 r271444: Fri Sep 12 00:47:55 UTC 2014     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/sys/GENERIC
-00:00:00.001435 main     Host RAM: 4053MB total, 2728MB available
-00:00:00.001438 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
-00:00:00.001439 main     Process ID: 86583
-00:00:00.001440 main     Package type: BSD_64BITS_GENERIC (OSE)
-00:00:00.107568 nspr-2   Loading settings file "/home/definitly/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
-00:00:01.109085 nspr-2   HostDnsMonitorProxy: Host's DNS information updated:
-00:00:01.109136 nspr-2   DNS server 1: 192.168.1.1
-00:00:01.109447 nspr-2   VDInit finished
-00:00:01.109587 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={1254a96a-ae57-4484-946a-22d86c1f98af} aComponent={SystemProperties} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false
-00:00:01.110140 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/openindiana/openindiana.vbox' for reading: -102(File not found.).
-00:00:01.110145 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.110382 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/opensuse/opensuse.vbox' for reading: -102(File not found.).
-00:00:01.110387 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.110566 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/elementary/elementary.vbox' for reading: -102(File not found.).
-00:00:01.110571 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.110749 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/mint/mint.vbox' for reading: -102(File not found.).
-00:00:01.110754 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.110930 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/solaris/solaris.vbox' for reading: -102(File not found.).
-00:00:01.110935 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.111122 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/win7/win7.vbox' for reading: -102(File not found.).
-00:00:01.111127 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.111304 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/win8/win8.vbox' for reading: -102(File not found.).
-00:00:01.111309 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.111486 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/w2000/w2000.vbox' for reading: -102(File not found.).
-00:00:01.111490 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.111675 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/winxp/winxp.vbox' for reading: -102(File not found.).
-00:00:01.111680 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.111858 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/winmin/winmin.vbox' for reading: -102(File not found.).
-00:00:01.111863 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.112038 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/win/win.vbox' for reading: -102(File not found.).
-00:00:01.112042 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.112212 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/centos/centos.vbox' for reading: -102(File not found.).
-00:00:01.112216 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.112391 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/debian/debian.vbox' for reading: -102(File not found.).
-00:00:01.112395 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.112574 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/fedora/fedora.vbox' for reading: -102(File not found.).
-00:00:01.112579 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.112756 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/ubuntu/ubuntu.vbox' for reading: -102(File not found.).
-00:00:01.112761 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.112937 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/slitaz/slitaz.vbox' for reading: -102(File not found.).
-00:00:01.112942 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
-00:00:01.186626 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186673 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186695 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186728 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186748 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186774 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186793 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186817 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186841 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186861 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186881 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186908 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186928 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186964 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.186984 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.187004 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.191332 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={SessionMachine} aText={No storage device attached to device slot 0 on port 0 of controller 'Floppy Controller'}, preserve=false
-00:00:01.248918 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.248979 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249000 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249020 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249049 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249069 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249099 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249121 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249141 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249166 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249185 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249205 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249230 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249250 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249276 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.249296 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284300 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284362 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284384 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284404 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284430 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284451 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284476 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284496 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284516 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284544 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284564 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284591 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284611 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284630 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284656 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.284676 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.287269 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={SessionMachine} aText={No storage device attached to device slot 0 on port 0 of controller 'IDE Controller'}, preserve=false
-00:00:01.288069 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={SessionMachine} aText={No storage device attached to device slot 0 on port 0 of controller 'IDE Controller'}, preserve=false
-00:00:01.288237 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288267 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288287 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288314 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288333 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288353 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288379 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288399 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288424 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288444 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288464 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288492 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288512 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288532 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288560 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.288579 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.338831 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.338880 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.338902 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.338940 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.338960 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.338980 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339006 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339026 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339052 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339072 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339092 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339119 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339139 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339158 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339184 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.339204 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.343002 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={SessionMachine} aText={No storage device attached to device slot 0 on port 1 of controller 'IDE Controller'}, preserve=false
-00:00:01.344088 nspr-2   ERROR [COM]: aRC=VBOX_E_OBJECT_NOT_FOUND (0x80bb0001) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={SessionMachine} aText={No storage device attached to device slot 0 on port 1 of controller 'IDE Controller'}, preserve=false
-00:00:01.344506 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344531 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344552 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344580 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344601 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344627 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344647 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344667 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344694 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344714 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344735 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344761 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344783 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344810 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344830 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.344850 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388331 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388378 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388419 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388439 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388459 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388488 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388508 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388528 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388555 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388575 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388602 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388621 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388641 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388668 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388688 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.388708 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428384 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428437 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428479 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428499 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428519 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428547 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428567 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428597 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428617 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428637 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428666 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428686 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428706 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428734 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428754 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:01.428781 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553525 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553581 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553623 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553643 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553662 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553693 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553712 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553739 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553758 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553777 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553804 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553823 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553852 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553871 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553890 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:00:03.553919 nspr-3   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
-00:01:17.306179 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={05f2bbb6-a3a6-4fb9-9b49-6d0dda7142ac} aComponent={Medium} aText={Medium '/usr/home/definitly/VirtualBox VMs/android/android.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false
-00:01:17.308922 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={fafa4e17-1ee2-4905-a10e-fe7c18bf5554} aComponent={VirtualBox} aText={The object is not ready}, preserve=false
+00:00:00.001723 main     Log opened 2014-09-17T12:48:32.679623000Z
+00:00:00.001725 main     Build Type: release
+00:00:00.001736 main     OS Product: FreeBSD
+00:00:00.001741 main     OS Release: 10.1-BETA1
+00:00:00.001745 main     OS Version: FreeBSD 10.1-BETA1 #0 r271444: Fri Sep 12 00:47:55 UTC 2014     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/sys/GENERIC
+00:00:00.001751 main     Host RAM: 4053MB total, 2614MB available
+00:00:00.001754 main     Executable: /usr/local/lib/virtualbox/VBoxSVC
+00:00:00.001755 main     Process ID: 89502
+00:00:00.001756 main     Package type: BSD_64BITS_GENERIC (OSE)
+00:00:00.112070 nspr-2   Loading settings file "/home/definitly/.config/VirtualBox/VirtualBox.xml" with version "1.12-freebsd"
+00:00:01.115299 nspr-2   HostDnsMonitorProxy: Host's DNS information updated:
+00:00:01.115331 nspr-2   DNS server 1: 192.168.1.1
+00:00:01.115632 nspr-2   VDInit finished
+00:00:01.115794 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={1254a96a-ae57-4484-946a-22d86c1f98af} aComponent={SystemProperties} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false
+00:00:01.116345 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/openindiana/openindiana.vbox' for reading: -102(File not found.).
+00:00:01.116350 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.116594 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/opensuse/opensuse.vbox' for reading: -102(File not found.).
+00:00:01.116599 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.116769 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/elementary/elementary.vbox' for reading: -102(File not found.).
+00:00:01.116774 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.116942 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/mint/mint.vbox' for reading: -102(File not found.).
+00:00:01.116947 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.117113 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/solaris/solaris.vbox' for reading: -102(File not found.).
+00:00:01.117118 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.117295 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/win7/win7.vbox' for reading: -102(File not found.).
+00:00:01.117300 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.117468 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/win8/win8.vbox' for reading: -102(File not found.).
+00:00:01.117473 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.117651 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/w2000/w2000.vbox' for reading: -102(File not found.).
+00:00:01.117656 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.117837 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/winxp/winxp.vbox' for reading: -102(File not found.).
+00:00:01.117842 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.118010 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/winmin/winmin.vbox' for reading: -102(File not found.).
+00:00:01.118015 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.118187 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/win/win.vbox' for reading: -102(File not found.).
+00:00:01.118191 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.118352 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/centos/centos.vbox' for reading: -102(File not found.).
+00:00:01.118356 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.118523 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/debian/debian.vbox' for reading: -102(File not found.).
+00:00:01.118528 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.118701 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/fedora/fedora.vbox' for reading: -102(File not found.).
+00:00:01.118705 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.118873 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/ubuntu/ubuntu.vbox' for reading: -102(File not found.).
+00:00:01.118878 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.119046 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={Runtime error opening '/home/definitly/VirtualBox VMs/slitaz/slitaz.vbox' for reading: -102(File not found.).
+00:00:01.119051 nspr-2   /usr/ports/emulators/virtualbox-ose/work/VirtualBox-4.3.12/src/VBox/Main/src-server/MachineImpl.cpp[731] (nsresult Machine::registeredInit())}, preserve=false
+00:00:01.119538 nspr-2   Loading settings file "/home/definitly/VirtualBox VMs/android/android.vbox" with version "1.14-freebsd"
+00:00:01.127167 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127209 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127242 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127262 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127282 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127307 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127327 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127352 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127373 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127392 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127419 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127438 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127458 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127484 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127503 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:00:01.127528 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={480cf695-2d8d-4256-9c7c-cce4184fa048} aComponent={Machine} aText={The object functionality is limited}, preserve=false
+00:01:48.647915 main     ERROR [COM]: aRC=VBOX_E_OBJECT_IN_USE (0x80bb000c) aIID={05f2bbb6-a3a6-4fb9-9b49-6d0dda7142ac} aComponent={Medium} aText={Medium '/usr/home/definitly/VirtualBox VMs/android/android.vdi' cannot be closed because it is still attached to 1 virtual machines}, preserve=false
+00:01:48.650745 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={fafa4e17-1ee2-4905-a10e-fe7c18bf5554} aComponent={VirtualBox} aText={The object is not ready}, preserve=false

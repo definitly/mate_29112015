@@ -40,7 +40,7 @@
       <MachineEntry uuid="{afb918a5-8eda-43fb-ac6f-b4ab4eb0b0ff}" src="/home/definitly/VirtualBox VMs/fedora/fedora.vbox"/>
       <MachineEntry uuid="{38d989c8-ca3a-4829-83e1-836e17b82a96}" src="/home/definitly/VirtualBox VMs/ubuntu/ubuntu.vbox"/>
       <MachineEntry uuid="{22aa4403-399c-4a34-8d44-de7fde2643da}" src="/home/definitly/VirtualBox VMs/slitaz/slitaz.vbox"/>
-      <MachineEntry uuid="{376fd87f-dd67-4385-898e-534ecbcefc3c}" src="/home/definitly/VirtualBox VMs/android/android.vbox"/>
+      <MachineEntry uuid="{f214c610-e5af-4767-abc7-10d1d1538a14}" src="/home/definitly/VirtualBox VMs/android/android.vbox"/>
     </MachineRegistry>
     <MediaRegistry>
       <HardDisks/>
