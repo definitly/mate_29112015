@@ -29,6 +29,6 @@ fi
 
 #sudo pkg add linux-c6-qt47-x11-4.7.2.txz   skype-4.2.0.13.txz
 pkg delete -y nspluginwrapper
-pkg install  -yU linux-c6-flashplugin  skype nspluginwrapper-1.4.4_4
+pkg install  -yU linux-c6-flashplugin  skype4 nspluginwrapper-1.4.4_4
 
 nspluginwrapper -a -i
