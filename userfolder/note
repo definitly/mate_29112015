@@ -39,3 +39,34 @@ http://www.ustream.tv/channel/radiotrance-54
 xhost localhost
 sudo -u ff -H firefox
 echo 639639 | pw useradd ff -m -g wheel -s /bin/csh -h 0
+
+
+
+2. Sound
+
+Since the OSS interface was removed, Skype now uses linux-alsa compat packages.
+By default you get one device corresponding to your default OSS dsp device (so
+Skype will use it for ringing, incoming voice and mic). If that doesn't suit
+needs, you can map the other dsp devices for example by editing
+/compat/linux/etc/alsa/pcm/pcm-oss.conf. You need to (re)start Skype after you
+edit this file in order to get Skype pick up the changes.
+Adding the following to the stock file, and then starting Skype and choosing
+in Options-->Sound Devices:   Speakers: oss1
+will let you use the second dsp (usually the front panel connectors for your
+headphones, while still hearing the call ringing and other notification on the
+first dsp device (presumably the one you connect your speakers to).
+pcm.oss1 {
+        type oss
+        device /dev/dsp1
+        hint {
+                description "Open Sound System"
+        }
+}
+
+ctl.oss1 {
+        type oss
+        device /dev/mixer1
+        hint {
+                description "Open Sound System"
+        }
+}
