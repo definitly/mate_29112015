@@ -3,6 +3,7 @@ setenv  SSL_NO_VERIFY_PEER 1
 
 
 VBoxManage modifyvm win --accelerate3d off
+VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.56.101
 
 занести в конфиг mlbviewer
 #video_player=cvlc -vvv input_stream --sout '#standard{access=http,mux=ts,dst=192.168.1.4:8902/tv.asf}'
