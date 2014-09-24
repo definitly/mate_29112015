@@ -39,8 +39,9 @@
                      echo 'BATCH=y'                      >>                   /etc/make.conf
                      echo 'WITH_PKGNG=yes'               >>                   /etc/make.conf
                      echo 'PERL_VERSION=5.16.3'          >>                   /etc/make.conf
-
-
+                     echo 'OVERRIDE_LINUX_BASE_PORT=c6'       >>                   /etc/make.conf 
+                     echo 'OVERRIDE_LINUX_NONBASE_PORTS=c6'    >>                   /etc/make.conf
+                     
 #/etc/profile
                      echo 'LANG=ru_RU.KOI8-R; export LANG'        >>           /etc/profile
                      echo 'MM_CHARSET=KOI8-R; export MM_CHARSET'  >>           /etc/profile
@@ -56,7 +57,7 @@
 
 #                     echo 'linsys  /compat/linux/sys   linsysfs  rw 0 0' >>  /etc/fstab
 #/etc/sysctl.conf
-                     echo "compat.linux.osrelease=2.6.36" >>                  /etc/sysctl.conf
+                     echo "compat.linux.osrelease=2.6.18" >>                  /etc/sysctl.conf
                      echo "vfs.usermount=1" >> /etc/sysctl.conf
 
 #/usr/local/etc/sudoers
