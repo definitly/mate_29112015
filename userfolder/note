@@ -66,6 +66,14 @@ pcm.oss1 {
 ctl.oss1 {
         type oss
         device /dev/mixer1
+
+ hint {
+                description "Open Sound System"
+        }
+}
+
+
+
 linux-c6-alsa-lib-1.0.22       Advanced Linux Sound Architecture libraries (Linux CentOS 6.5)
 linux-c6-alsa-plugins-oss-1.0.21 OSS plugin for ALSA (Linux CentOS 6.5)
 linux-c6-atk-1.30.0            Accessibility Toolkit, Linux/i386 binary (Linux CentOS 6.5)
@@ -101,9 +109,5 @@ linux-c6-tcp_wrappers-libs-7.6 Libraries tcp wrappers (Linux CentOS 6.5)
 linux-c6-tiff-3.9.4            TIFF library (Linux CentOS 6.5)
 linux-c6-xorg-libs-7.4         Xorg libraries (Linux CentOS 6.5)
 linux_base-c6-6.5              Base set of packages needed in Linux mode for i386/amd64 (Linux CentOS 6)
-  hint {
-                description "Open Sound System"
-        }
-}
-
+  
 
