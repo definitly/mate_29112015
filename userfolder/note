@@ -66,7 +66,44 @@ pcm.oss1 {
 ctl.oss1 {
         type oss
         device /dev/mixer1
-        hint {
+linux-c6-alsa-lib-1.0.22       Advanced Linux Sound Architecture libraries (Linux CentOS 6.5)
+linux-c6-alsa-plugins-oss-1.0.21 OSS plugin for ALSA (Linux CentOS 6.5)
+linux-c6-atk-1.30.0            Accessibility Toolkit, Linux/i386 binary (Linux CentOS 6.5)
+linux-c6-cairo-1.8.8           Vector graphics library Cairo (Linux CentOS 6.5)
+linux-c6-curl-7.19.7           Command line tool for transferring files with URL syntax (Linux CentOS 6.5)
+linux-c6-cyrus-sasl2-2.1.23    RFC 2222 SASL (Simple Authentication and Security Layer) (Linux CentOS 6.5)
+linux-c6-dbus-libs-1.2.24      Libraries for accessing D-BUS (Linux CentOS 6.5)
+linux-c6-expat-2.0.1           Linux/i386 binary port of Expat XML-parsing library (Linux CentOS 6.5)
+linux-c6-flac-1.2.1            Audio system for the KDE integrated X11 desktop (Linux CentOS 6.5)
+linux-c6-flashplugin-11.2r202.400 Adobe Flash Player NPAPI Plugin
+linux-c6-fontconfig-2.8.0      XML-based font configuration API for X Windows (Linux CentOS 6.5)
+linux-c6-gtk2-2.20.1           GTK+ library, version 2.X  (Linux CentOS 6.5)
+linux-c6-hicolor-icon-theme-0.5 High-color icon theme shell from the FreeDesktop project
+linux-c6-jpeg-1.2.1            RPM of the JPEG lib (Linux CentOS 6.5)
+linux-c6-libasyncns-0.8        C library for executing DNS queries asynchronously (Linux CentOS 6.5)
+linux-c6-libogg-1.1.4          Ogg bitstream library (Linux CentOS 6.5)
+linux-c6-libsndfile-1.0.20     Reading and writing files containing sampled sound (like WAV or AIFF) (Linux CentOS 6.5)
+linux-c6-libssh2-1.4.2         Library implementing the SSH2 protocol (Linux CentOS 6.5)
+linux-c6-libv4l-0.6.3          Collection of video4linux support libraries (CentOS 6)
+linux-c6-libvorbis-1.2.3       Audio compression codec library (Linux CentOS 6.5)
+linux-c6-nspr-4.10.0           Netscape Portable Runtime (Linux CentOS 6.5)
+linux-c6-nss-3.15.1            Network Security Services (Linux CentOS 6.5)
+linux-c6-openldap-2.4.23       Lightweight Directory Access Protocol libraries (Linux CentOS 6.5)
+linux-c6-openssl-1.0.1e        OpenSSL toolkit (Linux CentOS 6.5)
+linux-c6-openssl-compat-0.9.8e OpenSSL toolkit (Linux CentOS 6.5)
+linux-c6-pango-1.28.1          Pango library (Linux  CentOS 6.5)
+linux-c6-png-1.2.49            RPM of the PNG lib (Linux CentOS 6.5)
+linux-c6-qt47-4.7.2            RPM of QT4 (Linux CentOS 5)
+linux-c6-qt47-webkit-4.7.2     RPM of QT4 (Linux CentOS 5)
+linux-c6-qt47-x11-4.7.2        RPM of QT4 (Linux CentOS 5)
+linux-c6-sqlite-3.6.20         Library that implements an embeddable SQL database engine (Linux CentOS 6.5)
+linux-c6-tcp_wrappers-libs-7.6 Libraries tcp wrappers (Linux CentOS 6.5)
+linux-c6-tiff-3.9.4            TIFF library (Linux CentOS 6.5)
+linux-c6-xorg-libs-7.4         Xorg libraries (Linux CentOS 6.5)
+linux_base-c6-6.5              Base set of packages needed in Linux mode for i386/amd64 (Linux CentOS 6)
+  hint {
                 description "Open Sound System"
         }
 }
+
+
