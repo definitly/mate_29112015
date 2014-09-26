@@ -28,7 +28,9 @@ fi
 #cd ../skype 
 
 #sudo pkg add linux-c6-qt47-x11-4.7.2.txz   skype-4.2.0.13.txz
-pkg delete -y nspluginwrapper
-pkg install  -yU -r skype4 linux-c6-flashplugin  skype4 nspluginwrapper nvidia-driver linux-c6-alsa-plugins-oss
 
-nspluginwrapper -a -i
+pkg install  -yU -r skype4   skype4  linux-c6-alsa-plugins-oss linux-c6-alsa-lib linux-c6-libogg linux-c6-libvorbis
+pkg delete -f  linux-c6-pulseaudio-libs
+
+cd 
+wget http://download.skype.com/linux/skype-4.3.0.37.tar.bz2
