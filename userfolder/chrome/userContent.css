@@ -557,7 +557,7 @@ display: none !important;
     background: url('../images/noads_promo.png') no-repeat scroll 0px 0px transparent;
     display: none !important;
 }
-.jspPane {
+#.jspPane {
     position: absolute;
     display: none !important;
 
