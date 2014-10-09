@@ -538,5 +538,25 @@ display: none !important;
 
 }
 
+@-moz-document domain(flightradar24.com){
+#apppage_badge {
+    right: 3px;
+    bottom: 180px;
+    width: 127px;
+    height: 98px;
+    border: 0px none;
+    background: url('../images/apppage_promo2.png') no-repeat scroll 0px 0px transparent;
+    display: none !important;
+}
+
+#noads_badge {
+    width: 127px;
+    border-top: 0px none;
+    right: 3px;
+    bottom: 0px;
+    background: url('../images/noads_promo.png') no-repeat scroll 0px 0px transparent;
+    display: none !important;
+}
 
 
+}
