@@ -63,7 +63,7 @@ echo $k
 
   cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
 
-
+./mategit.sh
 
 
 sudo /home/$login/.scripts/rrdcreate.sh
