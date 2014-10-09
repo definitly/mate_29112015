@@ -61,7 +61,7 @@ echo $k
 
 
 
-  cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
+cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
 
 ./mategit.sh
 
