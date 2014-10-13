@@ -33,7 +33,6 @@
       <MachineEntry uuid="{f49e1edc-496c-40d1-a764-512c816f8fb4}" src="/home/definitly/VirtualBox VMs/win8/win8.vbox"/>
       <MachineEntry uuid="{03386365-b923-40c6-b3c7-504c7cf33718}" src="/home/definitly/VirtualBox VMs/w2000/w2000.vbox"/>
       <MachineEntry uuid="{9f0a9616-4dcc-42f8-8141-9b8f17611d44}" src="/home/definitly/VirtualBox VMs/winxp/winxp.vbox"/>
-      <MachineEntry uuid="{4e9cbbf6-6b47-484f-8fe7-7da5aa7a33fd}" src="/home/definitly/VirtualBox VMs/winmin/winmin.vbox"/>
       <MachineEntry uuid="{3a8cd07d-8870-461b-a6b2-bc95ddb16596}" src="/home/definitly/VirtualBox VMs/win/win.vbox"/>
       <MachineEntry uuid="{4ea5de98-012f-457d-8565-0c7c5ad23cf1}" src="/home/definitly/VirtualBox VMs/centos/centos.vbox"/>
       <MachineEntry uuid="{44f739bb-d372-4237-9fbe-82e9c1f7d2da}" src="/home/definitly/VirtualBox VMs/debian/debian.vbox"/>
@@ -41,6 +40,8 @@
       <MachineEntry uuid="{38d989c8-ca3a-4829-83e1-836e17b82a96}" src="/home/definitly/VirtualBox VMs/ubuntu/ubuntu.vbox"/>
       <MachineEntry uuid="{22aa4403-399c-4a34-8d44-de7fde2643da}" src="/home/definitly/VirtualBox VMs/slitaz/slitaz.vbox"/>
       <MachineEntry uuid="{f214c610-e5af-4767-abc7-10d1d1538a14}" src="/home/definitly/VirtualBox VMs/android/android.vbox"/>
+      <MachineEntry uuid="{1688ca4b-8b6b-4062-bcee-44f8989f7e9b}" src="/home/definitly/VirtualBox VMs/crunchbang/crunchbang.vbox"/>
+      <MachineEntry uuid="{51678e69-e570-4f3c-be4c-a35e31461ad3}" src="/home/definitly/VirtualBox VMs/neon5/neon5.vbox"/>
     </MachineRegistry>
     <MediaRegistry>
       <HardDisks/>
