@@ -1,8 +1,8 @@
 #!/bin/sh
  cd /tmp
- fetch  https://dl.dropboxusercontent.com/u/74640315/virtualbox/winmin.tar.gz
- tar -xf  winmin.tar.gz -C ~/VirtualBox\ VMs
-
+ fetch  https://dl.dropboxusercontent.com/u/74640315/virtualbox/winmin.ova
+ 
+VBoxManage import winmin.ova
 
  if ! [ -d ~/share/portable ]; then
 echo 'No directory'
