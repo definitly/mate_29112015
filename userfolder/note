@@ -42,6 +42,10 @@ echo 639639 | pw useradd ff -m -g wheel -s /bin/csh -h 0
 
 
 
+liberation-fonts-ttf
+
+
+
 2. Sound
 
 Since the OSS interface was removed, Skype now uses linux-alsa compat packages.
