@@ -64,6 +64,6 @@ echo $k
 cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
 ~/scripts/fftor.sh
 ./mategit.sh
-
+cp -R ~/themes/themes/* ~/.themes
 
 sudo /home/$login/.scripts/rrdcreate.sh
