@@ -5,7 +5,7 @@ a=.vdi
 vdi=$1$a
 
 VBoxManage createvm --name $name --ostype Ubuntu --register
-VBoxManage modifyvm $name --memory 1024  --floppy disabled --audio none --nic1 bridged --bridgeadapter1 ale0 --vram 128  --accelerate3d off --boot1 disk --acpi on --cableconnected1 on --usb off --vrde on --vrdeport 3390
+VBoxManage modifyvm $name --memory 1024  --floppy disabled --audio oss --nic1 bridged --bridgeadapter1 ale0 --vram 128  --accelerate3d off --boot1 disk --acpi on --cableconnected1 on --usb off --vrde on --vrdeport 3390
 VBoxManage createhd --filename /usr/home/definitly/VirtualBox\ VMs/$name/$vdi --size 20000
 VBoxManage storagectl $name --name "IDE Controller" --add ide
 
