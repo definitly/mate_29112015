@@ -8,7 +8,7 @@ VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.56.101
 занести в конфиг mlbviewer
 #video_player=cvlc -vvv input_stream --sout '#standard{access=http,mux=ts,dst=192.168.1.4:8902/tv.asf}'
 xset s off & xset -dpms &
-
+sudo cp ~/mate/etc/freebsd.conf /usr/local/etc/pkg/repos
 
 команды 
 
