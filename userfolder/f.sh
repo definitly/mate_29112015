@@ -67,3 +67,4 @@ cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
 cp -R ~/themes/themes/* ~/.themes
 
 sudo /home/$login/.scripts/rrdcreate.sh
+~/timeinstall/git.sh
