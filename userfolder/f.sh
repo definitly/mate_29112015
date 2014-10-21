@@ -1,5 +1,18 @@
 #!/usr/local/bin/bash
 
+
+if [ -z "$1" ]
+then
+  echo "Значение не задано"
+  echo "введите пароль"
+  echo " пример: ./f.sh password"
+  exit 1
+fi
+
+echo $1 > /tmp/passgeli
+
+
+
 MAC=`ifconfig -a | grep ether | awk '{print $2}'| sed s/://g | sed 's/.\{1\}/& /g'`
 echo $MAC
 a=`echo $MAC | awk '{print $9}'`
@@ -47,7 +60,7 @@ echo $k
                           mkdir -p   /home/$login/.mozilla 
                           fetch  http://dl.dropbox.com/u/$l/$k
                      sudo mdconfig -at vnode -f $k
-                     sudo geli attach /dev/md0
+                     sudo geli attach  -j /tmp/passgeli /dev/md0
                      sudo mount /dev/md0.eli /mnt
 #                          tar -xf   /mnt/skype.tar.gz -C       /home/$login/
                           tar -xf   /mnt/mlb.tar.gz -C       /home/$login/
@@ -58,6 +71,8 @@ echo $k
                      sudo umount /dev/md0.eli
                      sudo geli detach md0.eli
                      sudo mdconfig -d -u 0 
+
+rm /tmp/passgeli
 
 
 
