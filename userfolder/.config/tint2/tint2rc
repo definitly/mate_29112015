@@ -7,7 +7,7 @@
 #---------------------------------------------
 rounded = 7
 border_width = 2
-background_color = #000000 70
+background_color = #000000 100
 border_color = #ffffff 18
 
 rounded = 5
