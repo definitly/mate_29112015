@@ -11,4 +11,4 @@ vncviewer  -fullscreen -passwd ~/.vnc/passwd localhost:3390
 
 #VBoxManage modifyvm <vmname> --macaddress1 000027226F23
 
-#VBoxManage sharedfolder add NAMEMACHINE --name share --hostpath /share --automount
+#VBoxManage sharedfolder add NAMEMACHINE --name share --hostpath ~/share --automount
