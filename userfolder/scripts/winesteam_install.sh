@@ -19,10 +19,10 @@ l=$a$b$d$f$g$h$j$k
 echo $l
 
 
-fetch  https://dl.dropboxusercontent.com/u/$l/winesteam/winesteam
+fetch  https://dl.dropboxusercontent.com/u/$l/winesteam/winestream
 
 
-sudo mdconfig -at vnode -f winesteam 
+sudo mdconfig -at vnode -f winestream 
 sudo geli attach   /dev/md0
 sudo mount /dev/md0.eli /mnt
 
