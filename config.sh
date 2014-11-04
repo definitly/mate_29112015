@@ -27,7 +27,7 @@
                      echo 'polipo_enable="YES"'          >>                   /etc/rc.conf
                      echo 'tor_enable="YES"'             >>                   /etc/rc.conf
                      echo 'KLD_LIST="linux linsysfs linprocfs"'  >>           /etc/rc.conf
-
+                     echo 'allscreens_flags=" MODE_283"'         >>           /etc/rc.conf
 #/boot/defaults/loader.conf 
                      echo  'nvidia_load="YES" '          >>                   /boot/defaults/loader.conf
                      echo  'vboxdrv_load="YES"'          >>                   /boot/defaults/loader.conf
