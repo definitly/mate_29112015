@@ -46,6 +46,6 @@ login=definitly
 
 #/home/$login/.login  
                   
-                      echo 'startx' >>                                                              /home/$login/.login 
+#                      echo 'startx' >>                                                              /home/$login/.login 
 
                         
