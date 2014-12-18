@@ -59,7 +59,7 @@
 
 #                     echo 'linsys  /compat/linux/sys   linsysfs  rw 0 0' >>  /etc/fstab
 #/etc/sysctl.conf
-                     echo "compat.linux.osrelease=2.6.16" >>                  /etc/sysctl.conf
+                     echo "compat.linux.osrelease=2.6.18" >>                  /etc/sysctl.conf
                      echo "vfs.usermount=1" >> /etc/sysctl.conf
 
 #/usr/local/etc/sudoers
