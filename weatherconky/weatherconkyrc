@@ -38,6 +38,7 @@ PROCESSES $alignr PID    CPU
 ${hr}
 
 нпулчб             ${color}${execi 600 ~/weather/weather.sh UUDD}
+мподпо             ${color}${execi 600 ~/weather/weather.sh EGLL}
 рбтйц              ${color}${execi 600 ~/weather/weather.sh LFPG}
 оша-кптл           ${color}${execi 600 ~/weather/weather.sh KJFK}
 мпу-бодцемеу       ${color}${execi 600 ~/weather/weather.sh KLAX}
