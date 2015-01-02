@@ -9,7 +9,7 @@ VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.56.101
 #video_player=cvlc -vvv input_stream --sout '#standard{access=http,mux=ts,dst=192.168.1.4:8902/tv.asf}'
 xset s off & xset -dpms &
 sudo cp ~/mate/etc/freebsd.conf /usr/local/etc/pkg/repos
-
+pkg delete -y leafpad && pkg install -y leafpad
 
 sudo update-mime-database /usr/local/share/mime
 
