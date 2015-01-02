@@ -6,7 +6,7 @@ CURRENTDIRECTORY=$(pwd)
 
 
 cp $CURRENTDIRECTORY/conkytime           /usr/local/bin
-cp $CURRENTDIRECTORY/time-on-off.sh      /usr/local/bin
+cp $CURRENTDIRECTORY/timeconky-on-off.sh      /usr/local/bin
 
 
 cp $CURRENTDIRECTORY/timeconkyrc        /home/$login/.timeconkyrc

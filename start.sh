@@ -12,40 +12,38 @@ CURRENTDIRECTORY=$(pwd)
           #./cardapio.sh
           #cd ..
           cd $CURRENTDIRECTORY/dzenconky
-          ./dzenconky.sh
+          ./install.sh
           cd ..
           cd $CURRENTDIRECTORY/etc
-          ./etc.sh
+          ./install.sh
           cd .. 
           cd $CURRENTDIRECTORY/tint2
-          ./tint2.sh
+          ./install.sh
           cd ..
           cd $CURRENTDIRECTORY/switchscreen
-          ./switchscreen.sh
+          ./install.sh
           cd ..
           cd $CURRENTDIRECTORY/postinstall
-          ./postinstall.sh
+          ./install.sh
           cd ..  
           cd $CURRENTDIRECTORY/noteconky
-          ./note_install.sh
+          ./install.sh
           cd .. 
           cd $CURRENTDIRECTORY/rtorrent
-          ./rtorrent.sh
+          ./install.sh
           cd .. 
-          cd $CURRENTDIRECTORY/repo_new-xorg
-          ./repo_new-xorg.sh
-          cd ..  
+          
           cd $CURRENTDIRECTORY/weatherconky
-          ./weatherconky.sh
+          ./install.sh
           cd ..  
           cd $CURRENTDIRECTORY/monitoring
-          ./m.sh
+          ./install.sh
           cd ..
          # cd $CURRENTDIRECTORY/squid
          # ./squid.sh
          # cd ..
           cd $CURRENTDIRECTORY/tor
-          ./tor.sh 
+          ./install.sh 
           cd .. 
           cd $CURRENTDIRECTORY/worldtime
           ./install.sh 
