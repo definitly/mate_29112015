@@ -47,6 +47,9 @@ CURRENTDIRECTORY=$(pwd)
           cd $CURRENTDIRECTORY/tor
           ./tor.sh 
           cd .. 
+          cd $CURRENTDIRECTORY/worldtime
+          ./install.sh 
+          cd .. 
           
          
          
