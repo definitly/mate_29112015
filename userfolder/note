@@ -10,7 +10,7 @@ VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.56.101
 xset s off & xset -dpms &
 sudo cp ~/mate/etc/freebsd.conf /usr/local/etc/pkg/repos
 pkg delete -y leafpad && pkg install -y leafpad
-
+VBoxManage  modifyvm android44  --mouse usbtablet
 sudo update-mime-database /usr/local/share/mime
 
 sudo ntpdate 1.ru.pool.ntp.org
