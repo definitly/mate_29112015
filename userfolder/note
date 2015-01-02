@@ -13,7 +13,7 @@ pkg delete -y leafpad && pkg install -y leafpad
 
 sudo update-mime-database /usr/local/share/mime
 
-
+sudo ntpdate 1.ru.pool.ntp.org
 команды 
 
 cdd     перейти в каталог downloads
