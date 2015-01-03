@@ -42,7 +42,7 @@
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Autumn</name>
+    <name>crunchy-dark-grey</name>
     <titleLayout>NLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -84,7 +84,7 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Terminus</name>
+      <name>Estrangelo Edessa</name>
       <size>10</size>
       <!-- font size in points -->
       <weight>Normal</weight>
@@ -230,7 +230,7 @@
         <command>sudo ~/.scripts/mount.sh</command>
       </action>
     </keybind>
-     <keybind key="C-A-t">
+    <keybind key="C-A-t">
       <action name="Execute">
         <command>/usr/local/bin/timeconky-on-off.sh</command>
       </action>
