@@ -84,7 +84,7 @@
  # link ssl certificate verify 
                    ln -sf /usr/local/share/certs/ca-root-nss.crt /etc/ssl/cert.pem
   
-
+cp /usr/share/zoneinfo/Europe/Moscow /etc/localtime 
 
 
 #/etc/libmap32.conf
