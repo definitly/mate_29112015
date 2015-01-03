@@ -32,6 +32,7 @@ TEXT
     ${alignc 16}${font arial:size=16}WorldTime${font}
    
     Moscow:    ${alignc}${font arial:size=12}${time                        %H:%M:%S}${font}
+    Vladivostok:     ${alignc}${font arial:size=12}${tztime Asia/Vladivostok       %H:%M:%S}${font}                                                                                       
     London:        ${alignc}${font arial:size=12}${tztime  Europe/London    %H:%M:%S}${font}
     Paris:     ${alignc}${font arial:size=12}${tztime Europe/Paris         %H:%M:%S}${font}
     NY:        ${alignc}${font arial:size=12}${tztime America/New_York     %H:%M:%S}${font}
