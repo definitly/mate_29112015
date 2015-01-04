@@ -35,6 +35,7 @@
                      echo  'cpufreq_load="yes"'          >>                   /boot/defaults/loader.conf
                      echo 'vfs.zfs.prefetch_disable="0"' >>                   /boot/defaults/loader.conf
                      echo 'machdep.disable_mtrrs=1'      >>                   /boot/defaults/loader.conf
+                     echo   'kern.vty=vt'                >>                   /boot/defaults/loader.conf
 #/etc/make.conf
                      echo 'WITHOUT_NOUVEAU=YES'          >>                   /etc/make.conf
                      echo 'BATCH=y'                      >>                   /etc/make.conf
