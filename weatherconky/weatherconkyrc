@@ -34,8 +34,7 @@ override_utf8_locale no
 TEXT
 
 
-PROCESSES $alignr PID    CPU
-${hr}
+
 
 нпулчб             ${color}${execi 600 ~/weather/weather.sh UUDD}
 мподпо             ${color}${execi 600 ~/weather/weather.sh EGLL}
@@ -68,3 +67,4 @@ ${hr}
 чболхчет           ${color}${execi 600 ~/weather/weather.sh CYVR}
 пнул               ${color}${execi 600 ~/weather/weather.sh UNOO}
 рпофб-дембзб       ${color}${execi 600 ~/weather/weather.sh LPPD}
+Longyear           ${color}${execi 600 ~/weather/weather.sh ENSB}
