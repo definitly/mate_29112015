@@ -44,12 +44,12 @@
                      echo 'OVERRIDE_LINUX_NONBASE_PORTS=c6'    >>                   /etc/make.conf
                      
 #/etc/profile
-                     echo 'LANG=ru_RU.KOI8-R; export LANG'        >>           /etc/profile
-                     echo 'MM_CHARSET=KOI8-R; export MM_CHARSET'  >>           /etc/profile
+                     echo 'LANG=ru_RU.UTF-8; export LANG'        >>           /etc/profile
+                     echo 'MM_CHARSET=UTF-8; export MM_CHARSET'  >>           /etc/profile
  
 #/etc/csh.login
-                     echo 'setenv LANG ru_RU.KOI8-R' >>                       /etc/csh.login
-                     echo 'setenv MM_CHARSET KOI8-R' >>                       /etc/csh.login
+                     echo 'setenv LANG ru_RU.UTF-8' >>                       /etc/csh.login
+                     echo 'setenv MM_CHARSET UTF-8' >>                       /etc/csh.login
 
 #/etc/fstab
                      echo 'linproc /compat/linux/proc linprocfs rw  0 0' >>   /etc/fstab
