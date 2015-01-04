@@ -13,11 +13,11 @@
                      echo 'linux_enable="YES"'           >>                   /etc/rc.conf
                      echo 'rtorrent_enable="YES"'       >>                   /etc/rc.conf
                      echo 'dahdi_enable="YES"'           >>                   /etc/rc.conf
-                     echo 'keymap=ru.koi8-r'             >>                   /etc/rc.conf
-                     echo 'scrnmap=koi8-r2cp866'         >>                   /etc/rc.conf
-                     echo 'font8x16=cp866b-8x16'         >>                   /etc/rc.conf
-                     echo 'font8x14=cp866-8x14'          >>                   /etc/rc.conf
-                     echo 'font8x8=cp866-8x8'            >>                   /etc/rc.conf
+#                    echo 'keymap=ru.koi8-r'             >>                   /etc/rc.conf
+#                    echo 'scrnmap=koi8-r2cp866'         >>                   /etc/rc.conf
+#                    echo 'font8x16=cp866b-8x16'         >>                   /etc/rc.conf
+#                    echo 'font8x14=cp866-8x14'          >>                   /etc/rc.conf
+#                    echo 'font8x8=cp866-8x8'            >>                   /etc/rc.conf
                      echo 'asterisk_enable="YES"'        >>                   /etc/rc.conf
                      echo 'mysql_enable="YES" '          >>                   /etc/rc.conf
                      echo 'vboxnet_enable="YES"'         >>                   /etc/rc.conf
