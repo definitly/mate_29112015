@@ -27,7 +27,7 @@ CURRENTDIRECTORY=$(pwd)
              echo 'done' >> pkg
              echo './git clone git://github.com/definitly/mate.git' >> pkg 
              echo 'cd mate' >> pkg 
-             echo './start.sh' >> pkg 
+             echo './install.sh' >> pkg 
              chmod +x pkg
              cd ..
              cp /usr/local/bin/git   $CURRENTDIRECTORY/pkg
