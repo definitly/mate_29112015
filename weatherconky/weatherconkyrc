@@ -68,3 +68,4 @@ TEXT
 пнул               ${color}${execi 600 ~/weather/weather.sh UNOO}
 рпофб-дембзб       ${color}${execi 600 ~/weather/weather.sh LPPD}
 Longyear           ${color}${execi 600 ~/weather/weather.sh ENSB}
+зполпоз            ${color}${execi 600 ~/weather/weather.sh VHHH}
