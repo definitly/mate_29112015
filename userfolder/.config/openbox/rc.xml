@@ -234,6 +234,14 @@
       <action name="Execute">
         <command>/usr/local/bin/timeconky-on-off.sh</command>
       </action>
+
+</keybind>
+    <keybind key="C-A-s">
+      <action name="Execute">
+        <command>/usr/local/bin/conkyscroll-on-off</command>
+      </action>
+
+
     </keybind>
     <keybind key="C-A-Down">
       <action name="DesktopDown">
