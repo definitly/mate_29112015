@@ -98,8 +98,12 @@ cp  $CURRENTDIRECTORY/fonts.dir            /usr/local/lib/X11/fonts/terminus-fon
 cd  $CURRENTDIRECTORY/fonts.scale          /usr/local/lib/X11/fonts/terminus-font
 
 
+#livestreamerrc
+
+cp  $CURRENTDIRECTORY/livestreamerrc     /home/$login/.livestreamerrc
 
 
+chown  -R      $login:wheel             /home/$login/.livestreamerrc                         
 
 
 
