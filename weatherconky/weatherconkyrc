@@ -32,10 +32,6 @@ override_utf8_locale no
 #  Output
 #####################
 TEXT
-
-
-
-
 םןףכקב             ${color}${execi 600 ~/weather/weather.sh UUDD}
 לןמהןמ             ${color}${execi 600 ~/weather/weather.sh EGLL}
 נבעיצ              ${color}${execi 600 ~/weather/weather.sh LFPG}
@@ -69,3 +65,4 @@ TEXT
 נןמפב-הולבחב       ${color}${execi 600 ~/weather/weather.sh LPPD}
 Longyear           ${color}${execi 600 ~/weather/weather.sh ENSB}
 חןמכןמח            ${color}${execi 600 ~/weather/weather.sh VHHH}
+הץגבי              ${color}${execi 600 ~/weather/weather.sh OMDB}
