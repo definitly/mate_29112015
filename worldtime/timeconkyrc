@@ -40,4 +40,4 @@ TEXT
     Tokyo:     ${alignc}${font arial:size=12}${tztime Asia/Tokyo           %H:%M:%S}${font}
     Omsk:      ${alignc}${font arial:size=12}${tztime Asia/Omsk            %H:%M:%S}${font}
     Sydney:    ${alignc}${font arial:size=12}${tztime Australia/Sydney      %H:%M:%S}${font}  
-    Beijing:      ${alignc}${font arial:size=12}${tztime Asia/Beijing          %H:%M:%S}${font}
+    Shanghai:      ${alignc}${font arial:size=12}${tztime Asia/Shanghai      %H:%M:%S}${font}
