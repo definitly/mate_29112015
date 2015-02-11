@@ -27,7 +27,7 @@ name="rtorrent"
 load_rc_config $name
 
 [ -z "$rtorrent_enable" ] && rtorrent_enable="NO"
-[ -z "$rtorrent_user" ] && rtorrent_user="definitly"
+[ -z "$rtorrent_user" ] && rtorrent_user="rtorrent"
 [ -z "$rtorrent_home" ] && rtorrent_home="/home/${rtorrent_user}"
 
 required_dirs=${rtorrent_home}

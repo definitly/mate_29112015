@@ -3,9 +3,9 @@ max_peers = 100
 max_uploads = 100
 download_rate = 0
 upload_rate = 0
-directory = /home/definitly/downloads
-session = /home/definitly/.rtsession
-schedule = watch_directory,10,10,load_start=/home/definitly/watch/*.torrent
+directory = /home/rtorrent/downloads
+session = /home/rtorrent/.rtsession
+schedule = watch_directory,10,10,load_start=/home/rtorrent/watch/*.torrent
 port_range = 6881-6889
 port_random = no
 check_hash = yes

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-login=definitly
+login=rtorrent
 CURRENTDIRECTORY=$(pwd)
 
                       cp  $CURRENTDIRECTORY/rtorrent  /usr/local/etc/rc.d
