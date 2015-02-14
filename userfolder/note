@@ -12,7 +12,7 @@ sudo cp ~/mate/etc/freebsd.conf /usr/local/etc/pkg/repos
 pkg delete -y leafpad && pkg install -y leafpad
 VBoxManage  modifyvm android44  --mouse usbtablet
 sudo update-mime-database /usr/local/share/mime
-
+mount /dev/ada1s1a /mnt
 sudo ntpdate 1.ru.pool.ntp.org
 команды 
 
