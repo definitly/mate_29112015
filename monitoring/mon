@@ -5,6 +5,9 @@ rrd="/var/db/"
 #определение загрузки для процесса VBoxHeadless
 a="$(top | grep VBoxHeadless | awk ' {print $11} ' )"
 
+#частота процессора
+
+f="$(/sbin/sysctl dev.cpu.0.freq   | /usr/bin/awk '{print $2}' )"
 
 #определение самого загруженного процесса из программы top
 b="$(top | awk ' {print $12} ' | sed -n 10p )"
@@ -34,7 +37,7 @@ free="$(/usr/local/bin/free | grep Free | awk ' {print $5} ' | sed 's/.$//' | se
 `/usr/local/bin/rrdtool update $rrd/memory.rrd N:$wired:$active:$inactive:$free`
 
  
-echo -en  "VBoxHeadless:$a     $b:$b2     $core0       $idle     $e\n"   >>  /tmp/monitoring.log
+echo -en  "VBoxHeadless:$a     $b:$b2     $core0    $f     $idle     $e\n"      >>  /tmp/monitoring.log
 cat /tmp/monitoring.log | column -c 3 -t                   >  /home/$login/monitoring.log
  
 
