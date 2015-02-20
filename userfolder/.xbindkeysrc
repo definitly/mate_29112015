@@ -92,9 +92,13 @@
     m:0xc + c:56
     Control+Alt + b
 
+
 "~/.scripts/vnc_win.sh"
-    m:0x40 + c:54
-    Mod4 + c
+    m:0x40 + c:55
+    Mod4 + v
+
+
+
 "sudo ~/.scripts/orglinux.sh"
     m:0xc + c:46
     Control+Alt + l
