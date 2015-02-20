@@ -112,9 +112,14 @@
 
 
 
+
+
 "/usr/local/bin/timeconky-on-off.sh"
-    m:0x40 + c:28
-     Control+Alt + t
+    m:0xe + c:28
+    Control+Alt + t
+
+
+
 "/usr/local/bin/conkyscroll-on-off"
     m:0xc + c:39
     Control+Alt + s
