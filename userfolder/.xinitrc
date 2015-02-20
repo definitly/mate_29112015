@@ -7,6 +7,7 @@ exec   setxkbmap -layout us,ru -option "grp:alt_shift_toggle,grp_led:scroll" -va
 exec xset +fp /usr/local/lib/X11/fonts/terminus-font &
 dzenconky &
 tint2 &
+xbindkeys
 openbox-session 
 
 
