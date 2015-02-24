@@ -119,3 +119,7 @@ linux-c6-xorg-libs-7.4         Xorg libraries (Linux CentOS 6.5)
 linux_base-c6-6.5              Base set of packages needed in Linux mode for i386/amd64 (Linux CentOS 6)
   
 
+pkg install textproc/goldendict
+pkg install -Uy  graphics/djview4
+pkg install -Uy deskutils/fbreader
+
