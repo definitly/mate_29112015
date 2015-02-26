@@ -66,3 +66,4 @@ TEXT
 Longyear           ${color}${execi 600 ~/weather/weather.sh ENSB}
 חןמכןמח            ${color}${execi 600 ~/weather/weather.sh VHHH}
 הץגבי              ${color}${execi 600 ~/weather/weather.sh OMDB}
+גולחעבה            ${color}${execi 600 ~/weather/weather.sh LYBE}
