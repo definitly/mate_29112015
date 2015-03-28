@@ -83,3 +83,6 @@ cp -R ~/themes/themes/* ~/.themes
 
 sudo /home/$login/.scripts/rrdcreate.sh
 ~/timeinstall/git.sh
+
+sudo pkg delete -y leafpad && pkg install -y leafpad
+sudo pkg delete -y gsettings-desktop-schemas  && pkg install -y gsettings-desktop-schemas
