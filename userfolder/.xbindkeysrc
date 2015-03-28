@@ -109,7 +109,13 @@
 
 
 
+"/usr/local/bin/screensavon.sh"
+    m:0x40 + c:39
+    Mod4 + s
 
+"/usr/local/bin/screensavoff.sh"
+    m:0x40 + c:56
+    Mod4 + b
 
 
 
