@@ -52,6 +52,8 @@ CURRENTDIRECTORY=$(pwd)
           ./install.sh 
           cd .. 
          
-         
+          cd $CURRENTDIRECTORY/xscreensaver
+          ./install.sh 
+          cd .. 
 
           
