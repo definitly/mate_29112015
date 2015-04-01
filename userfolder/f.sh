@@ -86,3 +86,4 @@ sudo /home/$login/.scripts/rrdcreate.sh
 
 sudo pkg delete -y leafpad gsettings-desktop-schemas terminus-font
 sudo pkg install -y leafpad gsettings-desktop-schemas terminus-font
+sudo xset +fp /usr/local/lib/X11/fonts/terminus-font
