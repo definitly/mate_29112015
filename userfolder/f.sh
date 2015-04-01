@@ -84,7 +84,5 @@ cp -R ~/themes/themes/* ~/.themes
 sudo /home/$login/.scripts/rrdcreate.sh
 ~/timeinstall/git.sh
 
-sudo pkg delete -y leafpad 
-sudo pkg install -y leafpad
-sudo pkg delete -y gsettings-desktop-schemas  
-sudo pkg install -y gsettings-desktop-schemas
+sudo pkg delete -y leafpad gsettings-desktop-schemas terminus-font
+sudo pkg install -y leafpad gsettings-desktop-schemas terminus-font
