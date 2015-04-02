@@ -21,7 +21,7 @@
   <option name="patch_directory" value=""/>
   <option name="export_directory" value=""/>
   <option name="window_width" value="1024"/>
-  <option name="window_height" value="733"/>
+  <option name="window_height" value="686"/>
   <option name="preferences_width" value="446"/>
   <option name="preferences_height" value="480"/>
   <option name="pause_emulation_on_switch" value="0"/>
@@ -78,10 +78,10 @@
    <axis number="1" min="-32767" max="32767" center="0"/>
   </calibration>
   <joypad number="0">
-   <binding name="Up" binding="556270082"/>
-   <binding name="Down" binding="556270083"/>
-   <binding name="Left" binding="556270080"/>
-   <binding name="Right" binding="556270081"/>
+   <binding name="Up" binding="556270085"/>
+   <binding name="Down" binding="556270084"/>
+   <binding name="Left" binding="556270086"/>
+   <binding name="Right" binding="556270087"/>
    <binding name="Start" binding="553648137"/>
    <binding name="Select" binding="553648136"/>
    <binding name="A" binding="553648131"/>
