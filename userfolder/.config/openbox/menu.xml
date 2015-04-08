@@ -140,6 +140,15 @@
 			<item label="Top"> <action name="Execute">
 				<execute>xterm -e top</execute>
 			</action> </item>
+
+
+                        <item label="xfce4-taskmanager"> <action name="Execute">
+				<execute>xfce4-taskmanager</execute>
+			</action> </item>
+
+
+
+
 		</menu>
 		<menu id="38" label="Utilities">
 			<item label="Info"> <action name="Execute">
