@@ -32,7 +32,7 @@ login=definitly
 #/home/$login/.cshrc
 
 #                      echo 'set prompt="%{^[[40;33;1m%}[%T] %{^[[40;32;1m%} %/ >"'   >>            /home/$login/.cshrc
-                       echo                  'set prompt = "%n@%m [%c]%# "'           >>            /home/$login/.cshrc
+                       echo 'set prompt="\n%{\033]0;%m:%c3^G%}[%{\033[1;36m%} %P %{\033[0m%} %{\033[0m%} ] (%{\033[1;35m%} %~ %{\033[0m%}) % \n%# "'           >>            /home/$login/.cshrc
                        echo 'alias kn        killall -9  npviewer.bin'                >>            /home/$login/.cshrc
                        echo 'alias ks        killall -9  sp-sc-auth'                  >>            /home/$login/.cshrc
                        echo 'alias kw        killall -9  wine'                        >>            /home/$login/.cshrc
