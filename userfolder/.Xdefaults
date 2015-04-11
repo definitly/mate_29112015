@@ -7,7 +7,7 @@ xterm*saveLines: 2000
 xterm*cursorColor: lightgreen 
 xterm*cursorColor2: lightblue 
 xterm*ScrollBar: true
-
+xterm*termName: xterm-256color
 xterm*ScrollBar*width:         26 
 xterm*scrollbar.background:    black 
 xterm*scrollbar.foreground:    lightgreen 

@@ -3,13 +3,13 @@
 
 
 
-app="shqstream/"
+app="hqstream/"
 
-flashVer="LNX 11,2,202,327"
+flashVer="LNX 11,2,202,451"
 swfUrl="http://filo.hqstream.tv/jwp6/jwplayer.flash.swf"
-tcUrl="rtmp://174.36.195.13/shqstream/"
-pageUrl="http://hqstream.tv/player.php?streampage=ikcywq41xdijhhz&height=480&width=700"
-play="ikcywq41xdijhhz?keys=PCNhCqr-cw3OB6vhRkgzrg&keyt=1400434055"
+tcUrl="rtmp://67.228.177.52/hqstream/"
+pageUrl="http://hqstream.tv/player.php?streampage=bernli&height=480&width=728"
+play="bernli_arsenal?keys=AItkCAiGvQGlDiBB3WDgvg&keyt=1428785768"
 
 
 
