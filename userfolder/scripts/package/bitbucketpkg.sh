@@ -9,6 +9,7 @@ read pkg
         cd /tmp
         mkdir  $pkg
         cd     $pkg
+       pkg info -d $pkg >> dep.log
   for i in `cat  dep.log` ; do 
      sudo   pkg create -n $i
      done
