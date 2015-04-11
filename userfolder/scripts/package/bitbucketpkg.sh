@@ -23,7 +23,7 @@ read pkg
    sudo chown  -R      $login:wheel   $pkg/*
    cd $pkg
    git init
-   git remote add origin git@bitbucket.org:vcore/$1.git
+   git remote add origin git@bitbucket.org:vcore/$pkg.git
    git add .
 
    git commit -n
