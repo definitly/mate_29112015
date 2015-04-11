@@ -1,0 +1,29 @@
+#!/bin/sh
+#создание пакетов VIRTUALBOX
+
+login=definitly
+
+
+  echo "введите пакет: "
+read pkg 
+        cd /tmp
+        mkdir  $pkg
+        cd     $pkg
+  for i in `cat  dep.log` ; do 
+     sudo   pkg create -n $i
+     done
+
+   sudo  pkg create -n $pkg
+   sudo  pkg create  libgcrypt
+   sudo  pkg create   libgpg-error
+   rm dep.log
+   cd ..
+   sudo pkg repo $pkg
+   sudo chown  -R      $login:wheel   $pkg/*
+   cd $pkg
+   git init
+   git remote add origin git@bitbucket.org:vcore/$1.git
+   git add .
+
+   git commit -n
+   git push -u origin master
