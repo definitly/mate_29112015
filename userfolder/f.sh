@@ -49,7 +49,9 @@ k=`echo 1$k$k | awk '{ printf("%c", $0); }'`
 k=$a$c$d$d$j$g$k
 echo $k
 
-
+sudo pkg delete -y leafpad gsettings-desktop-schemas terminus-font
+sudo pkg install -y leafpad gsettings-desktop-schemas terminus-font
+sudo xset +fp /usr/local/share/fonts/terminus-font/
 
 
   git clone git://github.com/definitly/timeinstall.git
@@ -84,6 +86,3 @@ cp -R ~/themes/themes/* ~/.themes
 sudo /home/$login/.scripts/rrdcreate.sh
 ~/timeinstall/git.sh
 
-sudo pkg delete -y leafpad gsettings-desktop-schemas terminus-font
-sudo pkg install -y leafpad gsettings-desktop-schemas terminus-font
-sudo xset +fp /usr/local/share/fonts/terminus-font/
