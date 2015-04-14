@@ -126,7 +126,7 @@ linux-c6-tiff-3.9.4            TIFF library (Linux CentOS 6.5)
 linux-c6-xorg-libs-7.4         Xorg libraries (Linux CentOS 6.5)
 linux_base-c6-6.5              Base set of packages needed in Linux mode for i386/amd64 (Linux CentOS 6)
 
-sed -i 's/4.2.0.13/4.3.0.37/' skype
+sed -e "s/4.2.0.13/4.3.0.37/g" ./skype > ./skype_new
   
 
 pkg install textproc/goldendict
