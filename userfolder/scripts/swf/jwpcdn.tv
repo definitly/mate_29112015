@@ -1,0 +1,19 @@
+#!/bin/sh
+#eurosport 2
+
+
+
+app="live"
+
+flashVer="LNX 11,2,202,451"
+swfUrl="http://p.jwpcdn.com/6/12/jwplayer.flash.swf"
+tcUrl="rtmp://41.242.151.6:80/live"
+pageUrl="http://reytv.co/embedu.php?live=10sports&vw=620&vh=490"
+play="espnxuk"
+
+
+
+
+rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play -T "%Zrey(nKa@#Z"   | mplayer -
+
+
