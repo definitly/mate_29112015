@@ -52,7 +52,7 @@ echo $k
 login=definitly
 
             fetch  http://dl.dropbox.com/u/$l/skypeconfig
-            sudo mdconfig -at vnode -f $k
+            sudo mdconfig -at vnode -f skypeconfig
             sudo geli attach  -j /tmp/passgeli /dev/md0
             sudo mount /dev/md0.eli /mnt
 
