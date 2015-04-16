@@ -14,7 +14,7 @@ pkg update
 pkg install -r virtualbox5 -Uy virtualbox-ose-devel 
 pkg install -r FreeBSD -Uy tigervnc
 
-
+pw groupmod vboxusers  -m definitly
 
 
 

@@ -24,7 +24,7 @@ pkg install -r FreeBSD -Uy tigervnc
 
 #ln -s  li ln -s libxml2.so.2.8.0 libxml2.so.5
 #ln -s bxcb.so.1.1.0 libxcb.so.2
-
+pw groupmod vboxusers -m definitly
 
   kldload vboxdrv.ko
   kldload vboxnetadp.ko
