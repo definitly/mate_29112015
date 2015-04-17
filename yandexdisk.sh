@@ -9,9 +9,9 @@ login=definitly
             echo 'perm fuse 0666' >>                  /etc/devfs.conf
 
 #/etc/devfs.rules
-            touch /etc/devfs.rules
-            echo '[localrules=5]' >>                  /etc/devfs.conf
-            echo 'add path 'fuse[0-9]*' mode 666' >>  /etc/devfs.conf
+            
+            echo '[localrules=5]' >>                  /etc/devfs.rules
+            echo 'add path 'fuse[0-9]*' mode 666' >>  /etc/devfs.rules
 
 #/etc/rc.conf 
            echo ' devfs_system_ruleset="localrules"' >> /etc/rc.conf

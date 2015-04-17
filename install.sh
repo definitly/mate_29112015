@@ -48,7 +48,13 @@ CURRENTDIRECTORY=$(pwd)
           cd $CURRENTDIRECTORY/worldtime
           ./install.sh 
           cd .. 
+          
           cd $CURRENTDIRECTORY/scrollconky
+          ./install.sh 
+          cd .. 
+
+
+          cd $CURRENTDIRECTORY/webcamd
           ./install.sh 
           cd .. 
          
