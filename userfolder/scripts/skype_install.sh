@@ -11,5 +11,5 @@ wget --content-disposition   https://www.cubbyusercontent.com/pl/skype-devel.tar
 tar zxvf skype-devel.tar.gz
 rm skype-devel.tar.gz
 cd skype-devel
-pkg add skype-devel-2.2.0.35.txz
+pkg add skype-devel-2.2.0.35_1.txz
 cd ..
