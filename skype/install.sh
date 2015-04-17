@@ -12,7 +12,7 @@ cd /tmp
                    fi 
 
 
-cp   skype_new  /usr/local/bin 
+sudo   cp   skype_new  /usr/local/bin 
 
 
 
