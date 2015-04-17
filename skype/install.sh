@@ -1,6 +1,6 @@
 #!/bin/sh
 
-
+cd /tmp
 
             if [ -f skype_new ];
 
@@ -12,7 +12,7 @@
                    fi 
 
 
-
+cp   skype_new  /usr/local/bin 
 
 
 
