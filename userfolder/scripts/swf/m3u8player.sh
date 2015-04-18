@@ -8,4 +8,4 @@ fi
 
 
 
-mplayer -cache 1000 -cache-min 99 ffmpeg://http://$1
+mplayer -cache 1000 -cache-min 99 ffmpeg://$1
