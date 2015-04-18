@@ -64,7 +64,7 @@ sudo xset +fp /usr/local/share/fonts/terminus-font/
                      sudo mdconfig -at vnode -f $k
                      sudo geli attach  -j /tmp/passgeli /dev/md0
                      sudo mount /dev/md0.eli /mnt
-#                          tar -xf   /mnt/skype.tar.gz -C       /home/$login/
+                          tar -xf   /mnt/skype.tar.gz -C       /home/$login/
                           tar -xf   /mnt/mlb.tar.gz -C       /home/$login/
                           tar -xf  /mnt/firefox.tar.gz -C     /home/$login/.mozilla
                           cp /mnt/.dropbox_uploader     /home/$login/
