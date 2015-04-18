@@ -52,6 +52,10 @@
 				<execute>chrome --proxy-server="127.0.0.1:8118"  </execute>
 			</action> </item>
 
+ <item label="Wireshark"> <action name="Execute">
+				<execute>sudo wireshark  </execute>
+			</action> </item>
+
 
 
 			<item label="FTP"> <action name="Execute">
