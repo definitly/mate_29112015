@@ -123,4 +123,4 @@ zfs set mountpoint=/tmp $pool_name/tmp
 zfs set mountpoint=/usr $pool_name/usr
 zfs set mountpoint=/var $pool_name/var
 echo "Finished"
-reboot
+
