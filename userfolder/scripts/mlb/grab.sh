@@ -1,9 +1,7 @@
 #!/bin/sh
-echo "введите имя гостей"
-read  guest
+echo "введите имя гостей и хозяев"
+read  guest  home
 
-echo "введите имя хозяев"
-read  home
 
 mlb="mlb"
 end="_1&mode=video"
@@ -21,6 +19,6 @@ s=$(curl  $page | grep "#/play?content_id=" | sed -r 's/.* href="([^"]+)" .*/\1/
                  for i in $s ; do
               
 
-echo              http://mediadownloads.mlb.com/mlbam/2015/04/19/mlbtv_$guest$home$_$i$mp4
+echo              http://mediadownloads.mlb.com/mlbam/2015/04/18/mlbtv_$guest$home$_$i$mp4
                  done
  
