@@ -1,24 +1,29 @@
 #!/bin/sh
-echo "введите имя гостей и хозяев"
-read  guest  home
+echo "введите имя гостей и хозяев и число месяца"
+read  guest  home d
 
 
 mlb="mlb"
 end="_1&mode=video"
 _="_"
-
+mp4="_1200K.mp4"
   
-page="http://mlb.mlb.com/mlb/gameday/index.jsp?gid=2015_04_18_$guest$mlb$_$home$mlb$end"
+           
+mkdir $guest'_vs_'$home
+cd    $guest'_vs_'$home
+
+page="http://mlb.mlb.com/mlb/gameday/index.jsp?gid=2015_04_$d$_$guest$mlb$_$home$mlb$end"
  echo   $page
 
 
 
 s=$(curl  $page | grep "#/play?content_id=" | sed -r 's/.* href="([^"]+)" .*/\1/' | sed -r 's/[^0-9]//g')
 
- mp4="_1800K.mp4"
-                 for i in $s ; do
+ 
+                 for id_video in $s ; do
               
 
-echo              http://mediadownloads.mlb.com/mlbam/2015/04/18/mlbtv_$guest$home$_$i$mp4
+fetch              http://mediadownloads.mlb.com/mlbam/2015/04/$d/mlbtv_$guest$home$_$id_video$mp4
+fetch              http://mediadownloads.mlb.com/mlbam/2015/04/$(($d + 1))/mlbtv_$guest$home$_$id_video$mp4
                  done
  
