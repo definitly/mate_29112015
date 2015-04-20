@@ -1,6 +1,6 @@
 #!/usr/local/bin/bash
 
-
+CURRENTDIRECTORY=$(pwd)
 
  
    mlb="mlb"
@@ -26,7 +26,7 @@
                  game_id_final=$(echo $game_id | sed 's/mlb_//g')
      
 #создание папки для сохранения видео
-  
+           cd $CURRENTDIRECTORY
            mkdir $game_id_final
            cd $game_id_final   
 
@@ -43,7 +43,7 @@
               
 
                page2="http://mediadownloads.mlb.com/mlbam/2015/04/$game_date_d/mlbtv_$game_id_final$titl$id_video$mp4"
-               page3="http://mediadownloads.mlb.com/mlbam/2015/04/$($game_date_d+1)/mlbtv_$game_id_final$titl$id_video$mp4"
+               page3="http://mediadownloads.mlb.com/mlbam/2015/04/$(($game_date_d + 1))/mlbtv_$game_id_final$titl$id_video$mp4"
                
               
                 fetch  $page2
