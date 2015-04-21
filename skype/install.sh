@@ -32,7 +32,7 @@ sudo pkg add linux-c6-dbus-libs-1.2.24.txz
 fetch https://dl.dropboxusercontent.com/u/74640315/xinitronix/linux-c6-qt47-4.7.2.txz
 sudo pkg add linux-c6-qt47-4.7.2.txz
 fetch https://dl.dropboxusercontent.com/u/74640315/xinitronix/linux-c6-qt47-webkit-4.7.2.txz
-sudo pkg add linux-c6-qt47-webkit-4.7.2.txz
+
 fetch https://dl.dropboxusercontent.com/u/74640315/xinitronix/linux-c6-qt47-x11-4.7.2.txz
 sudo pkg add linux-c6-qt47-x11-4.7.2.txz
 
