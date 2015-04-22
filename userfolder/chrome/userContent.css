@@ -15,6 +15,29 @@
 }
 
 
+#topBanner {
+display: none !important; 
+
+}
+
+
+
+#yandex_rtb_R-28471-3    {
+
+display: none !important; 
+
+}
+
+#yandex_rtb_R-28471-2    {
+
+display: none !important; 
+
+}
+
+
+
+
+
 .rec-block {
     overflow: hidden;
     border-bottom: 1px solid #D8D8D8;
@@ -210,6 +233,14 @@ display: none !important;
 }
 
 
+mainsidebar.sidebar.narrow.right  {
+	
+display: none !important;	
+	
+	}
+
+
+
 #vk_groups  {
 	
 display: none !important;	
@@ -226,6 +257,11 @@ display: none !important;
 display: none !important;	
 	
 	}
+
+
+
+
+
 
 
 #OA_show_16   {
