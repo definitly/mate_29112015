@@ -1,6 +1,22 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain(sports.ru) {
 
+
+
+
+/* Запретить Flash */
+embed[type="application/x-shockwave-flash"] {
+display: none !important;
+} 
+
+.c-inline-search__input  {
+
+display: none !important; 
+
+}
+
+
+
 .c-user-tags__edit-panel {
     position: relative;
     margin-top: -40px;
@@ -41,6 +57,22 @@ display: none !important;
 
 }
 
+#directHorizontalBanner  {
+
+display: none !important; 
+}
+
+
+.b-banner-smi2  {
+
+display: none !important; 
+}
+
+
+.mB20  {
+display: none !important; 
+
+}
 
 .rec-block {
     overflow: hidden;
