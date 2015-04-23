@@ -37,3 +37,9 @@ cd /tmp
                #  sudo pkg add linux-c6-qt47-4.7.2.txz
                #  sudo pkg add linux-c6-qt47-x11-4.7.2.txz
                #  sudo pkg add linux-c6-qt47-webkit-4.7.2.txz
+
+                  wget   https://dl.dropboxusercontent.com/u/74640315/skype/skype-devel.tar.gz
+                       tar zxvf skype-devel.tar.gz
+                        rm skype-devel.tar.gz
+                        cd skype-devel
+                 sudo pkg add skype-devel-2.2.0.35_1.txz
