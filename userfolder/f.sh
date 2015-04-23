@@ -57,6 +57,7 @@ sudo xset +fp /usr/local/share/fonts/terminus-font/
   git clone git://github.com/definitly/timeinstall.git
   date >> ./timeinstall/time_install
   login=definitly
+  login2=ff
                      sudo nspluginwrapper -a -i
                           nspluginwrapper -a -i
                           mkdir -p   /home/$login/.mozilla 
@@ -80,6 +81,7 @@ rm /tmp/passgeli
 
 cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
 ~/scripts/fftor.sh
+sudo  cp -R chrome   /home/$login2/.mozilla/firefox/gm3zhe4q.default
 ./mategit.sh
 cp -R ~/themes/themes/* ~/.themes
 
