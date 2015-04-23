@@ -15,7 +15,10 @@ display: none !important;
 
 }
 
+.anons   {
 
+display: none !important;
+}
 
 .c-user-tags__edit-panel {
     position: relative;
