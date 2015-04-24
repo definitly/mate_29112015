@@ -15,11 +15,31 @@ display: none !important;
 
 }
 
+
+ .green-but.corners-3px.create-blog-but {
+
+
+display: none !important;
+
+}
+
+#thirdBanner {
+
+display: none !important;
+   
+}
+
+
 .c-read-also.c-read-also-news {
 
 display: none !important;
 }
 
+
+.news.news-in-this-day  {
+
+display: none !important;
+}
 
 
 .anons   {
