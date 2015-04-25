@@ -40,8 +40,19 @@ cd /tmp
                #  sudo pkg add linux-c6-qt47-x11-4.7.2.txz
                #  sudo pkg add linux-c6-qt47-webkit-4.7.2.txz
 
-                  wget   https://dl.dropboxusercontent.com/u/74640315/skype/skype-devel.tar.gz
+
+
+              if [ -f skype-devel.tar.gz ];
+
+                    then
+                  echo "файл существует"
+                           else
+                       wget   https://dl.dropboxusercontent.com/u/74640315/skype/skype-devel.tar.gz
+                      
+                   fi 
+              
+                  
                        tar zxvf skype-devel.tar.gz
-                        rm skype-devel.tar.gz
+                         skype-devel.tar.gz
                         cd skype-devel
                  sudo pkg add skype-devel-2.2.0.35_1.txz
