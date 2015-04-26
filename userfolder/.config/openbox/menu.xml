@@ -38,6 +38,10 @@
 			<item label="Gmplayer"> <action name="Execute">
 				<execute>gmplayer</execute>
 			</action> </item>
+
+                       <item label="Sm"> <action name="Execute">
+				<execute>mplayer http://localhost:8908/tv.asf</execute>
+			</action> </item>
 		</menu>
 		<menu id="5" label="Network">
 			<item label="FireFox"> <action name="Execute">
