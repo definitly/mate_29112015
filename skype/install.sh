@@ -1,5 +1,24 @@
 #!/bin/sh
 
+dirpkg="/usr/local/etc/pkg/repos"
+
+if [ -f $dirpkg/freebsd.conf ];
+
+                    then
+                  echo "файл существует"
+                           else
+               echo "copy freebsd.conf to $dirpkg"
+               echo "pkg update"
+                    exit 0                 
+
+
+                   fi 
+
+
+
+
+
+
 cd /tmp
 
             if [ -f skype_new ];
