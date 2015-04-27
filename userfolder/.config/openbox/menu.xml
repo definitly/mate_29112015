@@ -11,6 +11,12 @@
 			<item label="Python"> <action name="Execute">
 				<execute>xterm -e python</execute>
 			</action> </item>
+			<item label="Qt 5 Assistant"> <action name="Execute">
+				<execute>/usr/local/lib/qt5/bin/assistant</execute>
+			</action> </item>
+			<item label="Qt 5 Linguist"> <action name="Execute">
+				<execute>/usr/local/lib/qt5/bin/linguist</execute>
+			</action> </item>
 		</menu>
 		<menu id="2" label="Editors">
 			<item label="AA Fire"> <action name="Execute">
@@ -29,47 +35,43 @@
 				<execute>xterm -e vi</execute>
 			</action> </item>
 		</menu>
+		<menu id="18" label="Games">
+			<item label="Snes9x"> <action name="Execute">
+				<execute>snes9x-gtk</execute>
+			</action> </item>
+		</menu>
 		<menu id="6" label="Graphics">
 			<item label="Feh"> <action name="Execute">
 				<execute>feh</execute>
 			</action> </item>
 		</menu>
-		<menu id="7" label="Multimedia">
-			<item label="Gmplayer"> <action name="Execute">
-				<execute>gmplayer</execute>
-			</action> </item>
-
-                       <item label="Sm"> <action name="Execute">
-				<execute>mplayer http://localhost:8908/tv.asf</execute>
-			</action> </item>
-		</menu>
 		<menu id="5" label="Network">
-			<item label="FireFox"> <action name="Execute">
-				<execute>firefox</execute>
-			</action> </item>
-                        <item label="FireFox-Tor"> <action name="Execute">
+                         
+<item label="FireFox-Tor"> <action name="Execute">
 				<execute>~/.scripts/firefox_tor.sh</execute>
 			</action> </item>
 
 
- <item label="chrome-tor"> <action name="Execute">
+ <item label="Chrome-Tor"> <action name="Execute">
 				<execute>chrome --proxy-server="127.0.0.1:8118"  </execute>
 			</action> </item>
 
- <item label="Wireshark"> <action name="Execute">
-				<execute>sudo wireshark  </execute>
+
+                          <item label="Tor Browser Bundle"> <action name="Execute">
+				<execute>linux-tor-browser</execute>
 			</action> </item>
 
 
 
+
+			<item label="FireFox"> <action name="Execute">
+				<execute>firefox</execute>
+			</action> </item>
 			<item label="FTP"> <action name="Execute">
 				<execute>xterm -e ftp</execute>
 			</action> </item>
 			<item label="Mail"> <action name="Execute">
 				<execute>xterm -e mail</execute>
-			</action> </item>
-			<item label="qBittorrent"> <action name="Execute">
-		 		<execute>qbittorrent</execute>
 			</action> </item>
 			<item label="Skype"> <action name="Execute">
 				<execute>~/.scripts/skype</execute>
@@ -80,12 +82,11 @@
 			<item label="Telnet"> <action name="Execute">
 				<execute>xterm -e telnet</execute>
 			</action> </item>
-                          <item label="Tor Browser Bundle"> <action name="Execute">
-				<execute>linux-tor-browser</execute>
-			</action> </item>
-
 			<item label="TkVNC"> <action name="Execute">
 				<execute>xterm -e tkvnc</execute>
+			</action> </item>
+			<item label="Transmission"> <action name="Execute">
+				<execute>transmission-gtk</execute>
 			</action> </item>
 			<item label="Zwrite"> <action name="Execute">
 				<execute>xterm -e read -p 'Zwrite to users: ' u ; zwrite $u</execute>
@@ -106,6 +107,9 @@
 			<item label="GIT"> <action name="Execute">
 				<execute>xterm -e git</execute>
 			</action> </item>
+			<item label="LXTerminal"> <action name="Execute">
+				<execute>lxterminal</execute>
+			</action> </item>
 			<item label="MC"> <action name="Execute">
 				<execute>xterm -e mc</execute>
 			</action> </item>
@@ -115,13 +119,6 @@
 			<item label="XTerm (Unicode)"> <action name="Execute">
 				<execute>uxterm</execute>
 			</action> </item>
-
-                        <item label="lxterminal"> <action name="Execute">
-				<execute>lxterminal</execute>
-			</action> </item>
-
-
-
 		</menu>
 		<menu id="37" label="System">
 			<menu id="36" label="Settings">
@@ -130,9 +127,6 @@
 						<execute>flash-player-properties</execute>
 					</action> </item>
 				</menu>
-				<item label="Authorizations"> <action name="Execute">
-					<execute>polkit-gnome-authorization</execute>
-				</action> </item>
 				<item label="Customize Look and Feel"> <action name="Execute">
 					<execute>lxappearance</execute>
 				</action> </item>
@@ -149,21 +143,21 @@
 					<execute>libfm-pref-apps</execute>
 				</action> </item>
 			</menu>
+			<item label="guname"> <action name="Execute">
+				<execute>guname</execute>
+			</action> </item>
 			<item label="Htop"> <action name="Execute">
 				<execute>xterm -e htop</execute>
+			</action> </item>
+			<item label="Task Manager"> <action name="Execute">
+				<execute>xfce4-taskmanager</execute>
 			</action> </item>
 			<item label="Top"> <action name="Execute">
 				<execute>xterm -e top</execute>
 			</action> </item>
-
-
-                        <item label="xfce4-taskmanager"> <action name="Execute">
-				<execute>xfce4-taskmanager</execute>
+			<item label="Wireshark"> <action name="Execute">
+				<execute>sudo wireshark</execute>
 			</action> </item>
-
-                   
-
-
 		</menu>
 		<menu id="38" label="Utilities">
 			<item label="Info"> <action name="Execute">
