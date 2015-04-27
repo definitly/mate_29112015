@@ -15,6 +15,6 @@ play=$(sed -n '1p' play_tcUrl)
         tcUrl=$(sed -n '2p' play_tcUrl)
 
 
-rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play -T "%Zrey(nKa@#Z"   | mplayer -
+rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play -T "%Zrey(nKa@#Z"   | mplayer -cache 2048 -cache-min 30 -noautosub -
 
 
