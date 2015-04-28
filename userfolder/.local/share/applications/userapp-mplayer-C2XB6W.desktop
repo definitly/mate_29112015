@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=mplayer
-Exec=mplayer-icon  %f
+Exec=mplayer %f
 Icon=mplayer
 Categories=Other;
 NoDisplay=true

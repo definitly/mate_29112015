@@ -32,7 +32,11 @@ CURRENTDIRECTORY=$(pwd)
           cd $CURRENTDIRECTORY/rtorrent
           ./install.sh
           cd .. 
-          
+               cd $CURRENTDIRECTORY/seticon
+          ./install.sh
+          cd ..       
+
+
           cd $CURRENTDIRECTORY/weatherconky
           ./install.sh
           cd ..  
