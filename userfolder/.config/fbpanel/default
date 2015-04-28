@@ -42,6 +42,7 @@ Plugin {
             ClassName = Firefox
         }
         application {
+           icon = gnome-mplayer
             Image = /usr/local/share/icons/hicolor/48x48/apps/mplayer.png
              AppName = xv
             ClassName = MPlayer
