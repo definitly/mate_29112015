@@ -71,7 +71,7 @@ cd /tmp
                    fi 
               
                   
-                       tar zxvf skype-devel.tar.gz
-                         skype-devel.tar.gz
-                        cd skype-devel
-                 sudo pkg add skype-devel-2.2.0.35_1.txz
+        #               tar zxvf skype-devel.tar.gz
+        #                 skype-devel.tar.gz
+        #                cd skype-devel
+        #         sudo pkg add skype-devel-2.2.0.35_1.txz
