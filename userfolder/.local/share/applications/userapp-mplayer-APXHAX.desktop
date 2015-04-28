@@ -1,7 +1,8 @@
 [Desktop Entry]
 Type=Application
 Name=mplayer
-Exec=mplayer %f
+Exec=mplayer-icon  %f
+Icon=mplayer
 Categories=Other;
 NoDisplay=true
 MimeType=video/mp4
