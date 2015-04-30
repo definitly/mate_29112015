@@ -4,6 +4,7 @@ zip archive  --------   application-zip.png
 txt files    --------   text-x-generic.png
 script sh    --------   text-x-script.png
 tar.gz       --------   package-x-generic.png
+tar          --------   application-x-compressed-tar.png
 html file    --------   text-html.png
 python file  --------   text-x-python.png
 iso  file    --------   application-x-cd-image.png
