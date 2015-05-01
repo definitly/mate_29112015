@@ -8,3 +8,5 @@ tar          --------   application-x-compressed-tar.png
 html file    --------   text-html.png
 python file  --------   text-x-python.png
 iso  file    --------   application-x-cd-image.png
+deb  file    --------   application-x-deb.png
+bz2  file    --------   application-x-bzip-compressed-tar.png
