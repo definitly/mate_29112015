@@ -11,7 +11,7 @@
                      echo 'dbus_enable="yes"'            >>                   /etc/rc.conf
                      echo 'apache22_enable="YES"'        >>                   /etc/rc.conf
                      echo 'linux_enable="YES"'           >>                   /etc/rc.conf
-                     echo 'rtorrent_enable="YES"'        >>                   /etc/rc.conf
+                     
                      echo 'dahdi_enable="YES"'           >>                   /etc/rc.conf
 #                    echo 'keymap=ru.koi8-r'             >>                   /etc/rc.conf
 #                    echo 'scrnmap=koi8-r2cp866'         >>                   /etc/rc.conf
@@ -28,24 +28,24 @@
                      echo 'KLD_LIST="linux linsysfs linprocfs"'  >>           /etc/rc.conf
                      echo 'allscreens_flags=" MODE_283"'         >>           /etc/rc.conf
 #/boot/defaults/loader.conf 
-                     echo  'nvidia_load="YES" '          >>                   /boot/defaults/loader.conf
-                     echo  'vboxdrv_load="YES"'          >>                   /boot/defaults/loader.conf
-                     echo  'coretemp_load="YES" '        >>                   /boot/defaults/loader.conf
-                     echo  'cpufreq_load="yes"'          >>                   /boot/defaults/loader.conf
-                     echo 'vfs.zfs.prefetch_disable="0"' >>                   /boot/defaults/loader.conf
-                     echo 'machdep.disable_mtrrs=1'      >>                   /boot/defaults/loader.conf
-                     echo   'kern.vty=vt'                >>                   /boot/defaults/loader.conf
+                     echo  'nvidia_load="YES" '           >>                   /boot/defaults/loader.conf
+                     echo  'vboxdrv_load="YES"'           >>                   /boot/defaults/loader.conf
+                     echo  'coretemp_load="YES" '         >>                   /boot/defaults/loader.conf
+                     echo  'cpufreq_load="yes"'           >>                   /boot/defaults/loader.conf
+                     echo  'vfs.zfs.prefetch_disable="0"' >>                   /boot/defaults/loader.conf
+                     echo  'machdep.disable_mtrrs=1'      >>                   /boot/defaults/loader.conf
+                     echo  'kern.vty=vt'                  >>                   /boot/defaults/loader.conf
 #/etc/make.conf
-                     echo 'WITHOUT_NOUVEAU=YES'          >>                   /etc/make.conf
-                     echo 'BATCH=y'                      >>                   /etc/make.conf
-                     echo 'WITH_PKGNG=yes'               >>                   /etc/make.conf
-                     echo 'PERL_VERSION=5.16.3'          >>                   /etc/make.conf
-                     echo 'OVERRIDE_LINUX_BASE_PORT=c6'          >>           /etc/make.conf 
-                     echo 'OVERRIDE_LINUX_NONBASE_PORTS=c6'      >>           /etc/make.conf
+                     echo 'WITHOUT_NOUVEAU=YES'           >>                   /etc/make.conf
+                     echo 'BATCH=y'                       >>                   /etc/make.conf
+                     echo 'WITH_PKGNG=yes'                >>                   /etc/make.conf
+                     echo 'PERL_VERSION=5.16.3'           >>                   /etc/make.conf
+                     echo 'OVERRIDE_LINUX_BASE_PORT=c6'          >>            /etc/make.conf 
+                     echo 'OVERRIDE_LINUX_NONBASE_PORTS=c6'      >>            /etc/make.conf
                      
 #/etc/profile
-                     echo 'LANG=ru_RU.UTF-8; export LANG'        >>           /etc/profile
-                     echo 'MM_CHARSET=UTF-8; export MM_CHARSET'  >>           /etc/profile
+                     echo 'LANG=ru_RU.UTF-8; export LANG'        >>             /etc/profile
+                     echo 'MM_CHARSET=UTF-8; export MM_CHARSET'  >>             /etc/profile
  
 #/etc/csh.login
                      echo 'setenv LANG ru_RU.UTF-8' >>                       /etc/csh.login

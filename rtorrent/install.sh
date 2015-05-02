@@ -2,7 +2,9 @@
 
 login=rtorrent
 CURRENTDIRECTORY=$(pwd)
+#edit rc.conf
 
+                      echo 'rtorrent_enable="YES"'        >>                   /etc/rc.conf 
                       cp  $CURRENTDIRECTORY/rtorrent       /usr/local/etc/rc.d
                       chmod 744                            /usr/local/etc/rc.d/rtorrent
                   
