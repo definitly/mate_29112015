@@ -11,7 +11,7 @@
                      echo 'dbus_enable="yes"'            >>                   /etc/rc.conf
                      echo 'apache22_enable="YES"'        >>                   /etc/rc.conf
                      echo 'linux_enable="YES"'           >>                   /etc/rc.conf
-                     echo 'rtorrent_enable="YES"'       >>                   /etc/rc.conf
+                     echo 'rtorrent_enable="YES"'        >>                   /etc/rc.conf
                      echo 'dahdi_enable="YES"'           >>                   /etc/rc.conf
 #                    echo 'keymap=ru.koi8-r'             >>                   /etc/rc.conf
 #                    echo 'scrnmap=koi8-r2cp866'         >>                   /etc/rc.conf
@@ -22,7 +22,7 @@
                      echo 'mysql_enable="YES" '          >>                   /etc/rc.conf
                      echo 'vboxnet_enable="YES"'         >>                   /etc/rc.conf
                      echo 'powerd_enable="yes"'          >>                   /etc/rc.conf
-                     echo 'powerd_flags="-a adp -p 100 -r 90"' >>             /etc/rc.conf
+                     echo 'powerd_flags="-a adp -p 100 -r 90"'   >>           /etc/rc.conf
                      echo 'nginx_enable="YES"'           >>                   /etc/rc.conf
                      echo 'polipo_enable="YES"'          >>                   /etc/rc.conf
                      echo 'tor_enable="YES"'             >>                   /etc/rc.conf
@@ -41,8 +41,8 @@
                      echo 'BATCH=y'                      >>                   /etc/make.conf
                      echo 'WITH_PKGNG=yes'               >>                   /etc/make.conf
                      echo 'PERL_VERSION=5.16.3'          >>                   /etc/make.conf
-                     echo 'OVERRIDE_LINUX_BASE_PORT=c6'       >>                   /etc/make.conf 
-                     echo 'OVERRIDE_LINUX_NONBASE_PORTS=c6'    >>                   /etc/make.conf
+                     echo 'OVERRIDE_LINUX_BASE_PORT=c6'          >>           /etc/make.conf 
+                     echo 'OVERRIDE_LINUX_NONBASE_PORTS=c6'      >>           /etc/make.conf
                      
 #/etc/profile
                      echo 'LANG=ru_RU.UTF-8; export LANG'        >>           /etc/profile
