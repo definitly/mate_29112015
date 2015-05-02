@@ -8,7 +8,7 @@ cp $CURRENTDIRECTORY/conkynote              /usr/local/bin
 cp $CURRENTDIRECTORY/conkynote.sh           /usr/local/bin
 
 
-cp $CURRENTDIRECTORY/.noteconkyrc           /home/$login
+cp $CURRENTDIRECTORY/noteconkyrc           /home/$login/.noteconkyrc
 chown  -R      $login:wheel                 /home/$login/.noteconkyrc
 
 # edit xbindkeysrc
