@@ -7,14 +7,15 @@ app="privatestream/"
 
 flashVer="LNX 11,2,202,451"
 swfUrl="http://privatestream.tv/js/jwplayer.flash.swf"
-tcUrl="rtmp://31.220.0.200/privatestream/"
+tcUrl=
 pageUrl="http://privatestream.tv/player?streamname=ham920&width=700&height=480"
-play="ham920?keys=DumELztOPxYiE9b3SPH5Sg&keyt=1429224479"
+play=
+
+ play=$(sed -n '1p' play_tcUrl) 
+        tcUrl=$(sed -n '2p' play_tcUrl)
 
 
-
-
-rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play  -o "1.flv"
+rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play  | mplayer -cache 2048 -cache-min 30 -noautosub -
 
 
 
