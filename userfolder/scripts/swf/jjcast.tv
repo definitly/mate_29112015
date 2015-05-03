@@ -5,15 +5,16 @@
 
 app="lives"
 
-flashVer=LNX 11,2,202,341""
-swfUrl="http://jjcast.com/jplayer.swf"
-tcUrl="rtmp://77.81.98.82/lives"
-pageUrl="http://jjcast.com/player.php?stream=oubstjl43ej941&width=700&height=480"
-play="oubstjl43ej941?exP1Kcgf3y0jCoqEucOBOu50f_0aqHcDUyMdZtsRMAaa8cPjjrJInR6dcsXnzHJLUt0-GNCsV_Dpqv4AktKd4fmQ-frY2-c8otAly18d_Rk*"
+flashVer="LNX 11,2,202,327"
+swfUrl="http://jjcast.com/jw5/5.10.swf"
+tcUrl=""
+pageUrl="http://jjcast.com/player.php?stream=2mfkyf2zmh9n10&width=728&height=540"
+play=""
+
+ play=$(sed -n '1p' play_tcUrl) 
+        tcUrl=$(sed -n '2p' play_tcUrl)
 
 
-
-
-rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play  | mplayer -cache 2048 -really-quiet -
+rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play  | mplayer -
 
 
