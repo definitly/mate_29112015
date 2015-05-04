@@ -49,6 +49,9 @@ k=`echo 1$k$k | awk '{ printf("%c", $0); }'`
 k=$a$c$d$d$j$g$k
 echo $k
 
+sudo /home/$login/.scripts/rrdcreate.sh
+
+
 sudo pkg delete -y leafpad gsettings-desktop-schemas terminus-font
 sudo pkg install -y leafpad gsettings-desktop-schemas terminus-font
 sudo xset +fp /usr/local/share/fonts/terminus-font/
@@ -85,6 +88,6 @@ sudo  cp -R chrome   /home/$login2/.mozilla/firefox/gm3zhe4q.default
 ./mategit.sh
 cp -R ~/themes/themes/* ~/.themes
 
-sudo /home/$login/.scripts/rrdcreate.sh
+
 ~/timeinstall/git.sh
 
