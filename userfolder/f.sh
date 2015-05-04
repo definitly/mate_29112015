@@ -1,4 +1,7 @@
 #!/usr/local/bin/bash
+login=definitly
+login2=ff
+
 
 
 if [ -z "$1" ]
@@ -59,8 +62,7 @@ sudo xset +fp /usr/local/share/fonts/terminus-font/
 
   git clone git://github.com/definitly/timeinstall.git
   date >> ./timeinstall/time_install
-  login=definitly
-  login2=ff
+  
                      sudo nspluginwrapper -a -i
                           nspluginwrapper -a -i
                           mkdir -p   /home/$login/.mozilla 
