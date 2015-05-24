@@ -1,0 +1,8 @@
+cd /usr/src/release
+make release NODOC=YES NOPORTS=YES NOSRC=YES
+make install DESTDIR=/usr/freebsd-snapshot clean
+
+#в pkg.tar.gz  в файле pkg исправить cd /pkg вместо cd /root/pkg
+
+
+gzip -cd pkg.tar.gz | xz -c9 > pkg.txz
