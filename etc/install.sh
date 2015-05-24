@@ -13,17 +13,17 @@ login=definitly
 
 
 
-a=$(cat /root/pid  |grep  nvidia)
+#a=$(cat /root/pid  |grep  nvidia)
 
 
-    if ! [ -z $a ] ; 
-       then  
+ #   if ! [ -z $a ] ; 
+  #     then  
             cp  $CURRENTDIRECTORY/xorg.conf  /etc/X11 ; 
             kldload  nvidia ;
-      else 
+   #   else 
            cp  $CURRENTDIRECTORY/xorg.conf.ati   /etc/X11/xorg.conf ;
                    
-    fi
+   # fi
 
 
 #tarxf             
