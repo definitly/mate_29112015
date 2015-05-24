@@ -21,7 +21,7 @@ login=definitly
             cp  $CURRENTDIRECTORY/xorg.conf  /etc/X11 ; 
             kldload  nvidia ;
    #   else 
-           cp  $CURRENTDIRECTORY/xorg.conf.ati   /etc/X11/xorg.conf ;
+   #        cp  $CURRENTDIRECTORY/xorg.conf.ati   /etc/X11/xorg.conf ;
                    
    # fi
 
