@@ -6,3 +6,7 @@ make install DESTDIR=/usr/freebsd-snapshot clean
 
 
 gzip -cd pkg.tar.gz | xz -c9 > pkg.txz
+
+
+
+sh /usr/src/release/amd64/make-memstick.sh disc1 memstick.img
