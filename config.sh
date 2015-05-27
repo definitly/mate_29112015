@@ -65,6 +65,12 @@
 #/usr/local/etc/sudoers
                      echo " %wheel ALL=(ALL) NOPASSWD: ALL"  >>               /usr/local/etc/sudoers
 
+#root .cshrc
+
+                    echo  "set prompt="\n%{\e[0;35m%}\[`whoami`\@`hostname -s` $PWD:t\]$ %{\e[m%}"" >> /root/.cshrc
+
+
+
 
 #/usr/local/etc/pkg.conf
 
