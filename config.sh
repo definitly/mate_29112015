@@ -67,7 +67,7 @@
 
 #root .cshrc
 
-                    echo  "set prompt="\n%{\e[0;35m%}\[`whoami`\@`hostname -s` $PWD:t\]$ %{\e[m%}"" >> /root/.cshrc
+                    echo  "set prompt="%{^[[40;31;1m%} %{^[[40;31;1m%} %N@%m:%~ %# "" >> /root/.cshrc
 
 
 
