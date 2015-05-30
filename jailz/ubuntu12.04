@@ -19,7 +19,7 @@ mkdir -p /home/definitly/.steam/sdk32
 
 
 /bin/dbus-uuidgen --ensure
-/bin/dbus-uuidgen > /etc/machine-id
+ln -s  /var/lib/dbus/machine-id  /etc/machine-id
 
 
 
