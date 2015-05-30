@@ -19,4 +19,5 @@ mkdir -p /home/definitly/.steam/sdk32
 
 
 
- steam steam://rungameid/41070
+steam steam://rungameid/41070
+steam steam://open/games
