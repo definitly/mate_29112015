@@ -3,3 +3,6 @@ http://cdn.goodcast.co/players.swf                                              
 http://www.castto.me/_.swf                                                                  #ed%h0#w@1
 
 http://www.iguide.to/player/secure_player_iguide_embed_token.swf                            #ed%h0#w18623jsda6523lDGD  
+
+
+mplayer -cache 8192 ffmpeg://http://109.86.231.117:8091/sport.flv viasat sport
