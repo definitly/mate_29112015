@@ -11,7 +11,7 @@ m1=$(mount | grep "/compat/ubuntu/dev" )
 m2=$(mount | grep "/compat/ubuntu/proc" )
 m3=$(mount | grep "/compat/ubuntu/var/run/shm" )
 m4=$(mount | grep "/compat/ubuntu/var/run/dbus" )
-
+m5=$(mount | grep "/compat/ubuntu/sys" )
 rm /compat/linux
 
 
@@ -80,5 +80,13 @@ rm /compat/linux
                 mount -t nullfs /var/run/dbus   /compat/linux/var/run/dbus
                        
               fi
+
+           if  [ -z  "$m5" ]; then
+                       echo 'не смонтировано'
+                        
+                 mount -t linsysfs none /compat/linux/sys
+                       
+              fi
+             
  
              chmod 1777 /compat/linux/var/run/shm
