@@ -25,3 +25,5 @@ ln -s  /var/lib/dbus/machine-id  /etc/machine-id
 
 steam steam://rungameid/41070
 steam steam://open/games
+
+sudo mount -t nullfs /var/run/dbus   /compat/linux/var/run/dbus
