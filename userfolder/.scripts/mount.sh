@@ -9,7 +9,8 @@ kldload fdescfs linprocfs linsysfs tmpfs
 
 m1=$(mount | grep "/compat/ubuntu/dev" )
 m2=$(mount | grep "/compat/ubuntu/proc" )
-m3=$(mount | grep "/compat/ubuntu/run/shm" )
+m3=$(mount | grep "/compat/ubuntu/var/run/shm" )
+m4=$(mount | grep "/compat/ubuntu/var/run/dbus" )
 
 rm /compat/linux
 
@@ -41,20 +42,25 @@ rm /compat/linux
 
 
 
-              if ! [ -d "/compat/linux/run/shm" ]; then
+              if ! [ -d "/compat/linux/var/run/shm" ]; then
                   echo 'creat'
-                        mkdir -p /compat/ubuntu/run/shm
+                        mkdir -p /compat/ubuntu/var/run/shm
               fi
 
+  
+             if ! [ -d "/compat/linux/var/run/dbus" ]; then
+                  echo 'creat'
+                         mkdir -p /compat/ubuntu/var/run/dbus
+              fi
+              
 
-
-              if ! [ -d "/compat/linux/run/utmp" ]; then
-                         mkdir -p /compat/linux/run/utmp
+              if ! [ -d "/compat/linux/var/run/utmp" ]; then
+                         mkdir -p /compat/linux/var/run/utmp
               fi
               
              if ! [ -e  "/compat/linux/dev/shm" ]; then
                        echo 'ff'
-                        ln -s /compat/linux/run/shm /compat/linux/dev/shm  
+                        ln -s /compat/linux/var/run/shm /compat/linux/dev/shm  
                 
                        
               fi
@@ -63,8 +69,16 @@ rm /compat/linux
               if  [ -z  "$m3" ]; then
                        echo 'не смонтировано'
                         
-                mount -t tmpfs tmpfs /compat/linux/run/shm
+                mount -t tmpfs tmpfs /compat/linux/var/run/shm
+                       
+              fi
+
+
+             if  [ -z  "$m4" ]; then
+                       echo 'не смонтировано'
+                        
+                mount -t nullfs /var/run/dbus   /compat/linux/var/run/dbus
                        
               fi
  
-             chmod 1777 /compat/linux/run/shm
+             chmod 1777 /compat/linux/var/run/shm

@@ -6,7 +6,8 @@
 
              umount /compat/ubuntu/proc
              umount /compat/ubuntu/dev
-             umount /compat/ubuntu/run/shm
+             umount /compat/ubuntu/var/run/shm
+             umount /compat/ubuntu/var/run/dbus
              rm /compat/linux
              ln -s /linux /compat/linux
              
