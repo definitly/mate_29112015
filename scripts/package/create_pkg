@@ -18,7 +18,7 @@ CURRENTDIRECTORY=$(pwd)
              touch pkg
              echo '#!/bin/sh' >> pkg 
              echo 'kldload linux' >> pkg 
-             echo 'cd /root/pkg' >> pkg 
+             echo 'cd /pkg' >> pkg 
              echo 'tar xf ./pkg-1.5.2.txz -s ",/.*/,,g" "*/pkg-static"' >> pkg
              echo  './pkg-static add ./pkg-1.5.2.txz' >> pkg
              echo '#for i in $(ls *txz); do' >> pkg
