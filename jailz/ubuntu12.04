@@ -7,9 +7,8 @@ tar -zxvf     ubuntu-12.04-x86.tar.gz         -C  ubuntu
 cp /etc/resolv.conf  /compat/linux/etc
 
 setenv LD_LIBRARY_PATH /home/definitly/.local/share/Steam/ubuntu12_32
-apt-get install libx11-6  libxext6 libXtst6 libXfixes3 libXrandr2 libgtk2.0-0 libpulse0 libopenal1 libnm-glib4  libusb-1.0-0  libsm6 libasound2 libgconf2-4 dbus libsndfile1 \
- libnss3 libdbus-glib-1-2 libstdc++5 libcurl3 libxt6 libcrystalhd3
-
+apt-get install libx11-6  libxext6 libXtst6 libXfixes3 libXrandr2 libgtk2.0-0  libopenal1 libnm-glib4  libusb-1.0-0  libsm6 libasound2 libgconf2-4 dbus libsndfile1 \
+ libnss3 libdbus-glib-1-2 libstdc++5 libcurl3 libxt6 libcrystalhd3  libjson0
 
 FillInMachineIDInfo took a total of 0 milliseconds
 
