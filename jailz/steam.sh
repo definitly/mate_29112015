@@ -375,7 +375,7 @@ function unpack_runtime()
 	rm -rf "$EXTRACT_TMP"
 	mkdir "$EXTRACT_TMP"
 	cat "$STEAM_RUNTIME.$ARCHIVE_EXT".part* >"$STEAM_RUNTIME.$ARCHIVE_EXT"
-	EXISTING_CHECKSUM="$(cd "$(dirname "$STEAM_RUNTIME")"; md5sum "$(basename "$STEAM_RUNTIME.$ARCHIVE_EXT")")"
+	EXISTING_CHECKSUM="$(cd "$(dirname "$STEAM_RUNTIME")"; md5 "$(basename "$STEAM_RUNTIME.$ARCHIVE_EXT")")"
 	EXPECTED_CHECKSUM="$(cat "$STEAM_RUNTIME.checksum")"
 	if [ "$EXISTING_CHECKSUM" != "$EXPECTED_CHECKSUM" ]; then
 		echo $"Runtime checksum: $EXISTING_CHECKSUM, expected $EXPECTED_CHECKSUM" >&2
