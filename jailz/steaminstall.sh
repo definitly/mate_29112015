@@ -8,5 +8,5 @@ cp /etc/resolv.conf  ubuntu/etc
 cp ubuntu.sh   ubuntu/root
 cp libflashsupport.so ubuntu/usr/lib
 rm  ubuntu/var/run
-chmod 777 /ubuntu/tmp
+chmod 777 ubuntu/tmp
 sudo cp -R ubuntu /compat
