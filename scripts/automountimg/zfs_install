@@ -93,11 +93,11 @@ a=$(cat /pid | grep  nvidia)
     if ! [ -z $a ] ; 
        then  
 fetch --no-verify-peer http://dl.dropbox.com/u/$l/pkg.tar.gz ;
-tar -zxvf  pkg.tar.gz ;   
+tar -zxvf  pkg.tar.gz -C /;   
       
        else 
 fetch --no-verify-peer  http://dl.dropbox.com/u/$l/pkg_ati.tar.gz ;
-tar -zxvf  pkg_ati.tar.gz ;         
+tar -zxvf  pkg_ati.tar.gz -C /;         
     
                fi
 
@@ -105,7 +105,7 @@ tar -zxvf  pkg_ati.tar.gz ;
 cp /pid  /mnt/root/pid
 cp /etc/resolv.conf /mnt/etc/
 
-chroot /mnt  /root/pkg/pkg
+chroot /mnt  /pkg/pkg
 
 #cd pkg
 #./pkg
