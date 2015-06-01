@@ -1,0 +1,33 @@
+Couldn't write /usr/home/definitly/.local/share/Steam/.steam_exec_test.sh: Permission denied
+Installing breakpad exception handler for appid(steam)/version(1431729692)
+/home/buildbot/buildslave_steam/steam_rel_client_ubuntu12_linux/build/src/clientdll/applicationmanager.cpp (3030) : Assertion Failed: CApplicationManager::GetMountVolume: invalid index                                                                                                                                                                
+Assert( Assertion Failed: CApplicationManager::GetMountVolume: invalid index ):/home/buildbot/buildslave_steam/steam_rel_client_ubuntu12_linux/build/src/clientdll/applicationmanager.cpp:3030                                                                                                                                                          
+
+Installing breakpad exception handler for appid(steam)/version(1431729692)
+[0531/202226:ERROR:browser_main_loop.cc(170)] Running without the SUID sandbox! See https://code.google.com/p/chromium/wiki/LinuxSUIDSandboxDevelopment for more information on developing with the sandbox on.                                                                                                                                         
+[0531/202226:FATAL:zygote_host_impl_linux.cc(109)] Check failed: UnixDomainSocket::EnableReceiveProcessId(fds[0]). 
+Aborted
+ExceptionHandler::GenerateDump waitpid failed:No child processes
+No minidump written, nothing to upload.
+/home/buildbot/buildslave_steam/steam_rel_client_ubuntu12_linux/build/src/clientdll/applicationmanager.cpp (3030) : Assertion Failed: CApplicationManager::GetMountVolume: invalid index                                                                                                                                                                
+Installing breakpad exception handler for appid(steam)/version(1431729692)
+/home/buildbot/buildslave_steam/steam_rel_client_ubuntu12_linux/build/src/clientdll/applicationmanager.cpp (3181) : Assertion Failed: m_vecInstallBaseFolders.Count() > 0
+Installing breakpad exception handler for appid(steam)/version(1431729692)
+Installing breakpad exception handler for appid(steam)/version(1431729692)
+FillInMachineIDInfo took a total of 1 milliseconds
+PulseAudio connect failed (used only for Mic Volume Control) with error: Access denied
+Installing breakpad exception handler for appid(steam)/version(1431729692)
+Installing breakpad exception handler for appid(steam)/version(1431729692)
+libudev: udev_monitor_new_from_netlink_fd: error getting socket: Address family not supported by protocol
+/home/buildbot/buildslave_steam/steam_rel_client_ubuntu12_linux/build/src/clientdll/controller.cpp (2849) : Assertion Failed: pUdevMonitor != NULL
+Generating new string page texture 12: 48x256, total string texture memory is 49,15 KB
+Generating new string page texture 13: 256x256, total string texture memory is 311,30 KB
+Generating new string page texture 14: 128x256, total string texture memory is 442,37 KB
+Generating new string page texture 15: 384x256, total string texture memory is 835,58 KB
+/home/buildbot/buildslave_steam/steam_rel_client_ubuntu12_linux/build/src/common/html/chrome_ipc_client.cpp (291) : Assertion Failed: Failed to connect to master html process, created shared memory (spawn time 20,04)                                                                                                                                
+Assert( Assertion Failed: Failed to connect to master html process, created shared memory (spawn time 20,04) ):/home/buildbot/buildslave_steam/steam_rel_client_ubuntu12_linux/build/src/common/html/chrome_ipc_client.cpp:291                                                                                                                          
+
+Installing breakpad exception handler for appid(steam)/version(1431729692)
+ExceptionHandler::GenerateDump waitpid failed:ExceptionHandler::WaitForContinueSignal sys_read failed:No child processesBad file descriptor
+
+No minidump written, nothing to upload.
