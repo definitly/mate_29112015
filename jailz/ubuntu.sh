@@ -1,5 +1,6 @@
 dpkg-divert --local --rename --add /sbin/initctl
 ln -s /bin/true /sbin/initctl
+ln -s /dev/shm /var/run/shm
 locale-gen en_US.UTF-8
 locale-gen ru_RU.UTF-8
 dpkg-reconfigure locales
