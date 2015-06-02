@@ -13,7 +13,7 @@ apt-get install libx11-6  libxext6 libXtst6 libXfixes3 libXrandr2 libgtk2.0-0  l
 
 
 
-apt-get install gcc libtool intool pkg-config  libjson0-dev libsndfile1-dev libspeexdsp-dev checkinstall
+apt-get install gcc libtool intltool pkg-config  libjson0-dev libsndfile1-dev libspeexdsp-dev checkinstall
 
 
 
