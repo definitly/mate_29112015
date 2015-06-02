@@ -23,4 +23,6 @@ fi
 cp pulseaudio_1.1-1_i386.deb ubuntu/root
 rm  ubuntu/var/run
 chmod 777 ubuntu/tmp
-#sudo cp -R ubuntu /compat
+sudo sysctl compat.linux.osrelease=2.6.32
+sudo chroot ubuntu /root/ubuntu.sh
+sudo cp -R ubuntu /compat
