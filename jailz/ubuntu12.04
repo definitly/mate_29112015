@@ -32,4 +32,4 @@ steam steam://rungameid/41070
 steam steam://open/games
 
 rm /dev/shm
-ln -s /var/lib/dbus /dev/shm
+ln -s /var/run/shm /dev/shm

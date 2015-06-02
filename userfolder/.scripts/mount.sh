@@ -60,7 +60,7 @@ rm /compat/linux
               
              if ! [ -e  "/compat/linux/dev/shm" ]; then
                        echo 'ff'
-                        ln -s /compat/linux/var/run/shm /compat/linux/dev/shm  
+                        ln -s /var/run/shm /compat/linux/dev/shm  
                 
                        
               fi
