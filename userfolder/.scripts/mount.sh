@@ -36,7 +36,7 @@ rm /compat/linux
 
          if  [ -z "$m2" ]; then 
        echo 'не смонтировано'
-       mount -t  linprocfs linprocfs  /compat/linux/proc
+       mount -t  linprocfs  linproc /compat/linux/proc
 
          fi
 
@@ -84,7 +84,7 @@ rm /compat/linux
            if  [ -z  "$m5" ]; then
                        echo 'не смонтировано'
                         
-                 mount -t linsysfs none /compat/linux/sys
+                 mount -t linsysfs linsys /compat/linux/sys
                        
               fi
              
