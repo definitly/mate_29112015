@@ -10,10 +10,12 @@ setenv LD_LIBRARY_PATH /home/definitly/.local/share/Steam/ubuntu12_32
 apt-get install libx11-6  libxext6 libXtst6 libXfixes3 libXrandr2 libgtk2.0-0  libopenal1 libnm-glib4  libusb-1.0-0  libsm6 libasound2 libgconf2-4 dbus libsndfile1 \
  libnss3 libdbus-glib-1-2 libstdc++5 libcurl3 libxt6 libcrystalhd3  libjson0  libspeexdsp1
 
-FillInMachineIDInfo took a total of 0 milliseconds
 
 
-mkdir -p /home/definitly/.steam/sdk32
+
+apt-get install gcc libtool intool pkg-config  libjson0-dev libsndfile1-dev libspeexdsp-dev checkinstall
+
+
 
 
 
@@ -28,4 +30,3 @@ ln -s /usr/lib/libcrystalhd.so.3.6 /usr/lib/libcrystalhd.so
 steam steam://rungameid/41070
 steam steam://open/games
 
-sudo mount -t nullfs /var/run/dbus   /compat/linux/var/run/dbus
