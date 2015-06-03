@@ -19,7 +19,7 @@ cp libflashsupport.so ubuntu/usr/lib
    wget https://github.com/definitly/pulseaudio/raw/master/pulseaudio_1.1-1_i386.deb
 fi
 
-tar --unlink -xpJf /pkg/nvidia-driver-340-340.76.txz -C ~/$CURRENTDIRECTORY
+tar --unlink -xpJf /pkg/nvidia-driver-340-340.76.txz -C                        $CURRENTDIRECTORY
 cp $CURRENTDIRECTORY/compat/linux/usr/lib/libGL.so.1                           $CURRENTDIRECTORY/ubuntu/usr/lib
 cp $CURRENTDIRECTORY/compat/linux/usr/lib/libGL.so.340.76                      $CURRENTDIRECTORY/ubuntu/usr/lib
 cp $CURRENTDIRECTORY/compat/linux/usr/lib/libnvidia-glcore.so.340.76           $CURRENTDIRECTORY/ubuntu/usr/lib
