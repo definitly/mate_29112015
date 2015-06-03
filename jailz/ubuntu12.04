@@ -17,7 +17,7 @@ apt-get install libx11-6  libxext6 libXtst6 libXfixes3 libXrandr2 libgtk2.0-0  l
 apt-get install gcc libtool intltool pkg-config  libjson0-dev libsndfile1-dev libspeexdsp-dev checkinstall
 
 
-
+запустить pulseaudio в chroot'е для steam
 
 
 
@@ -31,5 +31,3 @@ ln -s /usr/lib/libcrystalhd.so.3.6 /usr/lib/libcrystalhd.so
 steam steam://rungameid/41070
 steam steam://open/games
 
-rm /dev/shm
-ln -s /var/run/shm /dev/shm
