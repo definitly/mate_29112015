@@ -6,7 +6,7 @@
 # directory lives - and all this in a subshell, so we don't affect
 # $PWD
 
-GAMEROOT=$(cd "${0%/*}" && echo $PWD)
+GAMEROOT="/home/definitly/.local/share/Steam/steamapps/common/Counter-Strike Source"
 
 #determine platform
 UNAME=`uname`
@@ -26,7 +26,7 @@ if [ -z $GAMEEXE ]; then
 	fi
 fi
 
-ulimit -n 2048
+
 
 # enable nVidia threaded optimizations
 export __GL_THREADED_OPTIMIZATIONS=1
@@ -61,7 +61,8 @@ while [ $STATUS -eq 42 ]; do
 		${GAME_DEBUGGER} "${GAMEROOT}"/${GAMEEXE} -x "$ARGSFILE"
 		rm "$ARGSFILE"
 	else
-		/home/definitly/.local/share/Steam/steamapps/common/Counter-Strike\ Source/hl2_linux
+                  export LD_LIBRARY_PATH="${GAMEROOT}"/bin:$LD_LIBRARY_PATH
+		 "${GAMEROOT}"/hl2_linux "$@"
 	fi
 	STATUS=$?
 done
