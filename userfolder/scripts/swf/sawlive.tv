@@ -4,10 +4,10 @@
 
 app="flash"
 
-flashVer="LNX 11,2,202,451"
+flashVer="LNX 11,2,202,460"
 swfUrl="http://static3.sawlive.tv/player.swf"
 #tcUrl=$2
-pageUrl="http://www3.sawlive.tv/embed/watch/Q0NDQ4MzQ0YThlMDYzNzkyODVmZGIwNWY_/bGFnbWF0ZWU6MjUxN2QxNzNjODQ4NTZjNDE5OGU4OGI5ZTQ1ZmRlNWI6ZGZiYjYyZG"
+pageUrl="http://www3.sawlive.tv/embed/watch/diNWQzNTdhYzU1Y2M0NGMzOGZhMjI5Nw__/bGFnODRqYTo1Mjc4YzZlMzE3NGJhYmZlOGI3ZjJiNGQwNmE1YTQyNDpjMTdjNzA1ZT"
 #play=$1 
 
         play=$(sed -n '1p' play_tcUrl) 
