@@ -1,16 +1,11 @@
 #!/bin/sh
 
+i=0
 
-
-    while true; do 
+    while i=$(($i+1)) ; do 
 
 sleep 0.1;
-#rm /home/definitly/.steam/steam.pid
-#rm /home/definitly/.steam/steam.pipe
-#rm /home/definitly/.steam/registry.vdf
-#rm -R ~/.nv
-#rm -R ~/.pulse
-#rm -R ~/.pki
+echo $i >> count.log
  /home/definitly/.local/share/Steam/ubuntu12_32/steam  
 
      done 
