@@ -16,6 +16,6 @@ locale-gen en_US.UTF-8
 locale-gen ru_RU.UTF-8
 dpkg-reconfigure locales
 echo  " vcore	ALL=(ALL:ALL) ALL" >> /etc/sudoers
-useradd vcore   -p qwe123  --create-home --skel /etc/skel/
+useradd -u 1002 vcore   -p qwe123  --create-home --skel /etc/skel/
 passwd -d vcore
 
