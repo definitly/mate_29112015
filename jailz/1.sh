@@ -21,7 +21,7 @@ fi
 
 
 
-    sudo  ln -s /var/run/shm  /dev/shm
+    
         sudo  chmod 1777 /dev/shm
     date | awk '{print $6}' >> count.log
  /home/definitly/.local/share/Steam/ubuntu12_32/steam  
