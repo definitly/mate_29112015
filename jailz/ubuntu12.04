@@ -1,4 +1,4 @@
-
+fetch https://dl.dropboxusercontent.com/u/74640315/steam/steam.tar.gz
 fetch http://download.openvz.org/template/precreated/ubuntu-12.04-x86.tar.gz
 fetch http://media.steampowered.com/client/installer/steam.deb
 wget https://github.com/definitly/pulseaudio/raw/master/pulseaudio_1.1-1_i386.deb
