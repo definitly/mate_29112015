@@ -1,5 +1,6 @@
 cd /usr/src/release
 make memstick NODOC=YES NOPORTS=YES NOSRC=YES
+cd /usr/src && make -j4 buildworld && make -j4 buildkernel && cd release && make memstick NODOC=YES NOPORTS=YES NOSRC=YES
 make install DESTDIR=/usr/freebsd-snapshot clean
 
 #в pkg.tar.gz  в файле pkg исправить cd /pkg вместо cd /root/pkg
