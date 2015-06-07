@@ -34,8 +34,7 @@ ln -s libGL.so.340.76   libGL.so.1
 cd   $CURRENTDIRECTORY
 cp  asoundrc  ~/.asoundrc
 
-tar -zxvf alsa-plugins-oss-1.0.21-3.fc10.i386.tar.gz  -C ubuntu
-
+sudo cp -R alsa-lib  ubuntu/usr/lib/i386-linux-gnu
 
 cp pulseaudio_1.1-1_i386.deb ubuntu/root
 rm  ubuntu/var/run
