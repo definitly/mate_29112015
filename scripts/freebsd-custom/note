@@ -5,10 +5,10 @@ cd /usr/src && make -j4 buildworld && make -j4 buildkernel && cd release && make
 make install DESTDIR=/usr/freebsd-snapshot clean
 cp /mnt/usr/freebsd-dist/pkg.txz ~/
 
-cp /home/definitly/mate/scripts/freebsd-custom/zfs_install  disc1 && cp /home/definitly/pkg.txz  disc1/usr/freebsd-dist  \ 
-  && cp /home/definitly/mate/scripts/freebsd-custom/rc.local disc1/etc \
- &&   cp /home/definitly/mate/scripts/freebsd-custom/resolv.conf disc1/etc 
+cp /home/definitly/pkg.txz /usr/src/release/disc1/usr/freebsd-dist
+ cp /home/definitly/mate/scripts/freebsd-custom/rc.local /usr/src/release/disc1/etc && cp /home/definitly/mate/scripts/freebsd-custom/resolv.conf /usr/src/release/disc1/etc
 
+ cp /home/definitly/mate/scripts/freebsd-custom/zfs_install /usr/src/release/disc1
 
 
 #в pkg.tar.gz  в файле pkg исправить cd /pkg вместо cd /root/pkg
