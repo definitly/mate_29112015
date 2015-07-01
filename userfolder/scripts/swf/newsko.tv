@@ -1,5 +1,5 @@
 #!/bin/sh
-#eurosport 2
+
 
 
 
@@ -8,6 +8,7 @@ app="live"
 flashVer="LNX 11,2,202,327"
 swfUrl="http://www.aadvertismentt.com/player.swf"
 tcUrl="rtmp://46.246.124.5/live"
+#tcUrl="rtmp://46.246.124.46/live"
 pageUrl="http://www.newsko.co.uk/channel/last8"
 play="last3"
 
