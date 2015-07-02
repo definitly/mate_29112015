@@ -1,11 +1,15 @@
 #!/bin/sh
 CURRENTDIRECTORY=$(pwd)
+ubuntu_vesrsion=ubuntu-12.04-x86.tar.gz 
+
+
+
 sudo mv /compat/linux /
 
   
-      if ! [ -f  ubuntu-12.04-x86.tar.gz  ]; then
+      if ! [ -f  $ubuntu_vesrsion ]; then
                   
-   fetch http://download.openvz.org/template/precreated/ubuntu-12.04-x86.tar.gz
+   fetch http://download.openvz.org/template/precreated/$ubuntu_vesrsion
 fi
 
 
@@ -14,7 +18,7 @@ sudo  chmod 1777 /dev/shm
 
 
 mkdir ubuntu
-tar -zxvf     ubuntu-12.04-x86.tar.gz         -C  ubuntu
+tar -zxvf      $ubuntu_vesrsion        -C  ubuntu
 cp /etc/resolv.conf  ubuntu/etc
 cp ubuntu.sh   ubuntu/root
 cp libflashsupport.so ubuntu/usr/lib
