@@ -12,6 +12,15 @@ echo $i >> count.log
 
        sudo chmod 1777 /compat/linux/tmp
     
+
+  if ! [ -d  /var/run/shm  ]; then
+
+sudo mkdir -p /var/run/shm 
+echo 'No directory'
+fi
+
+
+
   
    if ! [ -h /dev/shm ] ; then
  echo "ссылки не существует"
