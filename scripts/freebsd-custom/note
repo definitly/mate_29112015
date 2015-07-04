@@ -1,11 +1,12 @@
 cd /usr/src/release
 make memstick NODOC=YES NOPORTS=YES NOSRC=YES
 svnlite co svn://svn.freebsd.org/base/head /usr/src
-cd /usr/src && make -j4 buildworld && make -j4 buildkernel && cd release && make memstick NODOC=YES NOPORTS=YES NOSRC=YES &&  rm disc1/etc/resolv.conf
+cd /usr/src && make -j4 buildworld && make -j4 buildkernel && cd release && make memstick NODOC=YES NOPORTS=YES NOSRC=YES 
 make install DESTDIR=/usr/freebsd-snapshot clean
 cp /mnt/usr/freebsd-dist/pkg.txz ~/
 
 cp /home/definitly/pkg.txz /usr/src/release/disc1/usr/freebsd-dist && \
+rm disc1/etc/resolv.conf && \
 cp /home/definitly/mate/scripts/freebsd-custom/rc.local /usr/src/release/disc1/etc && \ 
 cp /home/definitly/mate/scripts/freebsd-custom/resolv.conf /usr/src/release/disc1/etc && \
 cp /home/definitly/mate/scripts/freebsd-custom/zfs_install /usr/src/release/disc1 && \
