@@ -1,0 +1,2 @@
+ipfw add 40 fwd 127.0.0.1, 1935 tcp from any to any 1935
+ipfw add 40 fwd 127.0.0.1, 1935 tcp from any to any 1935 not uid proxy
