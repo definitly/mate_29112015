@@ -16,7 +16,7 @@ cp /home/definitly/mate/scripts/freebsd-custom/zfs_install /usr/src/release/disc
 
 gzip -cd pkg.tar.gz | xz -c9 > pkg.txz
 
-
+ echo 'autoboot_delay="-1"' >> disc1/boot/defaults/loader.conf
 
 sh /usr/src/release/amd64/make-memstick.sh disc1 memstick.img
 
