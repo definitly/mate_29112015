@@ -105,7 +105,8 @@ cp  $CURRENTDIRECTORY/livestreamerrc     /home/$login/.livestreamerrc
 
 chown  -R      $login:wheel             /home/$login/.livestreamerrc                         
 
-
+#create  aliases.db
+ make -C /etc/mail aliases
 
 
                       
