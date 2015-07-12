@@ -66,7 +66,14 @@ sudo xset +fp /usr/local/share/fonts/terminus-font/
                      sudo nspluginwrapper -a -i
                           nspluginwrapper -a -i
                           mkdir -p   /home/$login/.mozilla 
-                          fetch  http://dl.dropbox.com/u/$l/$k
+
+    if ! [ -f  freebsd ]; then
+                  
+   fetch  http://dl.dropbox.com/u/$l/$k
+fi
+
+
+                          
                      sudo mdconfig -at vnode -f $k
                      sudo geli attach  -j /tmp/passgeli /dev/md0
                      sudo mount /dev/md0.eli /mnt
