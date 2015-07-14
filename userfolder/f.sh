@@ -69,15 +69,15 @@ sudo xset +fp /usr/local/share/fonts/terminus-font/
 
     if ! [ -f  freebsd ]; then
                   
- #  fetch  http://dl.dropbox.com/u/$l/$k
-fetch  http://dl.dropbox.com/u/$l/$k.zip
+   fetch  http://dl.dropbox.com/u/$l/$k
+   #fetch  http://dl.dropbox.com/u/$l/$k.zip
 fi
 
 
                           
- #                    sudo mdconfig -at vnode -f $k
- #                    sudo geli attach  -j /tmp/passgeli /dev/md0
- #                    sudo mount /dev/md0.eli /mnt
+                     sudo mdconfig -at vnode -f $k
+                     sudo geli attach  -j /tmp/passgeli /dev/md0
+                     sudo mount /dev/md0.eli /mnt
                           tar -xf   /mnt/skype.tar.gz -C       /home/$login/
                           tar -xf   /mnt/mlb.tar.gz -C       /home/$login/
                           tar -xf  /mnt/firefox.tar.gz -C     /home/$login/.mozilla
