@@ -119,6 +119,9 @@
 			<item label="MC"> <action name="Execute">
 				<execute>xterm -e mc</execute>
 			</action> </item>
+                        <item label="Oracle VM VirtualBox"> <action name="Execute">
+				<execute>VirtualBox</execute>
+			</action> </item>
 			<item label="Xterm"> <action name="Execute">
 				<execute>xterm</execute>
 			</action> </item>
