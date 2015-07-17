@@ -69,25 +69,16 @@
 
                     echo  "set prompt="%{^[[40;31;1m%} %{^[[40;31;1m%} %N@%m:%~ %# "" >> /root/.cshrc
 
+#/etc/fstab
 
+                   echo   "/dev/da0p3 /mnt             ufs      rw,noauto 0 0"        >> /etc/fstab
 
-
-#/usr/local/etc/pkg.conf
-
-
-#                    rm /usr/local/etc/pkg.conf
-#                    touch /usr/local/etc/pkg.conf
-#                    echo 'packagesite: http://pkg.cdn.pcbsd.org/9.2-RELEASE/amd64'                    >> /usr/local/etc/pkg.conf
-#                    echo 'PUBKEY: /usr/local/etc/pkg-pubkey.cert'                                     >> /usr/local/etc/pkg.conf
-#                    echo 'PKG_CACHEDIR: /usr/local/tmp '                                              >> /usr/local/etc/pkg.conf
-#                    echo 'PACKAGESITE	    : pkg+http://pkg.freebsd.org/${ABI}/latest'                >> /usr/local/etc/pkg.conf
- 
 
 #/etc/sysctl.conf   
                    echo 'kern.coredump=0'                 >>           /etc/sysctl.conf 
                    echo 'kern.ipc.shm_allow_removed=1'    >>           /etc/sysctl.conf 
  
- # link ssl certificate verify 
+#link ssl certificate verify 
                    ln -sf /usr/local/share/certs/ca-root-nss.crt /etc/ssl/cert.pem
   
 cp /usr/share/zoneinfo/Europe/Moscow /etc/localtime 
