@@ -24,7 +24,7 @@ sudo rtmpsrv >  /tmp/rtmp1
 sudo  kldunload ipfw
 
 sed -r 's/-o.+//' /tmp/rtmp1 >  /tmp/rtmp2
-rtmp=$(head -n 2 /tmp/rtmp2 | tail -n 1 | sed  's/$/ | mplayer -cache 2048 -cache-min 30 -noautosub -/')
+rtmp=$(head -n 2 /tmp/rtmp2 | tail -n 1 | sed  's/$/ | mpv --cache=2048  -/')
 echo $rtmp
 sudo rm *.flv
 echo '#!/bin/sh' >> runrtmp.sh

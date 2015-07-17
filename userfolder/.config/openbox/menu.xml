@@ -48,7 +48,7 @@
 
           <menu id="7" label="Multimedia">
 			<item label="SM"> <action name="Execute">
-				<execute>mplayer http://localhost:8908/tv.asf</execute>
+				<execute>mpv http://localhost:8908/tv.asf</execute>
 			</action> </item> 
 </menu>
 		<menu id="5" label="Network">
