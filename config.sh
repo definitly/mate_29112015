@@ -53,7 +53,7 @@
 
 #/etc/fstab
                      echo 'linproc /compat/linux/proc linprocfs rw  0 0' >>   /etc/fstab
-                     echo 'tmpfs        /tmp            tmpfs        rw 0' >>   /etc/fstab
+ #                    echo 'tmpfs        /tmp            tmpfs        rw 0' >>   /etc/fstab
                      echo 'fdesc   /dev/fd            fdescfs   rw  0 0' >>   /etc/fstab
                      echo 'proc    /proc               procfs   rw  0 0' >>   /etc/fstab
                      echo '/dev/da0p3 /mnt             ufs      rw,noauto 0 0'        >> /etc/fstab
