@@ -53,9 +53,10 @@
 
 #/etc/fstab
                      echo 'linproc /compat/linux/proc linprocfs rw  0 0' >>   /etc/fstab
-#                    echo 'linsysfs  /compat/linux/sys linsysfs rw  0 0' >>   /etc/fstab
+                     echo 'tmpfs        /tmp            tmpfs        rw 0' >>   /etc/fstab
                      echo 'fdesc   /dev/fd            fdescfs   rw  0 0' >>   /etc/fstab
                      echo 'proc    /proc               procfs   rw  0 0' >>   /etc/fstab
+                     echo '/dev/da0p3 /mnt             ufs      rw,noauto 0 0'        >> /etc/fstab
 
 #                     echo 'linsys  /compat/linux/sys   linsysfs  rw 0 0' >>  /etc/fstab
 #/etc/sysctl.conf
@@ -69,9 +70,9 @@
 
                     echo  "set prompt="%{^[[40;31;1m%} %{^[[40;31;1m%} %N@%m:%~ %# "" >> /root/.cshrc
 
-#/etc/fstab
-
-                   echo   "/dev/da0p3 /mnt             ufs      rw,noauto 0 0"        >> /etc/fstab
+#/etc/devfs.conf
+            
+                    echo 'link /tmp shm'              >>                   /etc/devfs.conf
 
 
 #/etc/sysctl.conf   
