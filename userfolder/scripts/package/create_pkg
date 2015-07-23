@@ -32,7 +32,6 @@ CURRENTDIRECTORY=$(pwd)
              cd ..
              cp /usr/local/bin/git   $CURRENTDIRECTORY/pkg
              tar zcvf pkg.tar.gz pkg 
-             dropbox_uploader.sh delete  /Public/pkg.tar.gz
-             dropbox_uploader.sh upload pkg.tar.gz /Public
+             gzip -cd pkg.tar.gz | xz -c9 > pkg.txz
              
              
