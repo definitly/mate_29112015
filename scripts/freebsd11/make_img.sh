@@ -36,6 +36,7 @@ rm disc1/etc/rc.local
 cp rc.local disc1/etc
 cp zfs_install disc1
 cp pid disc1
+cp pkg.txz disc1/usr/freebsd-dist
 
 
 sh ./make-memstick.sh disc1 1.img
