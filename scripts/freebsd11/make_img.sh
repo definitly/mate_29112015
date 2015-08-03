@@ -31,7 +31,7 @@ mdconfig -d -u 0
 
 echo 'autoboot_delay="-1"' >> disc1/boot/defaults/loader.conf
 rm disc1/etc/resolv.conf 
-cp resolv.conf /mnt/etc
+cp resolv.conf disc1/etc
 rm disc1/etc/rc.local
 cp rc.local disc1/etc
 cp zfs_install disc1
