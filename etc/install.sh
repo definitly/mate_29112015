@@ -33,8 +33,8 @@ login=definitly
 #mlbviewer        
 
                     tar -xf   $CURRENTDIRECTORY/mlbviewer2013-sf-8.tar.gz -C         /home/$login/
-                    chown  -R      $login:wheel                                      /home/$login/mlbviewer2013
-                    ln -s  /home/$login/mlbviewer2013/mlbviewer.py  /usr/local/bin/mlb 
+                    chown  -R      $login:wheel                                      /home/$login/mlbviewer2015
+                    ln -s  /home/$login/mlbviewer2015/mlbviewer.py  /usr/local/bin/mlb 
 
 
 #sp-cs-auth
