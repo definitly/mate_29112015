@@ -13,6 +13,12 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
+if [ -z "$1" ]
+then
+  echo "Порядок использования: `basename $0` img  "
+  exit 1
+fi
+
 
 if ! [ -d disc1 ]; then
          echo 'No directory'
