@@ -1,0 +1,11 @@
+/boot/loader.conf
+
+legal.realtek.license_ack=1
+rsu-rtl8712fw_load="YES"
+
+
+
+ifconfig wlan0 create wlandev rsu0
+
+ifconfig wlan0 up scan
+
