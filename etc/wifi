@@ -8,7 +8,16 @@ rsu-rtl8712fw_load="YES"
 ifconfig wlan0 create wlandev rsu0
 
 ifconfig wlan0 up scan
+ifconfig wlan0 list scan
 
+ifconfig wlan0 destroy
+
+service wpa_supplicant start wlan0
+
+ifconfig wlan0 inet 192.168.1.33 netmask 255.255.255.0 ssid 1ghfghf  wepmode on weptxkey 1 wepkey 1:31088265222
+
+
+wpa_passphrase 1ghfghf 31088265222 >  /etc/wpa_supplicant.conf
 
 
 
