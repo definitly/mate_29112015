@@ -38,7 +38,7 @@
 #/boot/loader.conf
 
                     echo  'rsu-rtl8712fw_load="YES"'      >>                   /boot/loader.conf
-                    echo  'legal.realtek.license_ack=1'                  >>                   /boot/loader.conf
+                    echo  'legal.realtek.license_ack=1'   >>                   /boot/loader.conf
 
 
 
