@@ -31,4 +31,8 @@ ifconfig wlan0 authmode wpa
 ifconfig wlan0 create wlandev rsu0 inet 192.168.1.44 netmask 255.255.255.0
 ifconfig wlan0 create wlandev rsu0 ssid 1ghfghf
 
+
+service netif restart
+service routing restart
+
 31088265222
