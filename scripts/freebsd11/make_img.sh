@@ -28,6 +28,7 @@ fi
 
 mdconfig -a -t vnode -u0 -f $1
 mount /dev/md0p3 /mnt
+mount /dev/md0a /mnt
 
 cp -rp /mnt/*  disc1
 
