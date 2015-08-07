@@ -21,10 +21,11 @@ ifconfig wlan0 inet 192.168.1.33 netmask 255.255.255.0 ssid 1ghfghf  wepmode on 
 
 wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf
 
+wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf -d
 
 wpa_passphrase 1ghfghf 31088265222 >  /etc/wpa_supplicant.conf
 
-kldunload wlan_xauth
+kldload wlan_xauth
 ifconfig wlan0 authmode wpa
 
 ifconfig wlan0 create wlandev rsu0 inet 192.168.1.44 netmask 255.255.255.0
