@@ -19,6 +19,9 @@ service wpa_supplicant start wlan0
 ifconfig wlan0 inet 192.168.1.33 netmask 255.255.255.0 ssid 1ghfghf  wepmode on weptxkey 1 wepkey 1:31088265222
 
 
+wpa_supplicant -i wlan0 -c /etc/wpa_supplicant.conf
+
+
 wpa_passphrase 1ghfghf 31088265222 >  /etc/wpa_supplicant.conf
 
 
