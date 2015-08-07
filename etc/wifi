@@ -7,6 +7,8 @@ rsu-rtl8712fw_load="YES"
 
 ifconfig wlan0 create wlandev rsu0
 
+ifconfig wlan0 ssid  1ghfghf authmode wpa
+
 ifconfig wlan0 up scan
 ifconfig wlan0 list scan
 
