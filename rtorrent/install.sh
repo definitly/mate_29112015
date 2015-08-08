@@ -12,7 +12,9 @@ CURRENTDIRECTORY=$(pwd)
                          
                              mkdir                         /home/$login/.rtsession
                              chmod -R  777                 /home/$login/.rtsession
-
+                             mkdir                         /home/$login/downloads
+                             chmod -R  777                 /home/$login/downloads
+                            
                              mkdir                         /home/$login/watch
                              chmod -R  777                 /home/$login/watch
                              chmod -R  777                 /home/$login
