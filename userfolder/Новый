@@ -74,6 +74,7 @@ FreeBSD freebsd 10.2-RC2 FreeBSD 10.2-RC2 #0 r286222: Mon Aug  3 14:11:30 MSK 20
 FreeBSD freebsd 10.2-RC2 FreeBSD 10.2-RC2 #0 r286283: Tue Aug  4 17:07:27 MSK 2015     definitly@freebsd:/usr/obj/usr/src/sys/GENERIC  amd64
 FreeBSD freebsd 10.2-RC2 FreeBSD 10.2-RC2 #0 r286361: Thu Aug  6 13:14:22 MSK 2015     definitly@freebsd:/usr/obj/usr/src/sys/GENERIC  amd64
 FreeBSD freebsd 10.2-RC3 FreeBSD 10.2-RC3 #0 r286391: Thu Aug  6 23:08:54 UTC 2015     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/sys/GENERIC  amd64
+FreeBSD freebsd 10.2-STABLE FreeBSD 10.2-STABLE #0 r286878: Tue Aug 18 18:35:31 UTC 2015     root@releng1.nyi.freebsd.org:/usr/obj/usr/src/sys/GENERIC  amd64
 
 
 
