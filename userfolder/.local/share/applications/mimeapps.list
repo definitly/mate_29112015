@@ -22,6 +22,7 @@ video/x-flv=userapp-mplayer-7JZ7FX.desktop;userapp-mplayer-VOAUFX.desktop;
 application/x-java=userapp-leafpad-O1YRIX.desktop;
 image/vnd.djvu=userapp-djview-6J07HX.desktop;
 application/x-pdf=userapp-xpdf-01YRII.desktop;
+image/jpeg=userapp-set_wallpaper-02YRII.desktop;
 
 [Default Applications]
 video/x-msvideo=userapp-mplayer-C2XB6W.desktop
@@ -41,3 +42,4 @@ application/x-extension-xht=userapp-Firefox-XIRGBX.desktop
 application/x-gmc-link=userapp-leafpad-S85CCX.desktop
 video/x-matroska=userapp-mplayer-D41HCX.desktop
 application/x-rpm=userapp-unrpm-ZEPGCX.desktop
+image/jpeg=userapp-set_wallpaper-02YRII.desktop

@@ -108,5 +108,7 @@ chown  -R      $login:wheel             /home/$login/.livestreamerrc
 #create  aliases.db
  make -C /etc/mail aliases
 
+#set_wallpaper.sh
 
+cp  $CURRENTDIRECTORY/$CURRENTDIRECTORY  /usr/local/bin/
                       
