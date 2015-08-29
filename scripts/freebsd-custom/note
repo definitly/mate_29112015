@@ -19,7 +19,7 @@ sh /usr/src/release/amd64/make-memstick.sh disc1 1.img
 gzip -cd pkg.tar.gz | xz -c9 > pkg.txz
 
  
-
+dd if=$1  of=/dev/da0 bs=64k
 
 
 284245
