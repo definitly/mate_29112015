@@ -110,5 +110,5 @@ chown  -R      $login:wheel             /home/$login/.livestreamerrc
 
 #set_wallpaper.sh
 
-cp  $CURRENTDIRECTORY/$CURRENTDIRECTORY  /usr/local/bin/
+cp  $CURRENTDIRECTORY/set_wallpaper.sh  /usr/local/bin/
                       
