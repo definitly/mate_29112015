@@ -16,6 +16,34 @@ display: none !important;
 }
 
 
+.sports-apps-promo {
+display: none !important; 
+    position: relative;
+    color: #FFF;
+}
+
+
+.main-header__promo-block {
+
+display: none !important; 
+    float: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+
+
+.main-menu_link.william-lawson__button
+
+{
+
+display: none !important; 
+    float: right;
+    display: inline-block;
+    margin-right: 10px;
+}
+
  .green-but.corners-3px.create-blog-but {
 
 
