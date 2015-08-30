@@ -31,7 +31,7 @@ CURRENTDIRECTORY=$(pwd)
              chmod +x pkg
              cd ..
              cp /usr/local/bin/git   $CURRENTDIRECTORY/pkg
-             tar zcvf pkg.tar.gz pkg 
-             gzip -cd pkg.tar.gz | xz -c9 > pkg.txz
+             tar -czf pkg.txz pkg
+             
              
              
