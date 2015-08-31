@@ -94,7 +94,7 @@ rm /tmp/passgeli
 
 cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
 ~/scripts/fftor.sh
-sudo  cp -R chrome   /home/$login2/.mozilla/firefox/gm3zhe4q.default
+
 ./mategit.sh
 cp -R ~/themes/themes/* ~/.themes
 
