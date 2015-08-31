@@ -14,7 +14,14 @@ CURRENTDIRECTORY=$(pwd)
              mkdir pkg
              cd pkg
              pkg_cutleaves -l >> pkg_leaves
-             pkg create -a
+             pkg info > /tmp/allpkg
+             awk '{ print $1  }' /tmp/allpkg > /tmp/allpkg2
+                 for path in $(cat /tmp/allpkg2); do
+             echo "${path%-*}" >> allpkg
+             done
+                  for i in $(cat allpkg); do
+             pkg create $i
+             done
              touch pkg
              echo '#!/bin/sh' >> pkg 
              echo 'kldload linux' >> pkg 
