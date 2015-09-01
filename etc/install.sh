@@ -111,4 +111,6 @@ chown  -R      $login:wheel             /home/$login/.livestreamerrc
 #set_wallpaper.sh
 
 cp  $CURRENTDIRECTORY/set_wallpaper.sh  /usr/local/bin/
+
+cp  $CURRENTDIRECTORY/ydcmd  /usr/local/bin/
                       

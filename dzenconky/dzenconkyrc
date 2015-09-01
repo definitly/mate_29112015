@@ -11,4 +11,4 @@ tGPU:${color}${execi 30 nvidia-settings -tq "[gpu:0]/GPUCoreTemp"} \
 tCPU:${color}${execi 30 sysctl -n dev.cpu.0.temperature | cut -c 1-2} \
 fGHz:${color}$freq_g GHz cpu1:${cpu cpu0}%   cpu2:${cpu cpu1}%    \
 ${top name 1}${top cpu 1} \
-                         ${if_match "${exec  xset -q | grep Caps |  awk '{print $4}'}" == "on"} Caps Lock  ${endif}
+${if_match " ${exec  xset -q | grep Caps |  awk '{print $4}'}" == "on"} Caps Lock  ${endif}
