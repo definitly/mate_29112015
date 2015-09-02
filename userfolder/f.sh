@@ -81,6 +81,7 @@ fi
                           tar -xf   /mnt/skype.tar.gz -C       /home/$login/
                           tar -xf  /mnt/firefox.tar.gz -C     /home/$login/.mozilla
                           cp /mnt/.dropbox_uploader     /home/$login/
+                          cp /mnt/ydcmd                 /home/$login/
                      sudo cp /mnt/.dropbox_uploader     /root
                           cp -R /mnt/.ssh   /home/$login/
                      sudo umount /dev/md0.eli
