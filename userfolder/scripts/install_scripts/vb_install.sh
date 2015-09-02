@@ -19,6 +19,7 @@ fi
 setenv  SSL_NO_VERIFY_PEER 1
 pkg update
 pkg install -r virtualbox -Uy virtualbox-ose 
+pkg install -r virtualbox -Uy qt4-corelib 
 pkg install -r FreeBSD -Uy tigervnc
 #ln -l libfreetype.so.6.11.2 libfreetype.so.9
 
