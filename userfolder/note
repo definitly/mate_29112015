@@ -70,4 +70,5 @@ pkg install textproc/goldendict
 pkg install -Uy  graphics/djview4
 pkg install -Uy deskutils/fbreader
 31 августа зрядка батареек от клавиатуры
+
 dc02c98dcc284f15b46fb5f653a8e49c
