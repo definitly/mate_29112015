@@ -11,5 +11,5 @@ play="rtp_r1_sq"
 
 
 
-rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play  | mplayer -
+rtmpdump -r $tcUrl -a $app -f $flashVer -W $swfUrl -p $pageUrl  -y  $play  | mpv -
 
