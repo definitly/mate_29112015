@@ -10,7 +10,7 @@ login=definitly
 
 #/etc/devfs.rules
             
-            echo '[localrules=10]' >>                  /etc/devfs.rules
+
             echo 'add path 'fuse[0-9]*' mode 666' >>   /etc/devfs.rules
 
 #/etc/rc.conf 
