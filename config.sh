@@ -84,7 +84,7 @@
 #/etc/devfs.rules
 
                     echo '[localrules=10]'                            >>   /etc/devfs.rules
-                    echo 'add path 'usb/*' mode 0660 group operator'  >>   /etc/devfs.rules
+                    echo 'add path 'usb/*' mode 0666 group operator'  >>   /etc/devfs.rules
 
 
 #/etc/sysctl.conf   
