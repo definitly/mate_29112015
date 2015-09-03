@@ -81,6 +81,9 @@
             
                     echo 'link /tmp shm'              >>                   /etc/devfs.conf
 
+#/etc/devfs.rules
+                    echo 'add path 'usb/*' mode 0660 group operator'  >>   /etc/devfs.rules
+
 
 #/etc/sysctl.conf   
                    echo 'kern.coredump=0'                 >>           /etc/sysctl.conf 
