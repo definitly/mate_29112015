@@ -1,4 +1,4 @@
 #!/bin/sh
-fg="black"
-bg="grey"
-conky -d -c ~/.dzenconkyrc | dzen2 -h 15   -fg $fg -bg $bg   -fn -xos4-terminus-bold-r-normal--14-140-72-72-c-80-koi8-r
+fg="white"
+bg="#898a79"
+conky -d -c ~/.dzenconkyrc | dzen2 -h 15   -fg $fg -bg $bg   -fn -misc-liberation-serif-r-normal--12-120-75-75-p-0-koi8-r
