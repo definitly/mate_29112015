@@ -29,7 +29,7 @@ load_rc_config $name
 
 
 [ -z "$rtorrent_enable" ] && rtorrent_enable="NO"
-[ -z "$rtorrent_user" ] && rtorrent_user="www"
+[ -z "$rtorrent_user" ] && rtorrent_user="rtorrent"
 [ -z "$rtorrent_home" ] && rtorrent_home="/home/rtorrent"
 
 required_dirs=${rtorrent_home}
@@ -43,7 +43,7 @@ rtorrent_start()
 if [ ! -f /var/run/${name}.run ]
     then
  cd ${rtorrent_home}
- su -m  ${rtorrent_user} -c "/usr/local/bin/screen -dmS rtorrent_init /usr/local/bin/rtorrent"
+ su -m  ${rtorrent_user} -c " cd /home/$rtorrent_user  &&    /usr/local/bin/screen -dmS rtorrent_init /usr/local/bin/rtorrent"
  touch /var/run/${name}.run
  echo "Started ${name}."
  echo `date` : "Started ${name}." >> /var/log/${name}.log
