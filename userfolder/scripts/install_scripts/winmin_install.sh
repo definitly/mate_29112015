@@ -27,8 +27,8 @@ echo $l
 
 
 cd /tmp
- fetch  https://dl.dropboxusercontent.com/u/$l/virtualbox/winxpmini-firefox.ova
- 
+# fetch  https://dl.dropboxusercontent.com/u/$l/virtualbox/winxpmini-firefox.ova
+ydcmd.py get  winxpmini-firefox.ova
 VBoxManage import winxpmini-firefox.ova
 
  if ! [ -d ~/share/portable ]; then
