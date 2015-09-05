@@ -5,5 +5,5 @@ sudo pkg install -y leafpad  tshark-lite devel/py-dateutil
 #sudo xset +fp /usr/local/share/fonts/terminus-font/
 git clone git://github.com/definitly/mate.git
 cd /usr/local/www/
-git clone https://github.com/Novik/ruTorrent.git
-chown -R www:www /usr/local/www/ruTorrent
+sudo git clone https://github.com/Novik/ruTorrent.git
+sudo chown -R www:www /usr/local/www/ruTorrent
