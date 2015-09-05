@@ -11,8 +11,8 @@ xterm*termName: xterm-256color
 xterm*ScrollBar*width:         26 
 xterm*scrollbar.background:    black 
 xterm*scrollbar.foreground:    lightgreen 
-XTerm*faceName: terminus
-XTerm*faceSize: 15
+XTerm*faceName: DejaVu Sans Mono 
+XTerm*faceSize: 11
 
 
 aterm*font: -misc-fixed-medium-r-normal--20-200-75-75-c-100-koi8-r
