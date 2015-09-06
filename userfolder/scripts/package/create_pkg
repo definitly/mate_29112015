@@ -24,8 +24,8 @@ CURRENTDIRECTORY=$(pwd)
              done
              touch pkg
              echo '#!/bin/sh' >> pkg 
-             echo 'kldload linux' >> pkg 
              echo 'cd /pkg' >> pkg 
+             echo 'tar -xf git-lite-2.5.1.txz /usr/local/bin/git' >>   pkg 
              echo 'tar xf ./pkg-1.5.6.txz -s ",/.*/,,g" "*/pkg-static"' >> pkg
              echo  './pkg-static add ./pkg-1.5.6.txz' >> pkg
              echo '#for i in $(ls *txz); do' >> pkg
@@ -34,12 +34,11 @@ CURRENTDIRECTORY=$(pwd)
              echo  'pkg   add $i.txz >> log' >> pkg
              echo  'date >> log' >> pkg
              echo 'done' >> pkg
-             echo './git clone git://github.com/definitly/mate.git' >> pkg 
+             echo './usr/local/bin/git clone git://github.com/definitly/mate.git' >> pkg 
              echo 'cd mate' >> pkg 
              echo './install.sh' >> pkg 
              chmod +x pkg
              cd ..
-             cp /usr/local/bin/git   $CURRENTDIRECTORY/pkg
              tar -czf pkg.txz pkg
              
              
