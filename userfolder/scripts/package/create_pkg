@@ -30,7 +30,9 @@ CURRENTDIRECTORY=$(pwd)
              echo  './pkg-static add ./pkg-1.5.6.txz' >> pkg
              echo '#for i in $(ls *txz); do' >> pkg
              echo  'for i in $(cat pkg_leaves); do' >> pkg
+             echo  'date >> log' >> pkg
              echo  'pkg   add $i.txz >> log' >> pkg
+             echo  'date >> log' >> pkg
              echo 'done' >> pkg
              echo './git clone git://github.com/definitly/mate.git' >> pkg 
              echo 'cd mate' >> pkg 
