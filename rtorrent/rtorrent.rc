@@ -13,4 +13,5 @@ peer_exchange = yes
 dht = auto
 dht_port = 6881
 
-scgi_port = 127.0.0.1:5000
+scgi_local = /tmp/rpc.socket
+schedule = chmod,0,0,"execute=chmod,777,/tmp/rpc.socket"
