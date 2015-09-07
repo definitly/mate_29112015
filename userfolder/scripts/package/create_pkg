@@ -28,7 +28,12 @@ CURRENTDIRECTORY=$(pwd)
              echo 'tar -xf git-lite-2.5.1.txz /usr/local/bin/git' >>   pkg 
              echo 'tar xf ./pkg-1.5.6.txz -s ",/.*/,,g" "*/pkg-static"' >> pkg
              echo 'tar xf ./indexinfo-0.2.3.txz -s ",/.*/,,g" "*/indexinfo"' >> pkg
-             echo  './pkg-static add ./pkg-1.5.6.txz' >> pkg
+             echo 'tar xf ./shared-mime-info-1.4.txz -s ",/.*/,,g" "*/update-mime-database"' >> pkg
+             echo 'tar xf ./desktop-file-utils-0.22_3.txz  -s ",/.*/,,g" "*/update-desktop-database"' >> pkg
+             echo 'cp indexinfo /bin' >> pkg
+             echo 'cp update-mime-database /bin' >> pkg 
+             echo 'cp update-desktop-database" /bin' >> pkg
+             echo './pkg-static add ./pkg-1.5.6.txz' >> pkg
              echo '#for i in $(ls *txz); do' >> pkg
              echo  'for i in $(cat pkg_leaves); do' >> pkg
              echo  'date >> log' >> pkg
