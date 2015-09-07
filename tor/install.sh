@@ -26,4 +26,4 @@ CURRENTDIRECTORY=$(pwd)
                       mkdir -p          /var/run/polipo
                       chmod -R 0777     /var/run/polipo
                       touch             /var/log/polipo
-                      chmod 0002        /var/log/polipo
+                      chmod 0777        /var/log/polipo
