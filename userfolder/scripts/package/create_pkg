@@ -35,11 +35,12 @@ CURRENTDIRECTORY=$(pwd)
              echo 'cp update-desktop-database /bin' >> pkg
              echo './pkg-static add ./pkg-1.5.6.txz' >> pkg
              echo '#for i in $(ls *txz); do' >> pkg
-             echo  'for i in $(cat pkg_leaves); do' >> pkg
-             echo  'date >> log' >> pkg
-             echo  'pkg   add $i.txz >> log' >> pkg
-             echo  'date >> log' >> pkg
+             echo 'for i in $(cat pkg_leaves); do' >> pkg
+             echo 'date >> log' >> pkg
+             echo 'pkg   add $i.txz >> log' >> pkg
+             echo 'date >> log' >> pkg
              echo 'done' >> pkg
+             echo 'rm /bin/indexinfo /bin/update-mime-database /bin/update-desktop-database' >> pkg
              echo './usr/local/bin/git clone git://github.com/definitly/mate.git' >> pkg 
              echo 'cd mate' >> pkg 
              echo './install.sh' >> pkg 
