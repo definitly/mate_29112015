@@ -17,6 +17,9 @@ read pkg
    sudo  pkg create -n $pkg
    sudo  pkg create  libgcrypt
    sudo  pkg create   libgpg-error
+   sudo  pkg create  qt4-corelib
+   sudo  pkg create  xprop
+   sudo  pkg create  xdg-utils
    rm dep.log
    cd ..
    sudo pkg repo $pkg
