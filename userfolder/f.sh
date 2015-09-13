@@ -55,9 +55,7 @@ echo $k
 sudo /home/$login/.scripts/rrdcreate.sh
 
 
-#sudo pkg delete -y leafpad gsettings-desktop-schemas terminus-font
-#sudo pkg install -y leafpad gsettings-desktop-schemas terminus-font tshark-lite
-#sudo xset +fp /usr/local/share/fonts/terminus-font/
+
 
 
   git clone git://github.com/definitly/timeinstall.git
@@ -93,11 +91,10 @@ rm /tmp/passgeli
 
 
 cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
-~/scripts/fftor.sh
+~/scripts/fftor.sh & ./install.sh & 
 
 git clone git://github.com/definitly/themes.git
 cp -R ~/themes/themes/* ~/.themes
 
 
-~/timeinstall/git.sh
 
