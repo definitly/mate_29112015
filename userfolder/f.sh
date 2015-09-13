@@ -95,6 +95,8 @@ cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
 
 git clone git://github.com/definitly/themes.git
 cp -R ~/themes/themes/* ~/.themes
+cd themes 
+./human.sh 
 
 
 
