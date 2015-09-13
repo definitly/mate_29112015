@@ -7,6 +7,6 @@ fi
 
 cd /tmp
 
-fetch ftp://ftp.freebsd.org/pub/FreeBSD/releases/amd64/10.1-RELEASE/src.txz
+fetch ftp://ftp.freebsd.org/pub/FreeBSD/snapshots/amd64/amd64/10.2-STABLE/src.txz
 
 tar -C / -xvzf src.txz
