@@ -15,3 +15,4 @@
                      sudo geli detach md0.eli
                      sudo mdconfig -d -u 0 
                           rm /tmp/passgeli
+                    cp -R chrome    /home/$login/.mozilla/firefox/iuvb8get.default
