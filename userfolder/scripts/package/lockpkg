@@ -1,20 +1,34 @@
-        zip-3.0_1
-        tiff-4.0.4 
-        sudo-1.8.14p3 
-        screen-4.3.1_1 
-        pcre-8.37_4
-        p7zip-9.38.1 
-        nvidia-driver-340-340.76 
-        nettle-2.7.1 
-        mpv-0.10.0,1 
-        mc-4.8.14_1 
-        llvm35-3.5.2_1 
-        libslang2-2.3.0 
-        jpeg-8_6 
-        jasper-1.900.1_15 
-        hal-0.5.14_30 
-        firefox-40.0.3,1 
-        ffmpeg-2.7.2_1,1 
-        fbpanel-6.1_4 
-        curl-7.44.0 
-        bash-4.3.42 
+        zip-3.0_1 (options changed)
+        tiff-4.0.4 (options changed)
+        sudo-1.8.14p3 (options changed)
+        screen-4.3.1_2 (options changed)
+        rrdtool-1.4.8_9 (options changed)
+        pcre-8.37_4 (options changed)
+        p7zip-9.38.1_2 (options changed)
+        obconf-2.0.4_2 (options changed)
+        nvidia-driver-340-340.76 (options changed)
+        nginx-1.8.0_3,2 (options changed)
+        nettle-2.7.1 (options changed)
+        mpv-0.10.0,1 (options changed)
+        mc-4.8.14_1 (options changed)
+        lxterminal-0.1.11_2 (options changed)
+        lxappearance-0.6.1 (options changed)
+        llvm35-3.5.2_1 (options changed)
+        libxcb-1.11_1 (options changed)
+        libv4l-1.6.3_1 (direct dependency changed: jpeg-turbo)
+        libtasn1-4.7 (options changed)
+        libsvg-0.1.4_8 (direct dependency changed: jpeg-turbo)
+        libslang2-2.3.0 (options changed)
+        jpeg-8_6 (options changed)
+        jasper-1.900.1_15 (options changed)
+        imlib2-1.4.6_6,2 (direct dependency changed: jpeg-turbo)
+        gdk-pixbuf2-2.31.7 (direct dependency changed: jpeg-turbo)
+        firefox-40.0.3,1 (options changed)
+        ffmpeg-2.7.2_1,1 (options changed)
+        feh-2.13.1 (options changed)
+        fbpanel-6.1_4 (options changed)
+        dejavu-2.35 (options changed)
+        curl-7.44.0 (options changed)
+        cabextract-1.6 (options changed)
+        bash-4.3.42 (options changed)
+        ansiweather-1.02 (options changed)
