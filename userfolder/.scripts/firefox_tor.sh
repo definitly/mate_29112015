@@ -1,4 +1,4 @@
 #!/bin/sh
 
-xhost localhost
+xhost +local:ff
 sudo -u ff -H firefox
