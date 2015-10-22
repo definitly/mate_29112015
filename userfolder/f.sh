@@ -65,11 +65,7 @@ sudo /home/$login/.scripts/rrdcreate.sh
                           nspluginwrapper -a -i
                           mkdir -p   /home/$login/.mozilla 
 
-    if ! [ -f  freebsd ]; then
-                  
-   fetch  https://dl.dropboxusercontent.com/u/$l/$k
-   
-fi
+ 
 
 
 ./geli.sh &           
