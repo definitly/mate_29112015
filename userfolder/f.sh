@@ -67,8 +67,8 @@ sudo /home/$login/.scripts/rrdcreate.sh
 
     if ! [ -f  freebsd ]; then
                   
-   fetch  http://dl.dropbox.com/u/$l/$k
-   #fetch  http://dl.dropbox.com/u/$l/$k.zip
+   fetch  https://dl.dropboxusercontent.com/u/$l/$k
+   
 fi
 
 
