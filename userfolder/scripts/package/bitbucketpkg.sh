@@ -19,7 +19,8 @@ read pkg
    sudo  pkg create   libgpg-error
    sudo  pkg create  qt4-corelib
    sudo  pkg create  xprop
-   sudo  pkg create  xdg-utils
+   sudo  pkg create  xdg-utils 
+   sudo  pkg create  libvncserver
    rm dep.log
    cd ..
    sudo pkg repo $pkg
