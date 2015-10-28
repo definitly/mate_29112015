@@ -1,5 +1,6 @@
 #!/bin/sh
 login=definitly
+login1=ff
 #mount and restart  sysctl
                      mkdir -p /compat/linux/proc
                      mount linproc
@@ -9,10 +10,15 @@ login=definitly
 #flash
 
                      mkdir /usr/local/lib/browser_plugins
-                     nspluginwrapper -a -i
+                     
 
 
                      mkdir -p  /home/$login/.mozilla/plugins
                      chown  -R      $login:wheel       /home/$login/.mozilla/plugins
                      chown  -R      $login:wheel       /home/$login/.mozilla/
-                     ln -s /usr/local/lib/browser_plugins/npwrapper.libflashplayer.so  /home/$login/.mozilla/plugins
+
+
+                      
+                     mkdir -p  /home/$login1/.mozilla/plugins
+                     chown  -R      $login1:wheel       /home/$login1/.mozilla/plugins
+                     chown  -R      $login1:wheel       /home/$login1/.mozilla/
