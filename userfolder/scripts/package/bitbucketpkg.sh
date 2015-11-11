@@ -18,6 +18,8 @@ read pkg
    sudo  pkg create  libgcrypt
    sudo  pkg create   libgpg-error
    sudo  pkg create  qt4-corelib
+   sudo  pkg create  qt4-opengl
+   sudo  pkg create  qt4-network
    sudo  pkg create  xprop
    sudo  pkg create  xdg-utils 
    sudo  pkg create  libvncserver
