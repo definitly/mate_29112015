@@ -1,6 +1,6 @@
 setenv  SSL_NO_VERIFY_PEER 1
 
-
+https://addons.mozilla.org/ru/firefox/addon/adblock-plus/
 
 VBoxManage modifyvm win --accelerate3d off
 VBoxManage hostonlyif ipconfig vboxnet0 --ip 192.168.56.101
