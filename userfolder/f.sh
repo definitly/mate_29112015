@@ -60,11 +60,11 @@ sudo /home/$login/.scripts/rrdcreate.sh
   nspluginwrapper -a -i
 
 
-./geli.sh &&           
+./geli.sh &        
 
 
 
-~/scripts/fftor.sh && ./install.sh && 
+~/scripts/fftor.sh & ./install.sh &
 
 git clone git://github.com/definitly/themes.git
 cp -R ~/themes/themes/* ~/.themes
