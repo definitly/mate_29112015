@@ -1,8 +1,8 @@
 #!/bin/sh
 
 
-sudo pkg install -y  tshark-lite  py27-livestreamer &
-git clone git://github.com/definitly/mate.git &
+sudo pkg install -y  tshark-lite   &&
+git clone git://github.com/definitly/mate.git &&
 cd /usr/local/www/
 sudo git clone https://github.com/Novik/ruTorrent.git 
 sudo chown -R www:www /usr/local/www/ruTorrent
