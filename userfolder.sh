@@ -42,6 +42,7 @@ login=definitly
                        echo 'alias vwin      VBoxHeadless --startvm win'              >>            /home/$login/.cshrc
                        echo 'alias cdd       cd  ~/downloads'                         >>            /home/$login/.cshrc 
                        echo 'alias cds       cd  ~/scripts'                           >>            /home/$login/.cshrc
+                       echo 'alias rtmp          ~/scripts/rtmp.sh'                   >>            /home/$login/.cshrc
                        echo 'setenv TERM xterm-256color'                              >>            /home/$login/.cshrc 
 
 
