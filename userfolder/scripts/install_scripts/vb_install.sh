@@ -25,5 +25,6 @@ pw groupmod vboxusers -m definitly
 pw groupmod operator  -m definitly
 sudo chmod +x  /usr/local/lib/virtualbox/VBoxHeadless 
 sudo chmod +x  /usr/local/lib/virtualbox/VirtualBox                                                                                      
-  kldload vboxdrv.ko
-  kldload vboxnetadp.ko
+     kldload   vboxdrv.ko
+     kldload   vboxnetadp.ko
+sudo rm        /usr/local/etc/pkg/repos
