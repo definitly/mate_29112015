@@ -36,13 +36,14 @@ login=definitly
                        echo 'alias kn        killall -9  npviewer.bin'                >>            /home/$login/.cshrc
                        echo 'alias ks        killall -9  sp-sc-auth'                  >>            /home/$login/.cshrc
                        echo 'alias kw        killall -9  wine'                        >>            /home/$login/.cshrc
-                       echo 'alias sm        mpv http://localhost:8908/tv.asf'    >>            /home/$login/.cshrc
+                       echo 'alias sm        mpv http://localhost:8908/tv.asf'        >>            /home/$login/.cshrc
                        echo 'alias kf        killall -9  firefox'                     >>            /home/$login/.cshrc
                        echo 'alias vwinmin   VBoxHeadless --startvm winmin'           >>            /home/$login/.cshrc
                        echo 'alias vwin      VBoxHeadless --startvm win'              >>            /home/$login/.cshrc
                        echo 'alias cdd       cd  ~/downloads'                         >>            /home/$login/.cshrc 
                        echo 'alias cds       cd  ~/scripts'                           >>            /home/$login/.cshrc
                        echo 'alias rtmp          ~/scripts/rtmp.sh'                   >>            /home/$login/.cshrc
+                       echo 'alias m3u8          ~/scripts/swf/m3u8player.sh'         >>            /home/$login/.cshrc
                        echo 'setenv TERM xterm-256color'                              >>            /home/$login/.cshrc 
 
 
