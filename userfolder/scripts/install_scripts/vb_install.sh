@@ -27,4 +27,4 @@ sudo chmod +x  /usr/local/lib/virtualbox/VBoxHeadless
 sudo chmod +x  /usr/local/lib/virtualbox/VirtualBox                                                                                      
      kldload   vboxdrv.ko
      kldload   vboxnetadp.ko
-sudo rm        /usr/local/etc/pkg/repos
+sudo rm        /usr/local/etc/pkg/repos/freebsd.conf
