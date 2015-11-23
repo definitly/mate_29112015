@@ -15,7 +15,7 @@ sudo cp /home/definitly/mate/etc/freebsd.conf /usr/local/etc/pkg/repos
 
 fi
 
-setenv  SSL_NO_VERIFY_PEER 1
+
 pkg update
 pkg install -r virtualbox -Uy virtualbox-ose 
 pkg install -r virtualbox -Uy qt4-corelib 
